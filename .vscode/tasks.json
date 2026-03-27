@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "${workspaceFolder}\\main.cpp",
+        "${workspaceFolder}\\API\\ApiClient.cpp",
+        "${workspaceFolder}\\MainWindow\\MainWindow.cpp",
+        "${workspaceFolder}\\Plot\\PlotManager.cpp",
+        "-I${workspaceFolder}\\API",
+        "-I${workspaceFolder}\\MainWindow",
+        "-I${workspaceFolder}\\Plot",
+        "-o",
+        "${workspaceFolder}\\Powietrze.exe",
+        "-lcurl",
+        "-std=c++17",
+        "-lnana",
+        "-lgdi32",
+        "-lcomdlg32",
+        "-lole32",
+        "-luuid",
+        "-lcpr",
+        "-lssl",
+        "-lcrypto",
+        "-lpng",
+        "-ljpeg",
+        "-mwindows"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

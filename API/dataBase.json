@@ -1,0 +1,2748 @@
+{
+    "Czerniawa": [
+        {
+            "Id": 11,
+            "Miasto": "Czerniawa",
+            "Ulica": "ul. Strażacka 7",
+            "Gmina": "Świeradów-Zdrój",
+            "Powiat": "lubański",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Dzierżoniów": [
+        {
+            "Id": 16,
+            "Miasto": "Dzierżoniów",
+            "Ulica": "ul. Piłsudskiego 26",
+            "Gmina": "Dzierżoniów",
+            "Powiat": "dzierżoniowski",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Kłodzko": [
+        {
+            "Id": 38,
+            "Miasto": "Kłodzko",
+            "Ulica": "ul. Szkolna 8",
+            "Gmina": "Kłodzko",
+            "Powiat": "kłodzki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Legnica": [
+        {
+            "Id": 52,
+            "Miasto": "Legnica",
+            "Ulica": "Al. Rzeczypospolitej 10/12",
+            "Gmina": "Legnica",
+            "Powiat": "Legnica",
+            "Województwo": "DOLNOŚLĄSKIE"
+        },
+        {
+            "Id": 11234,
+            "Miasto": "Legnica",
+            "Ulica": "ul. Polarna 1",
+            "Gmina": "Legnica",
+            "Powiat": "Legnica",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Oława": [
+        {
+            "Id": 70,
+            "Miasto": "Oława",
+            "Ulica": "ul. Żołnierzy AK 9",
+            "Gmina": "Oława",
+            "Powiat": "oławski",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Oleśnica": [
+        {
+            "Id": 71,
+            "Miasto": "Oleśnica",
+            "Ulica": "ul. Brzozowa 7",
+            "Gmina": "Oleśnica",
+            "Powiat": "oleśnicki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Osieczów": [
+        {
+            "Id": 74,
+            "Miasto": "Osieczów",
+            "Ulica": "brak",
+            "Gmina": "Osiecznica",
+            "Powiat": "bolesławiecki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Polkowice": [
+        {
+            "Id": 77,
+            "Miasto": "Polkowice",
+            "Ulica": "ul. Kasztanowa 29",
+            "Gmina": "Polkowice",
+            "Powiat": "polkowicki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Szczawno-Zdrój": [
+        {
+            "Id": 93,
+            "Miasto": "Szczawno-Zdrój",
+            "Ulica": "ul. Kolejowa 14",
+            "Gmina": "Szczawno-Zdrój",
+            "Powiat": "wałbrzyski",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Wałbrzych": [
+        {
+            "Id": 109,
+            "Miasto": "Wałbrzych",
+            "Ulica": "ul. Wysockiego 11",
+            "Gmina": "Wałbrzych",
+            "Powiat": "Wałbrzych",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Wrocław": [
+        {
+            "Id": 114,
+            "Miasto": "Wrocław",
+            "Ulica": "ul. Bartnicza",
+            "Gmina": "Wrocław",
+            "Powiat": "Wrocław",
+            "Województwo": "DOLNOŚLĄSKIE"
+        },
+        {
+            "Id": 115,
+            "Miasto": "Wrocław",
+            "Ulica": "ul. Na Grobli",
+            "Gmina": "Wrocław",
+            "Powiat": "Wrocław",
+            "Województwo": "DOLNOŚLĄSKIE"
+        },
+        {
+            "Id": 117,
+            "Miasto": "Wrocław",
+            "Ulica": "ul. Wyb. J.Conrada-Korzeniowskiego 18",
+            "Gmina": "Wrocław",
+            "Powiat": "Wrocław",
+            "Województwo": "DOLNOŚLĄSKIE"
+        },
+        {
+            "Id": 122,
+            "Miasto": "Wrocław",
+            "Ulica": "ul. Orzechowa 61",
+            "Gmina": "Wrocław",
+            "Powiat": "Wrocław",
+            "Województwo": "DOLNOŚLĄSKIE"
+        },
+        {
+            "Id": 129,
+            "Miasto": "Wrocław",
+            "Ulica": "Al. Wiśniowa/ul. Powst. Śląskich",
+            "Gmina": "Wrocław",
+            "Powiat": "Wrocław",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Zgorzelec": [
+        {
+            "Id": 134,
+            "Miasto": "Zgorzelec",
+            "Ulica": "ul. Bohaterów Getta 1a",
+            "Gmina": "Zgorzelec",
+            "Powiat": "zgorzelecki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Grudziądz": [
+        {
+            "Id": 142,
+            "Miasto": "Grudziądz",
+            "Ulica": "ul. Piłsudskiego 51",
+            "Gmina": "Grudziądz",
+            "Powiat": "Grudziądz",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 183,
+            "Miasto": "Grudziądz",
+            "Ulica": "ul. Sienkiewicza 27",
+            "Gmina": "Grudziądz",
+            "Powiat": "Grudziądz",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Inowrocław": [
+        {
+            "Id": 143,
+            "Miasto": "Inowrocław",
+            "Ulica": "ul. Solankowa",
+            "Gmina": "Inowrocław",
+            "Powiat": "inowrocławski",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Toruń": [
+        {
+            "Id": 145,
+            "Miasto": "Toruń",
+            "Ulica": "ul. Wały gen. Sikorskiego 12",
+            "Gmina": "Toruń",
+            "Powiat": "Toruń",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 206,
+            "Miasto": "Toruń",
+            "Ulica": "ul. Dziewulskiego 1",
+            "Gmina": "Toruń",
+            "Powiat": "Toruń",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 208,
+            "Miasto": "Toruń",
+            "Ulica": "ul. Przy Kaszowniku",
+            "Gmina": "Toruń",
+            "Powiat": "Toruń",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Bydgoszcz": [
+        {
+            "Id": 150,
+            "Miasto": "Bydgoszcz",
+            "Ulica": "ul. gen. Augusta Emila Fieldorfa „Nila” 13",
+            "Gmina": "Bydgoszcz",
+            "Powiat": "Bydgoszcz",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 156,
+            "Miasto": "Bydgoszcz",
+            "Ulica": "Plac Poznański",
+            "Gmina": "Bydgoszcz",
+            "Powiat": "Bydgoszcz",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 158,
+            "Miasto": "Bydgoszcz",
+            "Ulica": "ul. Warszawska 10",
+            "Gmina": "Bydgoszcz",
+            "Powiat": "Bydgoszcz",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 11576,
+            "Miasto": "Bydgoszcz",
+            "Ulica": "ul. Jeździecka",
+            "Gmina": "Bydgoszcz",
+            "Powiat": "Bydgoszcz",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Ciechocinek": [
+        {
+            "Id": 164,
+            "Miasto": "Ciechocinek",
+            "Ulica": "ul. Tężniowa - Park Tężniowy",
+            "Gmina": "Ciechocinek",
+            "Powiat": "aleksandrowski",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Koniczynka": [
+        {
+            "Id": 190,
+            "Miasto": "Koniczynka",
+            "Ulica": "Pojezierze Chełmińskie",
+            "Gmina": "Łysomice",
+            "Powiat": "toruński",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Włocławek": [
+        {
+            "Id": 225,
+            "Miasto": "Włocławek",
+            "Ulica": "ul. Okrzei",
+            "Gmina": "Włocławek",
+            "Powiat": "Włocławek",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 9791,
+            "Miasto": "Włocławek",
+            "Ulica": "ul. Kaliska 108 A",
+            "Gmina": "Włocławek",
+            "Powiat": "Włocławek",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        },
+        {
+            "Id": 10694,
+            "Miasto": "Włocławek",
+            "Ulica": "ul. Gniazdowskiego 7",
+            "Gmina": "Włocławek",
+            "Powiat": "Włocławek",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Zielonka": [
+        {
+            "Id": 232,
+            "Miasto": "Zielonka",
+            "Ulica": "Bory Tucholskie",
+            "Gmina": "Tuchola",
+            "Powiat": "tucholski",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Biała Podlaska": [
+        {
+            "Id": 236,
+            "Miasto": "Biała Podlaska",
+            "Ulica": "ul. Orzechowa",
+            "Gmina": "Biała Podlaska",
+            "Powiat": "Biała Podlaska",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Jarczew": [
+        {
+            "Id": 248,
+            "Miasto": "Jarczew",
+            "Ulica": "brak",
+            "Gmina": "Wola Mysłowska",
+            "Powiat": "łukowski",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Kraśnik": [
+        {
+            "Id": 250,
+            "Miasto": "Kraśnik",
+            "Ulica": "ul. Koszarowa 10A",
+            "Gmina": "Kraśnik",
+            "Powiat": "kraśnicki",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Lublin": [
+        {
+            "Id": 258,
+            "Miasto": "Lublin",
+            "Ulica": "ul. Śliwińskiego 5",
+            "Gmina": "Lublin",
+            "Powiat": "Lublin",
+            "Województwo": "LUBELSKIE"
+        },
+        {
+            "Id": 266,
+            "Miasto": "Lublin",
+            "Ulica": "ul. Obywatelska 13",
+            "Gmina": "Lublin",
+            "Powiat": "Lublin",
+            "Województwo": "LUBELSKIE"
+        },
+        {
+            "Id": 12096,
+            "Miasto": "Lublin",
+            "Ulica": "Okopowa 5a",
+            "Gmina": "Lublin",
+            "Powiat": "Lublin",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Radzyń Podlaski": [
+        {
+            "Id": 275,
+            "Miasto": "Radzyń Podlaski",
+            "Ulica": "ul. Sitkowskiego 1b",
+            "Gmina": "Radzyń Podlaski",
+            "Powiat": "radzyński",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Wilczopole": [
+        {
+            "Id": 282,
+            "Miasto": "Wilczopole",
+            "Ulica": "brak",
+            "Gmina": "Głusk",
+            "Powiat": "lubelski",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Zamość": [
+        {
+            "Id": 285,
+            "Miasto": "Zamość",
+            "Ulica": "ul. Hrubieszowska 69A",
+            "Gmina": "Zamość",
+            "Powiat": "Zamość",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Brzeziny": [
+        {
+            "Id": 289,
+            "Miasto": "Brzeziny",
+            "Ulica": "ul. Reformacka 1",
+            "Gmina": "Brzeziny",
+            "Powiat": "brzeziński",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Gajew": [
+        {
+            "Id": 291,
+            "Miasto": "Gajew",
+            "Ulica": "Ujęcie wody",
+            "Gmina": "Witonia",
+            "Powiat": "łęczycki",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Łódź": [
+        {
+            "Id": 295,
+            "Miasto": "Łódź",
+            "Ulica": "ul. Czernika 1/3",
+            "Gmina": "Łódź",
+            "Powiat": "Łódź",
+            "Województwo": "ŁÓDZKIE"
+        },
+        {
+            "Id": 296,
+            "Miasto": "Łódź",
+            "Ulica": "ul. Gdańska 16",
+            "Gmina": "Łódź",
+            "Powiat": "Łódź",
+            "Województwo": "ŁÓDZKIE"
+        },
+        {
+            "Id": 302,
+            "Miasto": "Łódź",
+            "Ulica": "ul. Legionów 1",
+            "Gmina": "Łódź",
+            "Powiat": "Łódź",
+            "Województwo": "ŁÓDZKIE"
+        },
+        {
+            "Id": 10058,
+            "Miasto": "Łódź",
+            "Ulica": "Al. Jana Pawła II 15",
+            "Gmina": "Łódź",
+            "Powiat": "Łódź",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Pabianice": [
+        {
+            "Id": 314,
+            "Miasto": "Pabianice",
+            "Ulica": "ul. Konstantynowska",
+            "Gmina": "Pabianice",
+            "Powiat": "pabianicki",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Parzniewice": [
+        {
+            "Id": 319,
+            "Miasto": "Parzniewice",
+            "Ulica": "Ujęcie wody",
+            "Gmina": "Wola Krzysztoporska",
+            "Powiat": "piotrkowski",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Piotrków Trybunalski": [
+        {
+            "Id": 322,
+            "Miasto": "Piotrków Trybunalski",
+            "Ulica": "ul. Krakowskie Przedmieście 13",
+            "Gmina": "Piotrków Trybunalski",
+            "Powiat": "Piotrków Trybunalski",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Radomsko": [
+        {
+            "Id": 331,
+            "Miasto": "Radomsko",
+            "Ulica": "ul. Rolna 2",
+            "Gmina": "Radomsko",
+            "Powiat": "radomszczański",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Tomaszów Mazowiecki": [
+        {
+            "Id": 345,
+            "Miasto": "Tomaszów Mazowiecki",
+            "Ulica": "ul. Św. Antoniego 43/45",
+            "Gmina": "Tomaszów Mazowiecki",
+            "Powiat": "tomaszowski",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Wieluń": [
+        {
+            "Id": 347,
+            "Miasto": "Wieluń",
+            "Ulica": "ul. POW 12",
+            "Gmina": "Wieluń",
+            "Powiat": "wieluński",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Zduńska Wola": [
+        {
+            "Id": 350,
+            "Miasto": "Zduńska Wola",
+            "Ulica": "ul. Królewska 10",
+            "Gmina": "Zduńska Wola",
+            "Powiat": "zduńskowolski",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Zgierz": [
+        {
+            "Id": 355,
+            "Miasto": "Zgierz",
+            "Ulica": "ul. Mielczarskiego 1",
+            "Gmina": "Zgierz",
+            "Powiat": "zgierski",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Gorzów Wielkopolski": [
+        {
+            "Id": 361,
+            "Miasto": "Gorzów Wielkopolski",
+            "Ulica": "ul. Kosynierów Gdyńskich",
+            "Gmina": "Gorzów Wielkopolski",
+            "Powiat": "Gorzów Wielkopolski",
+            "Województwo": "LUBUSKIE"
+        },
+        {
+            "Id": 362,
+            "Miasto": "Gorzów Wielkopolski",
+            "Ulica": "ul. Piłsudskiego",
+            "Gmina": "Gorzów Wielkopolski",
+            "Powiat": "Gorzów Wielkopolski",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Smolary Bytnickie": [
+        {
+            "Id": 374,
+            "Miasto": "Smolary Bytnickie",
+            "Ulica": "Smolary Bytnickie 45A",
+            "Gmina": "Bytnica",
+            "Powiat": "krośnieński",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Sulęcin": [
+        {
+            "Id": 376,
+            "Miasto": "Sulęcin",
+            "Ulica": "ul. Dudka",
+            "Gmina": "Sulęcin",
+            "Powiat": "sulęciński",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Wschowa": [
+        {
+            "Id": 379,
+            "Miasto": "Wschowa",
+            "Ulica": "ul. Kazimierza Wielkiego",
+            "Gmina": "Wschowa",
+            "Powiat": "wschowski",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Żary": [
+        {
+            "Id": 382,
+            "Miasto": "Żary",
+            "Ulica": "ul. Szymanowskiego 8",
+            "Gmina": "Żary",
+            "Powiat": "żarski",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Zielona Góra": [
+        {
+            "Id": 387,
+            "Miasto": "Zielona Góra",
+            "Ulica": "ul. Krótka",
+            "Gmina": "Zielona Góra",
+            "Powiat": "Zielona Góra",
+            "Województwo": "LUBUSKIE"
+        },
+        {
+            "Id": 11294,
+            "Miasto": "Zielona Góra",
+            "Ulica": "Wyszyńskiego",
+            "Gmina": "Zielona Góra",
+            "Powiat": "Zielona Góra",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Bochnia": [
+        {
+            "Id": 391,
+            "Miasto": "Bochnia",
+            "Ulica": "ul. Konfederatów Barskich",
+            "Gmina": "Bochnia",
+            "Powiat": "bocheński",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Gorlice": [
+        {
+            "Id": 398,
+            "Miasto": "Gorlice",
+            "Ulica": "ul. Krasińskiego",
+            "Gmina": "Gorlice",
+            "Powiat": "gorlicki",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Kraków": [
+        {
+            "Id": 400,
+            "Miasto": "Kraków",
+            "Ulica": "Al. Krasińskiego",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 401,
+            "Miasto": "Kraków",
+            "Ulica": "ul. Bujaka",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 402,
+            "Miasto": "Kraków",
+            "Ulica": "ul. Bulwarowa",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 10123,
+            "Miasto": "Kraków",
+            "Ulica": "Złoty Róg",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 10139,
+            "Miasto": "Kraków",
+            "Ulica": "Os. Piastów",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 10447,
+            "Miasto": "Kraków",
+            "Ulica": "Wadów",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 11303,
+            "Miasto": "Kraków",
+            "Ulica": "Lusińska",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 16896,
+            "Miasto": "Kraków",
+            "Ulica": "ul. Kamieńskiego",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 20367,
+            "Miasto": "Kraków",
+            "Ulica": "Półłanki 76",
+            "Gmina": "Kraków",
+            "Powiat": "Kraków",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Nowy Sącz": [
+        {
+            "Id": 426,
+            "Miasto": "Nowy Sącz",
+            "Ulica": "ul. Nadbrzeżna",
+            "Gmina": "Nowy Sącz",
+            "Powiat": "Nowy Sącz",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Skawina": [
+        {
+            "Id": 437,
+            "Miasto": "Skawina",
+            "Ulica": "Os. Ogrody",
+            "Gmina": "Skawina",
+            "Powiat": "krakowski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Szymbark": [
+        {
+            "Id": 443,
+            "Miasto": "Szymbark",
+            "Ulica": "Szymbark 430",
+            "Gmina": "Gorlice",
+            "Powiat": "gorlicki",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Tarnów": [
+        {
+            "Id": 444,
+            "Miasto": "Tarnów",
+            "Ulica": "ul. Bitwy pod Studziankami",
+            "Gmina": "Tarnów",
+            "Powiat": "Tarnów",
+            "Województwo": "MAŁOPOLSKIE"
+        },
+        {
+            "Id": 10120,
+            "Miasto": "Tarnów",
+            "Ulica": "ul. Ks. Romana Sitko",
+            "Gmina": "Tarnów",
+            "Powiat": "Tarnów",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Trzebinia": [
+        {
+            "Id": 449,
+            "Miasto": "Trzebinia",
+            "Ulica": "Os. Widokowe (dawne os. ZWM)",
+            "Gmina": "Trzebinia",
+            "Powiat": "chrzanowski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Tuchów": [
+        {
+            "Id": 450,
+            "Miasto": "Tuchów",
+            "Ulica": "ul. Chopina",
+            "Gmina": "Tuchów",
+            "Powiat": "tarnowski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Niepołomice": [
+        {
+            "Id": 455,
+            "Miasto": "Niepołomice",
+            "Ulica": "ul. 3 Maja",
+            "Gmina": "Niepołomice",
+            "Powiat": "wielicki",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Zakopane": [
+        {
+            "Id": 459,
+            "Miasto": "Zakopane",
+            "Ulica": "ul. Sienkiewicza",
+            "Gmina": "Zakopane",
+            "Powiat": "tatrzański",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Belsk Duży": [
+        {
+            "Id": 460,
+            "Miasto": "Belsk Duży",
+            "Ulica": "Osiedle PAN 1",
+            "Gmina": "Grójec",
+            "Powiat": "grójecki",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Granica": [
+        {
+            "Id": 466,
+            "Miasto": "Granica",
+            "Ulica": "Kampinoski Park Narodowy",
+            "Gmina": "Kampinos",
+            "Powiat": "warszawski zachodni",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Legionowo": [
+        {
+            "Id": 471,
+            "Miasto": "Legionowo",
+            "Ulica": "ul. Zegrzyńska 38",
+            "Gmina": "Legionowo",
+            "Powiat": "legionowski",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Otwock": [
+        {
+            "Id": 485,
+            "Miasto": "Otwock",
+            "Ulica": "ul. Brzozowa 2",
+            "Gmina": "Otwock",
+            "Powiat": "otwocki",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Piastów": [
+        {
+            "Id": 488,
+            "Miasto": "Piastów",
+            "Ulica": "ul. Pułaskiego 6/8",
+            "Gmina": "Piastów",
+            "Powiat": "pruszkowski",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Płock": [
+        {
+            "Id": 497,
+            "Miasto": "Płock",
+            "Ulica": "ul. Królowej Jadwigi 4",
+            "Gmina": "Płock",
+            "Powiat": "Płock",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 501,
+            "Miasto": "Płock",
+            "Ulica": "ul. Mikołaja Reja 28",
+            "Gmina": "Płock",
+            "Powiat": "Płock",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Radom": [
+        {
+            "Id": 510,
+            "Miasto": "Radom",
+            "Ulica": "ul. 25 Czerwca 1976 70",
+            "Gmina": "Radom",
+            "Powiat": "Radom",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 512,
+            "Miasto": "Radom",
+            "Ulica": "ul. Hallera",
+            "Gmina": "Radom",
+            "Powiat": "Radom",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 515,
+            "Miasto": "Radom",
+            "Ulica": "ul. Tochtermana 1",
+            "Gmina": "Radom",
+            "Powiat": "Radom",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Siedlce": [
+        {
+            "Id": 517,
+            "Miasto": "Siedlce",
+            "Ulica": "ul. Konarskiego 11",
+            "Gmina": "Siedlce",
+            "Powiat": "Siedlce",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Warszawa": [
+        {
+            "Id": 530,
+            "Miasto": "Warszawa",
+            "Ulica": "Al. Niepodległości 227/233",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 532,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Anieli Krzywoń",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 538,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Tołstoja 2",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 550,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Wokalna 1",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 552,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Kondratowicza 8",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 10955,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Chrościckiego 16/18",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 10956,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Bajkowa 17/21",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 16533,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Podleśna 61",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 20487,
+            "Miasto": "Warszawa",
+            "Ulica": "ul. Grochowska 244A",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        },
+        {
+            "Id": 20488,
+            "Miasto": "Warszawa",
+            "Ulica": "Al. Solidarności 83/89",
+            "Gmina": "Warszawa",
+            "Powiat": "Warszawa",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Żyrardów": [
+        {
+            "Id": 562,
+            "Miasto": "Żyrardów",
+            "Ulica": "ul. Roosevelta 2",
+            "Gmina": "Żyrardów",
+            "Powiat": "żyrardowski",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Kędzierzyn-Koźle": [
+        {
+            "Id": 568,
+            "Miasto": "Kędzierzyn-Koźle",
+            "Ulica": "ul. Bolesława Śmiałego 5",
+            "Gmina": "Kędzierzyn-Koźle",
+            "Powiat": "kędzierzyńsko-kozielski",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Kluczbork": [
+        {
+            "Id": 577,
+            "Miasto": "Kluczbork",
+            "Ulica": "ul. Mickiewicza 10",
+            "Gmina": "Kluczbork",
+            "Powiat": "kluczborski",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Olesno": [
+        {
+            "Id": 584,
+            "Miasto": "Olesno",
+            "Ulica": "ul. Słowackiego",
+            "Gmina": "Olesno",
+            "Powiat": "oleski",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Opole": [
+        {
+            "Id": 590,
+            "Miasto": "Opole",
+            "Ulica": "Os. Armii Krajowej",
+            "Gmina": "Opole",
+            "Powiat": "Opole",
+            "Województwo": "OPOLSKIE"
+        },
+        {
+            "Id": 10374,
+            "Miasto": "Opole",
+            "Ulica": "ul. Koszyka 21",
+            "Gmina": "Opole",
+            "Powiat": "Opole",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Zdzieszowice": [
+        {
+            "Id": 600,
+            "Miasto": "Zdzieszowice",
+            "Ulica": "ul. Piastów 6",
+            "Gmina": "Zdzieszowice",
+            "Powiat": "krapkowicki",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Białystok": [
+        {
+            "Id": 609,
+            "Miasto": "Białystok",
+            "Ulica": "ul. Warszawska 75 A",
+            "Gmina": "Białystok",
+            "Powiat": "Białystok",
+            "Województwo": "PODLASKIE"
+        },
+        {
+            "Id": 11174,
+            "Miasto": "Białystok",
+            "Ulica": "ul. 42 Pułku Piechoty 117",
+            "Gmina": "Białystok",
+            "Powiat": "Białystok",
+            "Województwo": "PODLASKIE"
+        },
+        {
+            "Id": 11814,
+            "Miasto": "Białystok",
+            "Ulica": "Al. Józefa Piłsudskiego 34",
+            "Gmina": "Białystok",
+            "Powiat": "Białystok",
+            "Województwo": "PODLASKIE"
+        },
+        {
+            "Id": 17658,
+            "Miasto": "Białystok",
+            "Ulica": "ul. Upalna 26",
+            "Gmina": "Białystok",
+            "Powiat": "Białystok",
+            "Województwo": "PODLASKIE"
+        }
+    ],
+    "Borsukowizna": [
+        {
+            "Id": 612,
+            "Miasto": "Borsukowizna",
+            "Ulica": "brak",
+            "Gmina": "Krynki",
+            "Powiat": "sokólski",
+            "Województwo": "PODLASKIE"
+        }
+    ],
+    "Łomża": [
+        {
+            "Id": 618,
+            "Miasto": "Łomża",
+            "Ulica": "ul. Sikorskiego 48/94",
+            "Gmina": "Łomża",
+            "Powiat": "Łomża",
+            "Województwo": "PODLASKIE"
+        }
+    ],
+    "Jarosław": [
+        {
+            "Id": 631,
+            "Miasto": "Jarosław",
+            "Ulica": "Pruchnicka",
+            "Gmina": "Jarosław",
+            "Powiat": "jarosławski",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Jasło": [
+        {
+            "Id": 638,
+            "Miasto": "Jasło",
+            "Ulica": "Sikorskiego",
+            "Gmina": "Jasło",
+            "Powiat": "jasielski",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Krosno": [
+        {
+            "Id": 646,
+            "Miasto": "Krosno",
+            "Ulica": "Kletówki",
+            "Gmina": "Krosno",
+            "Powiat": "Krosno",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Nisko": [
+        {
+            "Id": 659,
+            "Miasto": "Nisko",
+            "Ulica": "Szklarniowa",
+            "Gmina": "Nisko",
+            "Powiat": "niżański",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Przemyśl": [
+        {
+            "Id": 665,
+            "Miasto": "Przemyśl",
+            "Ulica": "Grunwaldzka",
+            "Gmina": "Przemyśl",
+            "Powiat": "Przemyśl",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Rzeszów": [
+        {
+            "Id": 671,
+            "Miasto": "Rzeszów",
+            "Ulica": "Al. Rejtana",
+            "Gmina": "Rzeszów",
+            "Powiat": "Rzeszów",
+            "Województwo": "PODKARPACKIE"
+        },
+        {
+            "Id": 10125,
+            "Miasto": "Rzeszów",
+            "Ulica": "Al. Piłsudskiego",
+            "Gmina": "Rzeszów",
+            "Powiat": "Rzeszów",
+            "Województwo": "PODKARPACKIE"
+        },
+        {
+            "Id": 17179,
+            "Miasto": "Rzeszów",
+            "Ulica": "Starzyńskiego 17",
+            "Gmina": "Rzeszów",
+            "Powiat": "Rzeszów",
+            "Województwo": "PODKARPACKIE"
+        },
+        {
+            "Id": 20201,
+            "Miasto": "Rzeszów",
+            "Ulica": "Kwiatkowskiego",
+            "Gmina": "Rzeszów",
+            "Powiat": "Rzeszów",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Sanok": [
+        {
+            "Id": 678,
+            "Miasto": "Sanok",
+            "Ulica": "Sadowa",
+            "Gmina": "Sanok",
+            "Powiat": "sanocki",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Tarnobrzeg": [
+        {
+            "Id": 684,
+            "Miasto": "Tarnobrzeg",
+            "Ulica": "Marii Dąbrowskiej",
+            "Gmina": "Tarnobrzeg",
+            "Powiat": "Tarnobrzeg",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Gdańsk": [
+        {
+            "Id": 706,
+            "Miasto": "Gdańsk",
+            "Ulica": "ul. Powstańców Wielkopolskich",
+            "Gmina": "Gdańsk",
+            "Powiat": "Gdańsk",
+            "Województwo": "POMORSKIE"
+        },
+        {
+            "Id": 729,
+            "Miasto": "Gdańsk",
+            "Ulica": "ul. Powstańców Warszawskich",
+            "Gmina": "Gdańsk",
+            "Powiat": "Gdańsk",
+            "Województwo": "POMORSKIE"
+        },
+        {
+            "Id": 731,
+            "Miasto": "Gdańsk",
+            "Ulica": "ul. Wyzwolenia",
+            "Gmina": "Gdańsk",
+            "Powiat": "Gdańsk",
+            "Województwo": "POMORSKIE"
+        },
+        {
+            "Id": 736,
+            "Miasto": "Gdańsk",
+            "Ulica": "ul. Leczkowa",
+            "Gmina": "Gdańsk",
+            "Powiat": "Gdańsk",
+            "Województwo": "POMORSKIE"
+        },
+        {
+            "Id": 16180,
+            "Miasto": "Gdańsk",
+            "Ulica": "Al. Grunwaldzka 127",
+            "Gmina": "Gdańsk",
+            "Powiat": "Gdańsk",
+            "Województwo": "POMORSKIE"
+        },
+        {
+            "Id": 20347,
+            "Miasto": "Gdańsk",
+            "Ulica": "Lawendowe Wzgórze",
+            "Gmina": "Gdańsk",
+            "Powiat": "Gdańsk",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Słupsk": [
+        {
+            "Id": 725,
+            "Miasto": "Słupsk",
+            "Ulica": "ul. Kniaziewicza 30",
+            "Gmina": "Słupsk",
+            "Powiat": "Słupsk",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Gdynia": [
+        {
+            "Id": 732,
+            "Miasto": "Gdynia",
+            "Ulica": "ul. Porębskiego",
+            "Gmina": "Gdynia",
+            "Powiat": "Gdynia",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Kościerzyna": [
+        {
+            "Id": 740,
+            "Miasto": "Kościerzyna",
+            "Ulica": "ul. Targowa",
+            "Gmina": "Kościerzyna",
+            "Powiat": "kościerski",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Malbork": [
+        {
+            "Id": 741,
+            "Miasto": "Malbork",
+            "Ulica": "ul. Mickiewicza",
+            "Gmina": "Malbork",
+            "Powiat": "malborski",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Lębork": [
+        {
+            "Id": 742,
+            "Miasto": "Lębork",
+            "Ulica": "ul. Malczewskiego",
+            "Gmina": "Lębork",
+            "Powiat": "lęborski",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Liniewko Kościerskie": [
+        {
+            "Id": 743,
+            "Miasto": "Liniewko Kościerskie",
+            "Ulica": "brak",
+            "Gmina": "Nowa Karczma",
+            "Powiat": "kościerski",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Kwidzyn": [
+        {
+            "Id": 747,
+            "Miasto": "Kwidzyn",
+            "Ulica": "ul. Sportowa",
+            "Gmina": "Kwidzyn",
+            "Powiat": "kwidzyński",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Łeba": [
+        {
+            "Id": 750,
+            "Miasto": "Łeba",
+            "Ulica": "ul. Rąbka 1A",
+            "Gmina": "Łeba",
+            "Powiat": "lęborski",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Busko-Zdrój": [
+        {
+            "Id": 756,
+            "Miasto": "Busko-Zdrój",
+            "Ulica": "ul. Rokosza 1",
+            "Gmina": "Busko-Zdrój",
+            "Powiat": "buski",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Nowiny": [
+        {
+            "Id": 769,
+            "Miasto": "Nowiny",
+            "Ulica": "ul. Parkowa",
+            "Gmina": "Nowiny",
+            "Powiat": "kielecki",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Ożarów": [
+        {
+            "Id": 777,
+            "Miasto": "Ożarów",
+            "Ulica": "Os. Wzgórze 52",
+            "Gmina": "Ożarów",
+            "Powiat": "opatowski",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Połaniec": [
+        {
+            "Id": 778,
+            "Miasto": "Połaniec",
+            "Ulica": "ul. Ruszczańska 23",
+            "Gmina": "Połaniec",
+            "Powiat": "staszowski",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Starachowice": [
+        {
+            "Id": 785,
+            "Miasto": "Starachowice",
+            "Ulica": "ul. Złota",
+            "Gmina": "Starachowice",
+            "Powiat": "starachowicki",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Bielsko-Biała": [
+        {
+            "Id": 789,
+            "Miasto": "Bielsko-Biała",
+            "Ulica": "ul. Kossak-Szczuckiej 19",
+            "Gmina": "Bielsko-Biała",
+            "Powiat": "Bielsko-Biała",
+            "Województwo": "ŚLĄSKIE"
+        },
+        {
+            "Id": 791,
+            "Miasto": "Bielsko-Biała",
+            "Ulica": "ul. Sternicza 4",
+            "Gmina": "Bielsko-Biała",
+            "Powiat": "Bielsko-Biała",
+            "Województwo": "ŚLĄSKIE"
+        },
+        {
+            "Id": 10158,
+            "Miasto": "Bielsko-Biała",
+            "Ulica": "ul. Partyzantów",
+            "Gmina": "Bielsko-Biała",
+            "Powiat": "Bielsko-Biała",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Częstochowa": [
+        {
+            "Id": 798,
+            "Miasto": "Częstochowa",
+            "Ulica": "Aleja Armii Krajowej 2",
+            "Gmina": "Częstochowa",
+            "Powiat": "Częstochowa",
+            "Województwo": "ŚLĄSKIE"
+        },
+        {
+            "Id": 800,
+            "Miasto": "Częstochowa",
+            "Ulica": "ul. Baczyńskiego 2",
+            "Gmina": "Częstochowa",
+            "Powiat": "Częstochowa",
+            "Województwo": "ŚLĄSKIE"
+        },
+        {
+            "Id": 804,
+            "Miasto": "Częstochowa",
+            "Ulica": "ul. Zana 6",
+            "Gmina": "Częstochowa",
+            "Powiat": "Częstochowa",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Dąbrowa Górnicza": [
+        {
+            "Id": 805,
+            "Miasto": "Dąbrowa Górnicza",
+            "Ulica": "ul. Tysiąclecia 25 a",
+            "Gmina": "Dąbrowa Górnicza",
+            "Powiat": "Dąbrowa Górnicza",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Gliwice": [
+        {
+            "Id": 809,
+            "Miasto": "Gliwice",
+            "Ulica": "ul. Mewy 34",
+            "Gmina": "Gliwice",
+            "Powiat": "Gliwice",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Godów": [
+        {
+            "Id": 810,
+            "Miasto": "Godów",
+            "Ulica": "ul. Gliniki",
+            "Gmina": "Godów",
+            "Powiat": "wodzisławski",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Katowice": [
+        {
+            "Id": 814,
+            "Miasto": "Katowice",
+            "Ulica": "ul. Kossutha 6",
+            "Gmina": "Katowice",
+            "Powiat": "Katowice",
+            "Województwo": "ŚLĄSKIE"
+        },
+        {
+            "Id": 17318,
+            "Miasto": "Katowice",
+            "Ulica": "ul. Jerzego Dudy-Gracza",
+            "Gmina": "Katowice",
+            "Powiat": "Katowice",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Knurów": [
+        {
+            "Id": 818,
+            "Miasto": "Knurów",
+            "Ulica": "ul. Jedności Narodowej 5",
+            "Gmina": "Knurów",
+            "Powiat": "gliwicki",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Myszków": [
+        {
+            "Id": 825,
+            "Miasto": "Myszków",
+            "Ulica": "ul. Miedziana 3",
+            "Gmina": "Myszków",
+            "Powiat": "myszkowski",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Rybnik": [
+        {
+            "Id": 834,
+            "Miasto": "Rybnik",
+            "Ulica": "ul. Borki 37 d",
+            "Gmina": "Rybnik",
+            "Powiat": "Rybnik",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Sosnowiec": [
+        {
+            "Id": 837,
+            "Miasto": "Sosnowiec",
+            "Ulica": "ul. Lubelska 51",
+            "Gmina": "Sosnowiec",
+            "Powiat": "Sosnowiec",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Tarnowskie Góry": [
+        {
+            "Id": 839,
+            "Miasto": "Tarnowskie Góry",
+            "Ulica": "ul. Litewska 6",
+            "Gmina": "Tarnowskie Góry",
+            "Powiat": "tarnogórski",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Tychy": [
+        {
+            "Id": 841,
+            "Miasto": "Tychy",
+            "Ulica": "ul. Tołstoja 1",
+            "Gmina": "Tychy",
+            "Powiat": "Tychy",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Ustroń": [
+        {
+            "Id": 842,
+            "Miasto": "Ustroń",
+            "Ulica": "ul. Sanatoryjna 7",
+            "Gmina": "Ustroń",
+            "Powiat": "cieszyński",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Wodzisław Śląski": [
+        {
+            "Id": 845,
+            "Miasto": "Wodzisław Śląski",
+            "Ulica": "ul. Gałczyńskiego 1",
+            "Gmina": "Wodzisław Śląski",
+            "Powiat": "wodzisławski",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Złoty Potok": [
+        {
+            "Id": 853,
+            "Miasto": "Złoty Potok",
+            "Ulica": "Leśniczówka Kamienna Góra",
+            "Gmina": "Janów",
+            "Powiat": "częstochowski",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Żywiec": [
+        {
+            "Id": 856,
+            "Miasto": "Żywiec",
+            "Ulica": "ul. Kopernika 83 a",
+            "Gmina": "Żywiec",
+            "Powiat": "żywiecki",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Elbląg": [
+        {
+            "Id": 861,
+            "Miasto": "Elbląg",
+            "Ulica": "ul. Bażyńskiego 6",
+            "Gmina": "Elbląg",
+            "Powiat": "Elbląg",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Gołdap": [
+        {
+            "Id": 870,
+            "Miasto": "Gołdap",
+            "Ulica": "ul. Jaćwieska 17",
+            "Gmina": "Gołdap",
+            "Powiat": "gołdapski",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Nidzica": [
+        {
+            "Id": 875,
+            "Miasto": "Nidzica",
+            "Ulica": "ul. Traugutta",
+            "Gmina": "Nidzica",
+            "Powiat": "nidzicki",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Olsztyn": [
+        {
+            "Id": 877,
+            "Miasto": "Olsztyn",
+            "Ulica": "ul. Puszkina 16",
+            "Gmina": "Olsztyn",
+            "Powiat": "Olsztyn",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Diabla Góra": [
+        {
+            "Id": 882,
+            "Miasto": "Diabla Góra",
+            "Ulica": "Diabla Góra",
+            "Gmina": "Kruklanki",
+            "Powiat": "giżycki",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Gniezno": [
+        {
+            "Id": 890,
+            "Miasto": "Gniezno",
+            "Ulica": "ul. Paczkowskiego 13",
+            "Gmina": "Gniezno",
+            "Powiat": "gnieźnieński",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Konin": [
+        {
+            "Id": 902,
+            "Miasto": "Konin",
+            "Ulica": "ul. Wyszyńskiego 3",
+            "Gmina": "Konin",
+            "Powiat": "Konin",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Nowy Tomyśl": [
+        {
+            "Id": 912,
+            "Miasto": "Nowy Tomyśl",
+            "Ulica": "ul. Szpitalna",
+            "Gmina": "Nowy Tomyśl",
+            "Powiat": "nowotomyski",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Piła": [
+        {
+            "Id": 920,
+            "Miasto": "Piła",
+            "Ulica": "ul. Kusocińskiego 10A",
+            "Gmina": "Piła",
+            "Powiat": "pilski",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Poznań": [
+        {
+            "Id": 931,
+            "Miasto": "Poznań",
+            "Ulica": "ul. Spychalskiego 34",
+            "Gmina": "Poznań",
+            "Powiat": "Poznań",
+            "Województwo": "WIELKOPOLSKIE"
+        },
+        {
+            "Id": 932,
+            "Miasto": "Poznań",
+            "Ulica": "ul. Szymanowskiego 17",
+            "Gmina": "Poznań",
+            "Powiat": "Poznań",
+            "Województwo": "WIELKOPOLSKIE"
+        },
+        {
+            "Id": 944,
+            "Miasto": "Poznań",
+            "Ulica": "ul. Dąbrowskiego 169",
+            "Gmina": "Poznań",
+            "Powiat": "Poznań",
+            "Województwo": "WIELKOPOLSKIE"
+        },
+        {
+            "Id": 10148,
+            "Miasto": "Poznań",
+            "Ulica": "Hetmańska",
+            "Gmina": "Poznań",
+            "Powiat": "Poznań",
+            "Województwo": "WIELKOPOLSKIE"
+        },
+        {
+            "Id": 16493,
+            "Miasto": "Poznań",
+            "Ulica": "ul. Szwajcarska",
+            "Gmina": "Poznań",
+            "Powiat": "Poznań",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Wągrowiec": [
+        {
+            "Id": 942,
+            "Miasto": "Wągrowiec",
+            "Ulica": "ul. Lipowa",
+            "Gmina": "Wągrowiec",
+            "Powiat": "wągrowiecki",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Krzyżówka": [
+        {
+            "Id": 946,
+            "Miasto": "Krzyżówka",
+            "Ulica": "Piaski 10",
+            "Gmina": "Witkowo",
+            "Powiat": "gnieźnieński",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Borówiec": [
+        {
+            "Id": 950,
+            "Miasto": "Borówiec",
+            "Ulica": "ul. Drapałka 4",
+            "Gmina": "Kórnik",
+            "Powiat": "poznański",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Kalisz": [
+        {
+            "Id": 952,
+            "Miasto": "Kalisz",
+            "Ulica": "ul. Wyszyńskiego",
+            "Gmina": "Kalisz",
+            "Powiat": "Kalisz",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Widuchowa": [
+        {
+            "Id": 961,
+            "Miasto": "Widuchowa",
+            "Ulica": "ul. Bulwary Rybackie 1",
+            "Gmina": "Widuchowa",
+            "Powiat": "gryfiński",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        }
+    ],
+    "Koszalin": [
+        {
+            "Id": 966,
+            "Miasto": "Koszalin",
+            "Ulica": "Al. Armii Krajowej",
+            "Gmina": "Koszalin",
+            "Powiat": "Koszalin",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        },
+        {
+            "Id": 967,
+            "Miasto": "Koszalin",
+            "Ulica": "ul. Spasowskiego 2f",
+            "Gmina": "Koszalin",
+            "Powiat": "Koszalin",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        },
+        {
+            "Id": 11336,
+            "Miasto": "Koszalin",
+            "Ulica": "ul. Chopina 42",
+            "Gmina": "Koszalin",
+            "Powiat": "Koszalin",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        }
+    ],
+    "Myślibórz": [
+        {
+            "Id": 973,
+            "Miasto": "Myślibórz",
+            "Ulica": "ul. Za Bramką 8",
+            "Gmina": "Myślibórz",
+            "Powiat": "myśliborski",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        }
+    ],
+    "Szczecinek": [
+        {
+            "Id": 981,
+            "Miasto": "Szczecinek",
+            "Ulica": "ul. 1 Maja 22",
+            "Gmina": "Szczecinek",
+            "Powiat": "szczecinecki",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        },
+        {
+            "Id": 983,
+            "Miasto": "Szczecinek",
+            "Ulica": "ul. Przemysłowa 5",
+            "Gmina": "Szczecinek",
+            "Powiat": "szczecinecki",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        }
+    ],
+    "Szczecin": [
+        {
+            "Id": 986,
+            "Miasto": "Szczecin",
+            "Ulica": "ul. Andrzejewskiego 23",
+            "Gmina": "Szczecin",
+            "Powiat": "Szczecin",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        },
+        {
+            "Id": 987,
+            "Miasto": "Szczecin",
+            "Ulica": "ul. Piłsudskiego 1",
+            "Gmina": "Szczecin",
+            "Powiat": "Szczecin",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        },
+        {
+            "Id": 989,
+            "Miasto": "Szczecin",
+            "Ulica": "ul. Łączna",
+            "Gmina": "Szczecin",
+            "Powiat": "Szczecin",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        }
+    ],
+    "Jelenia Góra": [
+        {
+            "Id": 8873,
+            "Miasto": "Jelenia Góra",
+            "Ulica": "ul. Sokoliki 6",
+            "Gmina": "Jelenia Góra",
+            "Powiat": "Jelenia Góra",
+            "Województwo": "DOLNOŚLĄSKIE"
+        },
+        {
+            "Id": 9153,
+            "Miasto": "Jelenia Góra",
+            "Ulica": "ul. Ogińskiego 6",
+            "Gmina": "Jelenia Góra",
+            "Powiat": "Jelenia Góra",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Iława": [
+        {
+            "Id": 8953,
+            "Miasto": "Iława",
+            "Ulica": "Andersa 8a",
+            "Gmina": "Iława",
+            "Powiat": "iławski",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Czerwionka-Leszczyny": [
+        {
+            "Id": 9000,
+            "Miasto": "Czerwionka-Leszczyny",
+            "Ulica": "ul. Kopalniana",
+            "Gmina": "Czerwionka-Leszczyny",
+            "Powiat": "rybnicki",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Ostrołęka": [
+        {
+            "Id": 9114,
+            "Miasto": "Ostrołęka",
+            "Ulica": "ul. gen. J. Hallera 12",
+            "Gmina": "Ostrołęka",
+            "Powiat": "Ostrołęka",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Dębica": [
+        {
+            "Id": 9173,
+            "Miasto": "Dębica",
+            "Ulica": "Grottgera 3",
+            "Gmina": "Dębica",
+            "Powiat": "dębicki",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Krempna": [
+        {
+            "Id": 9175,
+            "Miasto": "Krempna",
+            "Ulica": "59",
+            "Gmina": "Krempna",
+            "Powiat": "jasielski",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Głogów": [
+        {
+            "Id": 9177,
+            "Miasto": "Głogów",
+            "Ulica": "ul. Wita Stwosza 3",
+            "Gmina": "Głogów",
+            "Powiat": "głogowski",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Szarów": [
+        {
+            "Id": 9179,
+            "Miasto": "Szarów",
+            "Ulica": "ul. Spokojna",
+            "Gmina": "Kłaj",
+            "Powiat": "wielicki",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Brodnica": [
+        {
+            "Id": 9203,
+            "Miasto": "Brodnica",
+            "Ulica": "ul. Kochanowskiego",
+            "Gmina": "Brodnica",
+            "Powiat": "brodnicki",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Pleszew": [
+        {
+            "Id": 9218,
+            "Miasto": "Pleszew",
+            "Ulica": "Al. Mickiewicza",
+            "Gmina": "Pleszew",
+            "Powiat": "pleszewski",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Skierniewice": [
+        {
+            "Id": 9236,
+            "Miasto": "Skierniewice",
+            "Ulica": "ul. Marii Konopnickiej 5",
+            "Gmina": "Skierniewice",
+            "Powiat": "Skierniewice",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Nakło nad Notecią": [
+        {
+            "Id": 9798,
+            "Miasto": "Nakło nad Notecią",
+            "Ulica": "ul. Świętego Wawrzyńca",
+            "Gmina": "Nakło nad Notecią",
+            "Powiat": "nakielski",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Guty Duże": [
+        {
+            "Id": 9913,
+            "Miasto": "Guty Duże",
+            "Ulica": "Guty Duże 4",
+            "Gmina": "Czerwonka",
+            "Powiat": "makowski",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Kielce": [
+        {
+            "Id": 9973,
+            "Miasto": "Kielce",
+            "Ulica": "ul. Warszawska 210",
+            "Gmina": "Kielce",
+            "Powiat": "Kielce",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        },
+        {
+            "Id": 11195,
+            "Miasto": "Kielce",
+            "Ulica": "ul. Targowa 3",
+            "Gmina": "Kielce",
+            "Powiat": "Kielce",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        },
+        {
+            "Id": 16196,
+            "Miasto": "Kielce",
+            "Ulica": "ul. Warszawska 108",
+            "Gmina": "Kielce",
+            "Powiat": "Kielce",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        },
+        {
+            "Id": 16497,
+            "Miasto": "Kielce",
+            "Ulica": "ul. Jurajska 7",
+            "Gmina": "Kielce",
+            "Powiat": "Kielce",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Ełk": [
+        {
+            "Id": 10005,
+            "Miasto": "Ełk",
+            "Ulica": "ul. Piłsudskiego 27",
+            "Gmina": "Ełk",
+            "Powiat": "ełcki",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Głubczyce": [
+        {
+            "Id": 10018,
+            "Miasto": "Głubczyce",
+            "Ulica": "ul. Ratuszowa 9",
+            "Gmina": "Głubczyce",
+            "Powiat": "głubczycki",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Ostróda": [
+        {
+            "Id": 10030,
+            "Miasto": "Ostróda",
+            "Ulica": "Piłsudskiego 4",
+            "Gmina": "Ostróda",
+            "Powiat": "ostródzki",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Uniejów": [
+        {
+            "Id": 10059,
+            "Miasto": "Uniejów",
+            "Ulica": "ul. Zamkowa 1",
+            "Gmina": "Uniejów",
+            "Powiat": "poddębicki",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Bełchatów": [
+        {
+            "Id": 10060,
+            "Miasto": "Bełchatów",
+            "Ulica": "ul. Edwardów 5",
+            "Gmina": "Bełchatów",
+            "Powiat": "bełchatowski",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Duszniki-Zdrój": [
+        {
+            "Id": 10093,
+            "Miasto": "Duszniki-Zdrój",
+            "Ulica": "Sportowa",
+            "Gmina": "Duszniki-Zdrój",
+            "Powiat": "kłodzki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Mielec": [
+        {
+            "Id": 10115,
+            "Miasto": "Mielec",
+            "Ulica": "Pogodna 2",
+            "Gmina": "Mielec",
+            "Powiat": "mielecki",
+            "Województwo": "PODKARPACKIE"
+        },
+        {
+            "Id": 10438,
+            "Miasto": "Mielec",
+            "Ulica": "Biernackiego",
+            "Gmina": "Mielec",
+            "Powiat": "mielecki",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Kaszów": [
+        {
+            "Id": 10119,
+            "Miasto": "Kaszów",
+            "Ulica": "Bory",
+            "Gmina": "Liszki",
+            "Powiat": "krakowski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Iwonicz-Zdrój": [
+        {
+            "Id": 10122,
+            "Miasto": "Iwonicz-Zdrój",
+            "Ulica": "Księdza Rąba",
+            "Gmina": "Iwonicz-Zdrój",
+            "Powiat": "krośnieński",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Sucha Beskidzka": [
+        {
+            "Id": 10124,
+            "Miasto": "Sucha Beskidzka",
+            "Ulica": "ul. Nieszczyńskiej",
+            "Gmina": "Sucha Beskidzka",
+            "Powiat": "suski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Stalowa Wola": [
+        {
+            "Id": 10126,
+            "Miasto": "Stalowa Wola",
+            "Ulica": "Wojska Polskiego 9",
+            "Gmina": "Stalowa Wola",
+            "Powiat": "stalowowolski",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Sieradz": [
+        {
+            "Id": 10140,
+            "Miasto": "Sieradz",
+            "Ulica": "ul. Polna 18/20",
+            "Gmina": "Sieradz",
+            "Powiat": "sieradzki",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Świdnica": [
+        {
+            "Id": 10141,
+            "Miasto": "Świdnica",
+            "Ulica": "ul. Folwarczna 2",
+            "Gmina": "Świdnica",
+            "Powiat": "świdnicki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Rymanów-Zdrój": [
+        {
+            "Id": 10414,
+            "Miasto": "Rymanów-Zdrój",
+            "Ulica": "Parkowa 5",
+            "Gmina": "Rymanów",
+            "Powiat": "krośnieński",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Rabka-Zdrój": [
+        {
+            "Id": 10446,
+            "Miasto": "Rabka-Zdrój",
+            "Ulica": "Orkana",
+            "Gmina": "Rabka-Zdrój",
+            "Powiat": "nowotarski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Opoczno": [
+        {
+            "Id": 10456,
+            "Miasto": "Opoczno",
+            "Ulica": "ul. Skłodowskiej-Curie 5",
+            "Gmina": "Opoczno",
+            "Powiat": "opoczyński",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Żory": [
+        {
+            "Id": 10554,
+            "Miasto": "Żory",
+            "Ulica": "Os. Sikorskiego 52",
+            "Gmina": "Żory",
+            "Powiat": "Żory",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Małogoszcz": [
+        {
+            "Id": 10794,
+            "Miasto": "Małogoszcz",
+            "Ulica": "ul. Słoneczna 18",
+            "Gmina": "Małogoszcz",
+            "Powiat": "jędrzejowski",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Oświęcim": [
+        {
+            "Id": 10814,
+            "Miasto": "Oświęcim",
+            "Ulica": "J. Bema",
+            "Gmina": "Oświęcim",
+            "Powiat": "oświęcimski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Złockie": [
+        {
+            "Id": 10817,
+            "Miasto": "Złockie",
+            "Ulica": "Złockie 79",
+            "Gmina": "Muszyna",
+            "Powiat": "nowosądecki",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Koziegłowy": [
+        {
+            "Id": 10834,
+            "Miasto": "Koziegłowy",
+            "Ulica": "Osiedle Leśne 22",
+            "Gmina": "Czerwonak",
+            "Powiat": "poznański",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Wieniec-Zdrój": [
+        {
+            "Id": 10854,
+            "Miasto": "Wieniec-Zdrój",
+            "Ulica": "ul. Wieniecka",
+            "Gmina": "Brześć Kujawski",
+            "Powiat": "włocławski",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Florianka": [
+        {
+            "Id": 10874,
+            "Miasto": "Florianka",
+            "Ulica": "brak",
+            "Gmina": "Józefów",
+            "Powiat": "biłgorajski",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Kołobrzeg": [
+        {
+            "Id": 10934,
+            "Miasto": "Kołobrzeg",
+            "Ulica": "ul. Żółkiewskiego",
+            "Gmina": "Kołobrzeg",
+            "Powiat": "kołobrzeski",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        }
+    ],
+    "Suwałki": [
+        {
+            "Id": 11154,
+            "Miasto": "Suwałki",
+            "Ulica": "ul. Pułaskiego 26",
+            "Gmina": "Suwałki",
+            "Powiat": "Suwałki",
+            "Województwo": "PODLASKIE"
+        }
+    ],
+    "Nowa Ruda": [
+        {
+            "Id": 11254,
+            "Miasto": "Nowa Ruda",
+            "Ulica": "ul. Jeziorna 19",
+            "Gmina": "Nowa Ruda",
+            "Powiat": "kłodzki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Lubliniec": [
+        {
+            "Id": 11278,
+            "Miasto": "Lubliniec",
+            "Ulica": "ul. Ks. Płk. Jana Szymały 3",
+            "Gmina": "Lubliniec",
+            "Powiat": "lubliniecki",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Olkusz": [
+        {
+            "Id": 11301,
+            "Miasto": "Olkusz",
+            "Ulica": " Cegielniana",
+            "Gmina": "Olkusz",
+            "Powiat": "olkuski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Biała": [
+        {
+            "Id": 11358,
+            "Miasto": "Biała",
+            "Ulica": "ul. Andrzeja Kmicica 33",
+            "Gmina": "Stara Biała",
+            "Powiat": "płocki",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Chełm": [
+        {
+            "Id": 11360,
+            "Miasto": "Chełm",
+            "Ulica": "ul. Połaniecka",
+            "Gmina": "Chełm",
+            "Powiat": "Chełm",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Nałęczów": [
+        {
+            "Id": 11362,
+            "Miasto": "Nałęczów",
+            "Ulica": "Al. Małachowskiego",
+            "Gmina": "Nałęczów",
+            "Powiat": "puławski",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Zabierzów": [
+        {
+            "Id": 11434,
+            "Miasto": "Zabierzów",
+            "Ulica": "Wapienna",
+            "Gmina": "Zabierzów",
+            "Powiat": "krakowski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Zawiercie": [
+        {
+            "Id": 11455,
+            "Miasto": "Zawiercie",
+            "Ulica": "ul. K.I.Gałczyńskiego 3",
+            "Gmina": "Zawiercie",
+            "Powiat": "zawierciański",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Goczałkowice-Zdrój": [
+        {
+            "Id": 11457,
+            "Miasto": "Goczałkowice-Zdrój",
+            "Ulica": "ul. Parkowa",
+            "Gmina": "Goczałkowice-Zdrój",
+            "Powiat": "pszczyński",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Łask": [
+        {
+            "Id": 11554,
+            "Miasto": "Łask",
+            "Ulica": "ul. Narutowicza 28",
+            "Gmina": "Łask",
+            "Powiat": "łaski",
+            "Województwo": "ŁÓDZKIE"
+        }
+    ],
+    "Gołuchów": [
+        {
+            "Id": 11754,
+            "Miasto": "Gołuchów",
+            "Ulica": "Ujęcie Wody",
+            "Gmina": "Kije",
+            "Powiat": "pińczowski",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Racibórz": [
+        {
+            "Id": 11794,
+            "Miasto": "Racibórz",
+            "Ulica": "ul. Wojska Polskiego 8",
+            "Gmina": "Racibórz",
+            "Powiat": "raciborski",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Jastrzębie-Zdrój": [
+        {
+            "Id": 11855,
+            "Miasto": "Jastrzębie-Zdrój",
+            "Ulica": "Aleja Józefa Piłsudskiego/Harcerska 3",
+            "Gmina": "Jastrzębie-Zdrój",
+            "Powiat": "Jastrzębie-Zdrój",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Augustów": [
+        {
+            "Id": 11916,
+            "Miasto": "Augustów",
+            "Ulica": "brak",
+            "Gmina": "Augustów",
+            "Powiat": "augustowski",
+            "Województwo": "PODLASKIE"
+        }
+    ],
+    "Trzebnica": [
+        {
+            "Id": 11934,
+            "Miasto": "Trzebnica",
+            "Ulica": "ul. 3 Maja",
+            "Gmina": "Trzebnica",
+            "Powiat": "trzebnicki",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Nowe Miasto Lubawskie": [
+        {
+            "Id": 12050,
+            "Miasto": "Nowe Miasto Lubawskie",
+            "Ulica": "Działyńskich 17",
+            "Gmina": "Nowe Miasto Lubawskie",
+            "Powiat": "nowomiejski",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ],
+    "Krasnobród": [
+        {
+            "Id": 12098,
+            "Miasto": "Krasnobród",
+            "Ulica": "ul. Sanatoryjna",
+            "Gmina": "Krasnobród",
+            "Powiat": "zamojski",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Opatów": [
+        {
+            "Id": 12139,
+            "Miasto": "Opatów",
+            "Ulica": "ul. Partyzantów 13 b",
+            "Gmina": "Opatów",
+            "Powiat": "opatowski",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Połczyn-Zdrój": [
+        {
+            "Id": 16157,
+            "Miasto": "Połczyn-Zdrój",
+            "Ulica": "ul. Solankowa 8",
+            "Gmina": "Połczyn-Zdrój",
+            "Powiat": "świdwiński",
+            "Województwo": "ZACHODNIOPOMORSKIE"
+        }
+    ],
+    "Sopot": [
+        {
+            "Id": 16242,
+            "Miasto": "Sopot",
+            "Ulica": "ul. Bitwy pod Płowcami",
+            "Gmina": "Sopot",
+            "Powiat": "Sopot",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Konstancin-Jeziorna": [
+        {
+            "Id": 16271,
+            "Miasto": "Konstancin-Jeziorna",
+            "Ulica": "ul. Żeromskiego",
+            "Gmina": "Konstancin-Jeziorna",
+            "Powiat": "piaseczyński",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Wejherowo": [
+        {
+            "Id": 16397,
+            "Miasto": "Wejherowo",
+            "Ulica": "ul. Dworcowa",
+            "Gmina": "Wejherowo",
+            "Powiat": "wejherowski",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Cieszyn": [
+        {
+            "Id": 16406,
+            "Miasto": "Cieszyn",
+            "Ulica": "ul. Chopina 37",
+            "Gmina": "Cieszyn",
+            "Powiat": "cieszyński",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Brzeg": [
+        {
+            "Id": 16413,
+            "Miasto": "Brzeg",
+            "Ulica": "ul. Poprzeczna 1",
+            "Gmina": "Brzeg",
+            "Powiat": "brzeski",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Mosina": [
+        {
+            "Id": 16495,
+            "Miasto": "Mosina",
+            "Ulica": "ul. Czereśniowa 4",
+            "Gmina": "Mosina",
+            "Powiat": "poznański",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Nowa Sól": [
+        {
+            "Id": 16613,
+            "Miasto": "Nowa Sól",
+            "Ulica": "T. Kościuszki",
+            "Gmina": "Nowa Sól",
+            "Powiat": "nowosolski",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Myślenice": [
+        {
+            "Id": 16753,
+            "Miasto": "Myślenice",
+            "Ulica": "Solidarności 6",
+            "Gmina": "Myślenice",
+            "Powiat": "myślenicki",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Nowy Targ": [
+        {
+            "Id": 16894,
+            "Miasto": "Nowy Targ",
+            "Ulica": "Al. Tysiąclecia",
+            "Gmina": "Nowy Targ",
+            "Powiat": "nowotarski",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Krapkowice": [
+        {
+            "Id": 16913,
+            "Miasto": "Krapkowice",
+            "Ulica": "ul. 3 Maja 17",
+            "Gmina": "Krapkowice",
+            "Powiat": "krapkowicki",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Pszczyna": [
+        {
+            "Id": 17058,
+            "Miasto": "Pszczyna",
+            "Ulica": "ul. Stefana Batorego 24",
+            "Gmina": "Pszczyna",
+            "Powiat": "pszczyński",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Uście Gorlickie Wysowa": [
+        {
+            "Id": 17118,
+            "Miasto": "Uście Gorlickie Wysowa",
+            "Ulica": "Wysowa",
+            "Gmina": "Uście Gorlickie",
+            "Powiat": "gorlicki",
+            "Województwo": "MAŁOPOLSKIE"
+        }
+    ],
+    "Kępno": [
+        {
+            "Id": 17659,
+            "Miasto": "Kępno",
+            "Ulica": "Sportowa",
+            "Gmina": "Kępno",
+            "Powiat": "kępiński",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Leszno": [
+        {
+            "Id": 17698,
+            "Miasto": "Leszno",
+            "Ulica": "Bolesława Prusa 33",
+            "Gmina": "Leszno",
+            "Powiat": "Leszno",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Zabrze": [
+        {
+            "Id": 17880,
+            "Miasto": "Zabrze",
+            "Ulica": "ul. M. Skłodowskiej-Curie 34",
+            "Gmina": "Zabrze",
+            "Powiat": "Zabrze",
+            "Województwo": "ŚLĄSKIE"
+        }
+    ],
+    "Wysokie Mazowieckie": [
+        {
+            "Id": 20140,
+            "Miasto": "Wysokie Mazowieckie",
+            "Ulica": "ul. 1 Maja 6",
+            "Gmina": "Wysokie Mazowieckie",
+            "Powiat": "wysokomazowiecki",
+            "Województwo": "PODLASKIE"
+        }
+    ],
+    "Krasne": [
+        {
+            "Id": 20202,
+            "Miasto": "Krasne",
+            "Ulica": "brak",
+            "Gmina": "Krasne",
+            "Powiat": "rzeszowski",
+            "Województwo": "PODKARPACKIE"
+        }
+    ],
+    "Ciechanów": [
+        {
+            "Id": 20209,
+            "Miasto": "Ciechanów",
+            "Ulica": "Kraszewskiego 8",
+            "Gmina": "Ciechanów",
+            "Powiat": "ciechanowski",
+            "Województwo": "MAZOWIECKIE"
+        }
+    ],
+    "Tomaszów Lubelski": [
+        {
+            "Id": 20277,
+            "Miasto": "Tomaszów Lubelski",
+            "Ulica": "Janusza Petera 7",
+            "Gmina": "Tomaszów Lubelski",
+            "Powiat": "tomaszowski",
+            "Województwo": "LUBELSKIE"
+        }
+    ],
+    "Krotoszyn": [
+        {
+            "Id": 20307,
+            "Miasto": "Krotoszyn",
+            "Ulica": "Olimpijska 10",
+            "Gmina": "Krotoszyn",
+            "Powiat": "krotoszyński",
+            "Województwo": "WIELKOPOLSKIE"
+        }
+    ],
+    "Nysa": [
+        {
+            "Id": 20387,
+            "Miasto": "Nysa",
+            "Ulica": "ul. Rodziewiczówny 1",
+            "Gmina": "Nysa",
+            "Powiat": "nyski",
+            "Województwo": "OPOLSKIE"
+        }
+    ],
+    "Lubań": [
+        {
+            "Id": 20468,
+            "Miasto": "Lubań",
+            "Ulica": "Ludowa",
+            "Gmina": "Lubań",
+            "Powiat": "lubański",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Szlichtyngowa": [
+        {
+            "Id": 20548,
+            "Miasto": "Szlichtyngowa",
+            "Ulica": "Przemysłowa",
+            "Gmina": "Szlichtyngowa",
+            "Powiat": "wschowski",
+            "Województwo": "LUBUSKIE"
+        }
+    ],
+    "Ostrowiec Świętokrzyski": [
+        {
+            "Id": 20567,
+            "Miasto": "Ostrowiec Świętokrzyski",
+            "Ulica": "ul. Polna 56",
+            "Gmina": "Ostrowiec Świętokrzyski",
+            "Powiat": "ostrowiecki",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Solec Zdrój": [
+        {
+            "Id": 20568,
+            "Miasto": "Solec Zdrój",
+            "Ulica": "ul. Leśna",
+            "Gmina": "Solec-Zdrój",
+            "Powiat": "buski",
+            "Województwo": "ŚWIĘTOKRZYSKIE"
+        }
+    ],
+    "Kobierzyce": [
+        {
+            "Id": 20590,
+            "Miasto": "Kobierzyce",
+            "Ulica": "ul. Sportowa 15",
+            "Gmina": "Kobierzyce",
+            "Powiat": "wrocławski",
+            "Województwo": "DOLNOŚLĄSKIE"
+        }
+    ],
+    "Solec Kujawski": [
+        {
+            "Id": 20591,
+            "Miasto": "Solec Kujawski",
+            "Ulica": "Tartaczna 10",
+            "Gmina": "Solec Kujawski",
+            "Powiat": "bydgoski",
+            "Województwo": "KUJAWSKO-POMORSKIE"
+        }
+    ],
+    "Tczew": [
+        {
+            "Id": 20607,
+            "Miasto": "Tczew",
+            "Ulica": "Czyżykowska",
+            "Gmina": "Tczew",
+            "Powiat": "tczewski",
+            "Województwo": "POMORSKIE"
+        }
+    ],
+    "Braniewo": [
+        {
+            "Id": 20647,
+            "Miasto": "Braniewo",
+            "Ulica": "PCK 4",
+            "Gmina": "Braniewo",
+            "Powiat": "braniewski",
+            "Województwo": "WARMIŃSKO-MAZURSKIE"
+        }
+    ]
+}
