@@ -92,23 +92,68 @@ void PlotManager::writeXTics(ofstream& script, int total) {
 void PlotManager::runGnuplot(const string& flags) {
     string cmd = "gnuplot " + flags + " " + TEMP_SCRIPT_FILE;
 
+    // DEBUG — sprawdź czy pliki tymczasowe istnieją
+    ifstream testData(TEMP_DATA_FILE);
+    ifstream testScript(TEMP_SCRIPT_FILE);
+    
+    if (!testData.is_open()) {
+        MessageBoxA(nullptr, "Brak pliku tmp_plot.dat!", "Błąd wykresu", MB_OK);
+        return;
+    }
+    if (!testScript.is_open()) {
+        MessageBoxA(nullptr, "Brak pliku tmp_plot.gp!", "Błąd wykresu", MB_OK);
+        return;
+    }
+
+    // DEBUG — sprawdź czy gnuplot jest dostępny
+    STARTUPINFOA si_test = {};
+    PROCESS_INFORMATION pi_test = {};
+    si_test.cb = sizeof(si_test);
+    string test_cmd = "gnuplot --version";
+
+    BOOL gnuplot_found = CreateProcessA(
+        nullptr,
+        const_cast<char*>(test_cmd.c_str()),
+        nullptr, nullptr,
+        FALSE,
+        CREATE_NO_WINDOW,
+        nullptr, nullptr,
+        &si_test, &pi_test
+    );
+
+    if (!gnuplot_found) {
+        MessageBoxA(nullptr, 
+            "gnuplot nie został znaleziony!\n"
+            "Zainstaluj gnuplot i dodaj do PATH\n"
+            "lub umieść gnuplot.exe w folderze aplikacji.",
+            "Błąd wykresu", MB_OK);
+        return;
+    }
+
+    CloseHandle(pi_test.hProcess);
+    CloseHandle(pi_test.hThread);
+
+    // Uruchom właściwy wykres
     STARTUPINFOA si = {};
     PROCESS_INFORMATION pi = {};
     si.cb = sizeof(si);
 
-    // Uruchom gnuplot jako osobny proces bez okna konsoli
-    CreateProcessA(
+    // Pokaż okno konsoli żeby zobaczyć błędy gnuplot
+    BOOL result = CreateProcessA(
         nullptr,
         const_cast<char*>(cmd.c_str()),
         nullptr, nullptr,
         FALSE,
-        CREATE_NO_WINDOW, // ukryj okno CMD
+        CREATE_NEW_CONSOLE, // zmienione z CREATE_NO_WINDOW na CREATE_NEW_CONSOLE
         nullptr, nullptr,
         &si, &pi
     );
 
-    // Czekaj na zakończenie procesu w osobnym wątku
-    // żeby nie blokować głównego wątku GUI
+    if (!result) {
+        MessageBoxA(nullptr, "Nie udało się uruchomić gnuplot!", "Błąd", MB_OK);
+        return;
+    }
+
     thread([pi]() mutable {
         WaitForSingleObject(pi.hProcess, INFINITE);
         CloseHandle(pi.hProcess);
