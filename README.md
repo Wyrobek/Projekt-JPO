@@ -168,6 +168,6 @@ Dokumentacja:  https://api.gios.gov.pl/pjp-api/swagger-ui/
 -------
 ### Filip Wyrobek
 ### Numer indeksu: 164350
-###Teleinformatyka | Semestr 4
+### Teleinformatyka | Semestr 4
  
 ================================================================================
