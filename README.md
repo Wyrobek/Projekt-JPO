@@ -44,7 +44,7 @@ Wymagane biblioteki (instalacja przez MSYS2):
  
 ## STRUKTURA PROJEKTU
 ------------------
-Projekt/
+Projekt/<br/>
   main.cpp                    -- punkt wejścia aplikacji
  
   API/
