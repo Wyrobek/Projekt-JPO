@@ -1,9 +1,8 @@
-================================================================================
-                    SPRAWDŹ JAKOŚĆ POWIETRZA
-                    Aplikacja desktopowa C++ / Windows
-================================================================================
+
+ # SPRAWDŹ JAKOŚĆ POWIETRZA
+ # Aplikacja desktopowa C++ / Windows
  
-OPIS
+## OPIS
 ----
 Aplikacja pozwala sprawdzić jakość powietrza w Polsce na podstawie danych
 z API Głównego Inspektoratu Ochrony Środowiska (GIOŚ).
@@ -13,7 +12,7 @@ Aplikacja działa również w trybie offline, korzystając z danych
 zapisanych podczas ostatniego połączenia z internetem.
  
  
-FUNKCJE
+## FUNKCJE
 -------
 - Wyszukiwanie stacji pomiarowych po nazwie miasta
 - Przeglądanie listy sensorów dla wybranej stacji
@@ -25,7 +24,7 @@ FUNKCJE
 - Obsługa dwóch języków: polski i angielski
  
  
-WYMAGANIA
+## WYMAGANIA
 ---------
 System operacyjny:  Windows 10/11 (64-bit)
 Środowisko:         MSYS2 MinGW64
@@ -43,47 +42,68 @@ Wymagane biblioteki (instalacja przez MSYS2):
   pacman -S mingw-w64-x86_64-gnuplot
  
  
-STRUKTURA PROJEKTU
+## STRUKTURA PROJEKTU
 ------------------
-Projekt/
+Projekt/<br/>
   main.cpp                    -- punkt wejścia aplikacji
+<br/>
  
-  API/
+  API/<br/>
     ApiClient.h               -- nagłówek klienta API
+    <br/>
     ApiClient.cpp             -- pobieranie danych z API GIOŚ
+    <br/>
  
-  MainWindow/
+  MainWindow/<br/>
     MainWindow.h              -- nagłówek głównego okna
+    <br/>
     MainWindow.cpp            -- interfejs użytkownika (Nana GUI)
- 
-  Plot/
+    <br/>
+    
+  Plot/<br/>
     PlotManager.h             -- nagłówek managera wykresów
+    <br/>
     PlotManager.cpp           -- generowanie wykresów (gnuplot)
- 
-  Lang/
+    <br/>
+    
+  Lang/<br/>
     Translator.h              -- nagłówek klasy tłumaczeń
+    <br/>
     Translator.cpp            -- obsługa wielojęzyczności
+    <br/>
     pl.json                   -- tłumaczenia polskie
+    <br/>
     en.json                   -- tłumaczenia angielskie
+    <br/>
  
   API/                        -- pliki JSON z danymi (generowane automatycznie)
+    <br/>
     dataBase.json             -- lista stacji pogrupowana po miastach
+    <br/>
     sensors.json              -- sensory dla ostatnio wybranej stacji
+    <br/>
     measurments.json          -- pomiary dla ostatnio wybranego sensora
+    <br/>
     index.json                -- indeks jakości powietrza
+    <br/>
  
-  Plot/
+  Plot/<br/>
     tmp_plot.dat              -- tymczasowe dane dla gnuplot
+    <br/>
     tmp_plot.gp               -- tymczasowy skrypt gnuplot
+    <br/>
  
-  tests/
+  tests/<br/>
     main_test.cpp             -- punkt wejścia testów
+    <br/>
     translator_test.cpp       -- testy klasy Translator
+    <br/>
     apiclient_test.cpp        -- testy klasy ApiClient
+    <br/>
     plotmanager_test.cpp      -- testy klasy PlotManager
+   
  
- 
-BUDOWANIE APLIKACJI
+## BUDOWANIE APLIKACJI
 -------------------
 Komenda w terminalu MSYS2 MinGW64:
  
@@ -98,7 +118,7 @@ Komenda w terminalu MSYS2 MinGW64:
 Lub przez VS Code: Ctrl+Shift+B (task "build")
  
  
-BUDOWANIE I URUCHAMIANIE TESTÓW
+## BUDOWANIE I URUCHAMIANIE TESTÓW
 --------------------------------
 Komenda w terminalu MSYS2 MinGW64:
  
@@ -117,7 +137,7 @@ Oczekiwany wynik:
   [  PASSED  ] X tests.
  
  
-UŻYTKOWANIE
+## UŻYTKOWANIE
 -----------
 1. Uruchom Powietrze.exe
 2. Wpisz nazwę miasta w polu tekstowym (np. "Poznań")
@@ -130,23 +150,24 @@ UŻYTKOWANIE
      - "Regresja liniowa"        — wykres z linią trendu
 6. Przycisk języka (lewy dolny róg) — przełącza między PL i EN
  
-TRYB OFFLINE
+## TRYB OFFLINE
 ------------
 Jeśli brak połączenia z internetem, aplikacja automatycznie
 korzysta z danych zapisanych podczas ostatniej sesji online.
 Komunikat o braku internetu pojawi się przy wyborze stacji.
  
  
-API
+## API
 ---
 Źródło danych: Główny Inspektorat Ochrony Środowiska (GIOŚ)
 URL:           https://api.gios.gov.pl/pjp-api/v1/rest
 Dokumentacja:  https://api.gios.gov.pl/pjp-api/swagger-ui/
  
  
-AUTOR
+## AUTOR
 -------
-Filip Wyrobek
-Teleinformatyka | Semestr 4
+### Filip Wyrobek
+### Numer indeksu: 164350
+### Teleinformatyka | Semestr 4
  
 ================================================================================
