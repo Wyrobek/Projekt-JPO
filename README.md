@@ -46,41 +46,62 @@ Wymagane biblioteki (instalacja przez MSYS2):
 ------------------
 Projekt/<br/>
   main.cpp                    -- punkt wejścia aplikacji
+<br/>
  
-  API/
+  API/<br/>
     ApiClient.h               -- nagłówek klienta API
+    <br/>
     ApiClient.cpp             -- pobieranie danych z API GIOŚ
+    <br/>
  
-  MainWindow/
+  MainWindow/<br/>
     MainWindow.h              -- nagłówek głównego okna
+    <br/>
     MainWindow.cpp            -- interfejs użytkownika (Nana GUI)
- 
-  Plot/
+    <br/>
+    
+  Plot/<br/>
     PlotManager.h             -- nagłówek managera wykresów
+    <br/>
     PlotManager.cpp           -- generowanie wykresów (gnuplot)
- 
-  Lang/
+    <br/>
+    
+  Lang/<br/>
     Translator.h              -- nagłówek klasy tłumaczeń
+    <br/>
     Translator.cpp            -- obsługa wielojęzyczności
+    <br/>
     pl.json                   -- tłumaczenia polskie
+    <br/>
     en.json                   -- tłumaczenia angielskie
+    <br/>
  
   API/                        -- pliki JSON z danymi (generowane automatycznie)
+    <br/>
     dataBase.json             -- lista stacji pogrupowana po miastach
+    <br/>
     sensors.json              -- sensory dla ostatnio wybranej stacji
+    <br/>
     measurments.json          -- pomiary dla ostatnio wybranego sensora
+    <br/>
     index.json                -- indeks jakości powietrza
+    <br/>
  
-  Plot/
+  Plot/<br/>
     tmp_plot.dat              -- tymczasowe dane dla gnuplot
+    <br/>
     tmp_plot.gp               -- tymczasowy skrypt gnuplot
+    <br/>
  
-  tests/
+  tests/<br/>
     main_test.cpp             -- punkt wejścia testów
+    <br/>
     translator_test.cpp       -- testy klasy Translator
+    <br/>
     apiclient_test.cpp        -- testy klasy ApiClient
+    <br/>
     plotmanager_test.cpp      -- testy klasy PlotManager
- 
+   
  
 ## BUDOWANIE APLIKACJI
 -------------------
