@@ -1,6 +1,6 @@
 
  # SPRAWDŹ JAKOŚĆ POWIETRZA
- # Aplikacja desktopowa C++ / Windows
+   Aplikacja desktopowa C++ / Windows
  
 ## OPIS
 ----
