@@ -2,6 +2,11 @@
     "pomiary": [
         {
             "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Data": "2026-04-03 01:00:00",
+            "Wartość": 7.2
+        },
+        {
+            "Kod stanowiska": "WmOstrPilsud-O3-1g",
             "Data": "2026-04-03 00:00:00",
             "Wartość": 16.3
         },
