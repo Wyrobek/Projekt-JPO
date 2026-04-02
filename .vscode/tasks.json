@@ -29,7 +29,13 @@
         "-lcrypto",
         "-lpng",
         "-ljpeg",
-        "-mwindows"
+        "-mwindows",
+        "tests/main_test.cpp",
+        "-ILang", "-IAPI", "-IPlot",
+        "-o", 
+        "tests/tests.exe",
+        "-lgtest",
+        "-lgtest_main"
       ],
       "group": {
         "kind": "build",

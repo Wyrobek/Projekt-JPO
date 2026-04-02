@@ -7,7 +7,7 @@ set style line 2 lc rgb '#FF0000' lw 2
 set xtics rotate by -45
 set xtics font ',9'
 set key box top left
-set xrange [0:66]
+set xrange [0:67]
 set xtics ('02:00' 0, '15:00' 13, '04:00' 26, '17:00' 39, '06:00' 52, '20:00' 65)
 f(x) = a * x + b
 set fit quiet

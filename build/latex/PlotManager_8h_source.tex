@@ -1,0 +1,34 @@
+\doxysection{Plot\+Manager.\+h}
+\hypertarget{PlotManager_8h_source}{}\label{PlotManager_8h_source}\index{Plot/PlotManager.h@{Plot/PlotManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ }json\ =\ nlohmann::ordered\_json;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Klasa\ do\ generowania\ wykresów\ przez\ gnuplot}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classPlotManager}{PlotManager}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ Generowanie\ wykresu\ z\ pomiarami}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ generateChart(\textcolor{keyword}{const}\ json\&\ data);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ Generuje\ wykres\ z\ regresją\ liniową}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ generateRegressionChart(\textcolor{keyword}{const}\ json\&\ data);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Zapisanie\ danych\ do\ pliku\ tymczasowego,\ zwraca\ liczbę\ zapisanych\ punktów}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ writeTempData(\textcolor{keyword}{const}\ json\&\ data);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Zapisanie\ etykiety\ osi\ X\ do\ skryptu\ gnuplot}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ writeXTics(std::ofstream\&\ script,\ \textcolor{keywordtype}{int}\ total);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Uruchamianie\ gnuplot\ w\ osobnym\ wątku}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ runGnuplot(\textcolor{keyword}{const}\ std::string\&\ flags\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ TEMP\_DATA\_FILE;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ TEMP\_SCRIPT\_FILE;}
+\DoxyCodeLine{00028\ \};}
+
+\end{DoxyCode}

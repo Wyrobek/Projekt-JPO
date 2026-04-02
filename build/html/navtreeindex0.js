@@ -1,0 +1,26 @@
+var NAVTREEINDEX0 =
+{
+"ApiClient_8h_source.html":[1,0,0,0],
+"MainWindow_8h_source.html":[1,0,2,0],
+"PlotManager_8h_source.html":[1,0,3,0],
+"Translator_8h_source.html":[1,0,1,0],
+"annotated.html":[0,0],
+"classApiClient.html":[0,0,0],
+"classMainWindow.html":[0,0,1],
+"classPlotManager.html":[0,0,2],
+"classTranslator.html":[0,0,3],
+"classTranslator.html#a6d1bb942816c03dc33c2da74708b1161":[0,0,3,2],
+"classTranslator.html#a90c1738a41c21d9e3ed5626945b21733":[0,0,3,3],
+"classTranslator.html#ad72b40588ef78ea8139f68cfc3a30aa0":[0,0,3,0],
+"classTranslator.html#ae6390bb4de9cccab7eb2c7d84f1a0e34":[0,0,3,1],
+"classes.html":[0,1],
+"dir_19ea4dbfe8f0e4681f60b9b97f7b5d11.html":[1,0,0],
+"dir_24befa00d2234065caa5460d50801baf.html":[1,0,3],
+"dir_49035ede989da6206a3bef4823b0aa85.html":[1,0,2],
+"dir_cbfa26da51b3ed7459130d70d9b4a32b.html":[1,0,1],
+"files.html":[1,0],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"index.html":[],
+"pages.html":[]
+};

@@ -1,0 +1,50 @@
+\doxysection{Api\+Client.\+h}
+\hypertarget{ApiClient_8h_source}{}\label{ApiClient_8h_source}\index{API/ApiClient.h@{API/ApiClient.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ ApiClient.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }json\ =\ nlohmann::ordered\_json;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Klasa\ odpowiedzialna\ za\ komunikację\ z\ API\ GIOŚ}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ Wszystkie\ metody\ pobierają\ dane\ z\ internetu\ i\ zapisują\ je\ do\ plików\ JSON}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ W\ przypadku\ braku\ internetu\ używają\ danych\ zapisanych\ lokalnie}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classApiClient}{ApiClient}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Sprawdza\ czy\ jest\ aktywne\ połączenie\ z\ internetem}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ isInternetAvailable();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Sprawdza\ czy\ plik\ istnieje\ i\ nie\ jest\ pusty}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ fileExists(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Pobiera\ listę\ wszystkich\ stacji\ pomiarowych\ i\ zapisuje\ do\ API/dataBase.json}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ fetchStations();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Pobiera\ listę\ sensorów\ dla\ podanej\ stacji\ i\ zapisuje\ do\ API/sensors.json}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ paramater\ stationId\ ID\ stacji\ pomiarowej}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ fetchSensors(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Pobiera\ pomiary\ dla\ podanego\ stanowiska\ i\ zapisuje\ do\ API/measurments.json}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ parametr\ stationId\ ID\ stanowiska\ pomiarowego}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ fetchMeasurements(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Pobiera\ indeks\ jakości\ powietrza\ dla\ podanej\ stacji\ i\ zapisuje\ do\ API/index.json}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ parametr\ stationId\ ID\ stacji\ pomiarowej}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ fetchAirQualityIndex(\textcolor{keywordtype}{int}\ stationId);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ TIMEOUT\_MS\ \ \ \ \ \ \ =\ 3000;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ MAX\_STATIONS\ \ \ \ \ =\ 500;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ MAX\_MEASUREMENTS\ =\ 72;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ std::string\ BASE\_URL;}
+\DoxyCodeLine{00048\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,100 @@
+\doxysection{Main\+Window.\+h}
+\hypertarget{MainWindow_8h_source}{}\label{MainWindow_8h_source}\index{MainWindow/MainWindow.h@{MainWindow/MainWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ MainWindow.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <nana/gui.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <nana/gui/widgets/label.hpp>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <nana/gui/widgets/textbox.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <nana/gui/widgets/button.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <nana/gui/widgets/listbox.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <nana/gui/msgbox.hpp>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../API/ApiClient.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../Plot/PlotManager.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../Lang/Translator.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }MainWindow\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Konstruktor\ —\ tworzy\ okno,\ ustawia\ layout\ i\ podpina\ zdarzenia}}
+\DoxyCodeLine{00021\ \ \ \ \ MainWindow();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Wyświetla\ okno\ i\ uruchamia\ pętlę\ zdarzeń\ Nana}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ show();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ ───\ Widgety\ interfejsu\ ───────────────────────────────────────}}
+\DoxyCodeLine{00028\ \ \ \ \ nana::form\ \ \ \ \ \ \ form;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Główne\ okno\ aplikacji}}
+\DoxyCodeLine{00029\ \ \ \ \ nana::label\ \ \ \ \ \ labelInput;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Etykieta\ "{}Wpisz\ szukane\ miasto"{}}}
+\DoxyCodeLine{00030\ \ \ \ \ nana::textbox\ \ \ \ inputCity;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Pole\ tekstowe\ do\ wpisania\ miasta}}
+\DoxyCodeLine{00031\ \ \ \ \ nana::button\ \ \ \ \ btnSearch;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Przycisk\ "{}Szukaj"{}}}
+\DoxyCodeLine{00032\ \ \ \ \ nana::listbox\ \ \ \ listStations;\ \ \ \ \ \ \textcolor{comment}{//\ Lista\ stacji\ pomiarowych\ dla\ wybranego\ miasta}}
+\DoxyCodeLine{00033\ \ \ \ \ nana::listbox\ \ \ \ listSensors;\ \ \ \ \ \ \ \textcolor{comment}{//\ Lista\ sensorów\ dla\ wybranej\ stacji}}
+\DoxyCodeLine{00034\ \ \ \ \ nana::label\ \ \ \ \ \ labelStats;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Etykieta\ "{}Statystyki\ danej\ stacji"{}}}
+\DoxyCodeLine{00035\ \ \ \ \ nana::label\ \ \ \ \ \ labelStatsTitle;\ \ \ \textcolor{comment}{//\ Etykieta\ "{}Statystyki"{}}}
+\DoxyCodeLine{00036\ \ \ \ \ nana::button\ \ \ \ \ btnIndex;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Przycisk\ otwierający\ indeks\ jakości\ powietrza}}
+\DoxyCodeLine{00037\ \ \ \ \ nana::button\ \ \ \ \ btnMeasurements;\ \ \ \textcolor{comment}{//\ Przycisk\ otwierający\ bieżące\ pomiary}}
+\DoxyCodeLine{00038\ \ \ \ \ nana::button\ \ \ \ \ btnChart;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Przycisk\ rysujący\ wykres\ pomiarów}}
+\DoxyCodeLine{00039\ \ \ \ \ nana::button\ \ \ \ \ btnRegression;\ \ \ \ \ \textcolor{comment}{//\ Przycisk\ rysujący\ wykres\ z\ regresją\ liniową}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ ───\ Zależności\ ───────────────────────────────────────────────}}
+\DoxyCodeLine{00042\ \ \ \ \ \doxymbox{\hyperlink{classApiClient}{ApiClient}}\ \ \ api;\ \ \ \ \textcolor{comment}{//\ Klient\ API\ GIOŚ\ —\ pobiera\ i\ zapisuje\ dane}}
+\DoxyCodeLine{00043\ \ \ \ \ \doxymbox{\hyperlink{classPlotManager}{PlotManager}}\ plot;\ \ \ \textcolor{comment}{//\ Manager\ wykresów\ —\ generuje\ wykresy\ przez\ gnuplot}}
+\DoxyCodeLine{00044\ \ \ \ \ \doxymbox{\hyperlink{classTranslator}{Translator}}\ translator;\ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ nana::button\ btnLang;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ ───\ Konfiguracja\ ─────────────────────────────────────────────}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Ustawia\ pozycje\ i\ rozmiary\ wszystkich\ widgetów\ w\ oknie}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ setupLayout();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ Podpina\ handlery\ zdarzeń\ do\ przycisków\ i\ list}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ bindEvents();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ ───\ Handlery\ zdarzeń\ ─────────────────────────────────────────}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Szukaj"{}\ —\ wyszukuje\ stacje\ w\ podanym\ mieście}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ onSearch();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ zaznaczenie\ stacji\ na\ liście\ —\ pobiera\ sensory\ i\ dane}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ parametr\ arg\ argument\ zdarzenia\ zawierający\ zaznaczony\ element\ listy}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ onStationSelected(\textcolor{keyword}{const}\ nana::arg\_listbox\&\ arg);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Indeks\ jakości\ powietrza"{}}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ onIndexClick();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Bieżące\ pomiary"{}}}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ onMeasurementsClick();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Wykres"{}}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ onChartClick();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Regresja\ liniowa"{}}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ onRegressionClick();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{comment}{//\ ───\ Pomocnicze\ ───────────────────────────────────────────────}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//\ Wyświetla\ okienko\ z\ komunikatem\ błędu}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//\ parametr\ title\ \ tytuł\ okienka}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{//\ parametr\ message\ treść\ komunikatu}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ showError(\textcolor{keyword}{const}\ std::string\&\ title,\ \textcolor{keyword}{const}\ std::string\&\ message);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//\ Wczytuje\ plik\ JSON\ z\ dysku}}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{//\ parametr\ filename\ ścieżka\ do\ pliku}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{comment}{//\ return\ sparsowany\ obiekt\ JSON\ lub\ nullptr\ jeśli\ plik\ nie\ istnieje}}
+\DoxyCodeLine{00083\ \ \ \ \ json\ loadJson(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//\ Bezpiecznie\ odczytuje\ wartość\ stringa\ z\ obiektu\ JSON}}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ Zwraca\ "{}brak"{}\ jeśli\ klucz\ nie\ istnieje\ lub\ ma\ wartość\ null}}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//\ parametr\ data\ obiekt\ JSON}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{comment}{//\ parametr\ key\ \ nazwa\ klucza}}
+\DoxyCodeLine{00089\ \ \ \ \ std::string\ safeGetStr(\textcolor{keyword}{const}\ json\&\ data,\ \textcolor{keyword}{const}\ std::string\&\ key);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{//\ Przełącza\ język\ i\ odświeża\ interfejs}}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ switchLanguage();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//\ Odświeża\ teksty\ wszystkich\ widgetów}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshLabels();\ \ \ \ \ \ }
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{comment}{//\ Odświeża\ nagłówki\ tabel\ po\ zmianie\ języka}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshHeaders();}
+\DoxyCodeLine{00099\ \};}
+
+\end{DoxyCode}
