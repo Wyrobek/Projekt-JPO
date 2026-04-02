@@ -166,7 +166,8 @@ Dokumentacja:  https://api.gios.gov.pl/pjp-api/swagger-ui/
  
 ## AUTOR
 -------
-Filip Wyrobek
-Teleinformatyka | Semestr 4
+### Filip Wyrobek
+### Numer indeksu: 164350
+###Teleinformatyka | Semestr 4
  
 ================================================================================
