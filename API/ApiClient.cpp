@@ -14,9 +14,10 @@ const std::string ApiClient::BASE_URL = "https://api.gios.gov.pl/pjp-api/v1/rest
  */
 bool ApiClient::isInternetAvailable() {
     cpr::Response response = cpr::Get(
-        cpr::Url{BASE_URL + "/station/findAll?size=1"},
-        cpr::Timeout{TIMEOUT_MS}  // przerwij po 3 sekundach braku odpowiedzi
-    );
+    cpr::Url{BASE_URL + "/station/findAll?size=1"},
+    cpr::Timeout{TIMEOUT_MS},
+    cpr::Ssl(cpr::ssl::CaInfo{"curl-ca-bundle.crt"})
+);
     return response.status_code == 200;
 }
 
@@ -45,7 +46,10 @@ void ApiClient::fetchStations() {
     }
 
     string url = BASE_URL + "/station/findAll?size=" + to_string(MAX_STATIONS);
-    cpr::Response response = cpr::Get(cpr::Url{url});
+    cpr::Response response = cpr::Get(
+    cpr::Url{url},
+    cpr::Ssl(cpr::ssl::CaInfo{"curl-ca-bundle.crt"})
+);
 
     if (response.status_code != 200) {
         cout << "Błąd HTTP: " << response.status_code << endl;
@@ -95,7 +99,10 @@ void ApiClient::fetchSensors(int stationId) {
     }
 
     string url = BASE_URL + "/station/sensors/" + to_string(stationId) + "?size=500";
-    cpr::Response response = cpr::Get(cpr::Url{url});
+    cpr::Response response = cpr::Get(
+    cpr::Url{url},
+    cpr::Ssl(cpr::ssl::CaInfo{"curl-ca-bundle.crt"})
+);
 
     if (response.status_code != 200) {
         cout << "Błąd HTTP: " << response.status_code << endl;
@@ -136,7 +143,10 @@ void ApiClient::fetchMeasurements(int stationId) {
     }
 
     string url = BASE_URL + "/data/getData/" + to_string(stationId) + "?size=" + to_string(MAX_MEASUREMENTS);
-    cpr::Response response = cpr::Get(cpr::Url{url});
+    cpr::Response response = cpr::Get(
+    cpr::Url{url},
+    cpr::Ssl(cpr::ssl::CaInfo{"curl-ca-bundle.crt"})
+);
 
     if (response.status_code != 200) {
         cout << "Błąd HTTP: " << response.status_code << endl;
@@ -186,7 +196,10 @@ void ApiClient::fetchAirQualityIndex(int stationId) {
     }
 
     string url = BASE_URL + "/aqindex/getIndex/" + to_string(stationId);
-    cpr::Response response = cpr::Get(cpr::Url{url});
+    cpr::Response response = cpr::Get(
+    cpr::Url{url},
+    cpr::Ssl(cpr::ssl::CaInfo{"curl-ca-bundle.crt"})
+);
 
     if (response.status_code != 200) {
         cout << "Błąd HTTP: " << response.status_code << endl;
