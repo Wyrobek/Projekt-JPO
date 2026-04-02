@@ -1,47 +1,54 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "build",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "${workspaceFolder}\\main.cpp",
-        "${workspaceFolder}\\API\\ApiClient.cpp",
-        "${workspaceFolder}\\MainWindow\\MainWindow.cpp",
-        "${workspaceFolder}\\Plot\\PlotManager.cpp",
-        "${workspaceFolder}\\Lang\\Translator.cpp",
-        "-I${workspaceFolder}\\API",
-        "-I${workspaceFolder}\\MainWindow",
-        "-I${workspaceFolder}\\Plot",
-        "-I${workspaceFolder}\\Lang",
-        "-o",
-        "${workspaceFolder}\\Powietrze.exe",
-        "-lcurl",
-        "-std=c++17",
-        "-lnana",
-        "-lgdi32",
-        "-lcomdlg32",
-        "-lole32",
-        "-luuid",
-        "-lcpr",
-        "-lssl",
-        "-lcrypto",
-        "-lpng",
-        "-ljpeg",
-        "-mwindows",
-        "tests/main_test.cpp",
-        "-ILang", "-IAPI", "-IPlot",
-        "-o", 
-        "tests/tests.exe",
-        "-lgtest",
-        "-lgtest_main"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": ["$gcc"]
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build app",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/API/ApiClient.cpp",
+                "${workspaceFolder}/MainWindow/MainWindow.cpp",
+                "${workspaceFolder}/Plot/PlotManager.cpp",
+                "${workspaceFolder}/Lang/Translator.cpp",
+                "-I${workspaceFolder}/API",
+                "-I${workspaceFolder}/MainWindow",
+                "-I${workspaceFolder}/Plot",
+                "-I${workspaceFolder}/Lang",
+                "-o", "${workspaceFolder}/Powietrze.exe",
+                "-lcurl", "-std=c++17", "-lnana",
+                "-lgdi32", "-lcomdlg32", "-lole32", "-luuid",
+                "-lcpr", "-lssl", "-lcrypto", "-lpng", "-ljpeg",
+                "-mwindows"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "build tests",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${workspaceFolder}/Tests/main_test.cpp",
+                "${workspaceFolder}/Tests/translator_test.cpp",
+                "${workspaceFolder}/Tests/apiclient_test.cpp",
+                "${workspaceFolder}/Tests/plotmanager_test.cpp",
+                "${workspaceFolder}/Lang/Translator.cpp",
+                "${workspaceFolder}/API/ApiClient.cpp",
+                "${workspaceFolder}/Plot/PlotManager.cpp",
+                "-I${workspaceFolder}/Lang",
+                "-I${workspaceFolder}/API",
+                "-I${workspaceFolder}/Plot",
+                "-o", "${workspaceFolder}/Tests/tests.exe",
+                "-lgtest", "-lgtest_main", "-lpthread",
+                "-lcpr", "-lcurl", "-lssl", "-lcrypto",
+                "-std=c++17"
+            ],
+            "group": "test",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
 }
