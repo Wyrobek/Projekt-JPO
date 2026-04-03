@@ -35,5 +35,19 @@
     "index_category":     "  Category: ",
     "index_detailed":     "\nDetailed indicators\n",
     "index_critical":     "\nCritical pollutant: ",
-    "no_data_value":    "N/A"
+    "no_data_value":    "N/A",
+    "filter_days":        "Data range:",
+    "btn_regression_on":  "Regression: ON",
+    "btn_regression_off": "Regression: OFF",
+    "btn_stats":          "Statistics",
+    "err_select_sensor":  "Please select a sensor first",
+    "title_stats":        "Measurement statistics",
+    "stats_sensor_id":    "Sensor ID: ",
+    "stats_period":       "Period: last ",
+    "stats_days":         " days",
+    "stats_count":        "Measurements: ",
+    "stats_min":          "Minimum:  ",
+    "stats_max":          "Maximum:  ",
+    "stats_avg":          "Average:  ",
+    "stats_stddev":       "Std dev:  "
 }

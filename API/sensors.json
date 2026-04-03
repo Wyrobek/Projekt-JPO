@@ -1,39 +1,39 @@
 {
     "sensory": [
         {
-            "Id stanowiska": 4701,
-            "Id stacji": 731,
-            "Wskaźnik": "tlenek węgla"
-        },
-        {
-            "Id stanowiska": 4702,
-            "Id stacji": 731,
-            "Wskaźnik": "tlenek azotu"
-        },
-        {
-            "Id stanowiska": 4703,
-            "Id stacji": 731,
-            "Wskaźnik": "dwutlenek azotu"
-        },
-        {
-            "Id stanowiska": 4704,
-            "Id stacji": 731,
-            "Wskaźnik": "tlenki azotu"
-        },
-        {
-            "Id stanowiska": 4706,
-            "Id stacji": 731,
+            "Id stanowiska": 26171,
+            "Id stacji": 16180,
             "Wskaźnik": "pył zawieszony PM10"
         },
         {
-            "Id stanowiska": 4707,
-            "Id stacji": 731,
-            "Wskaźnik": "dwutlenek siarki"
+            "Id stanowiska": 26172,
+            "Id stacji": 16180,
+            "Wskaźnik": "pył zawieszony PM2.5"
         },
         {
-            "Id stanowiska": 27667,
-            "Id stacji": 731,
-            "Wskaźnik": "pył zawieszony PM2.5"
+            "Id stanowiska": 26173,
+            "Id stacji": 16180,
+            "Wskaźnik": "tlenek azotu"
+        },
+        {
+            "Id stanowiska": 26174,
+            "Id stacji": 16180,
+            "Wskaźnik": "dwutlenek azotu"
+        },
+        {
+            "Id stanowiska": 26175,
+            "Id stacji": 16180,
+            "Wskaźnik": "tlenki azotu"
+        },
+        {
+            "Id stanowiska": 31434,
+            "Id stacji": 16180,
+            "Wskaźnik": "pył zawieszony PM10"
+        },
+        {
+            "Id stanowiska": 31436,
+            "Id stacji": 16180,
+            "Wskaźnik": "benzo(a)piren w PM10"
         }
     ]
 }

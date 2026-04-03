@@ -7,8 +7,8 @@ set style line 2 lc rgb '#FF0000' lw 2
 set xtics rotate by -45
 set xtics font ',9'
 set key box top left
-set xrange [0:45]
-set xtics ('02:00' 0, '11:00' 9, '20:00' 18, '05:00' 27, '15:00' 36, '00:00' 45)
+set xrange [0:23]
+set xtics ('16:00' 0, '20:00' 4, '00:00' 8, '04:00' 12, '08:00' 16, '12:00' 20)
 f(x) = a * x + b
 set fit quiet
 fit f(x) 'Plot/tmp_plot.dat' using 1:2 via a, b

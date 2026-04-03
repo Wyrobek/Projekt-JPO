@@ -35,5 +35,19 @@
     "index_category":     "  Kategoria: ",
     "index_detailed":     "\nWskazniki szczegolowe\n",
     "index_critical":     "\nZanieczyszczenie krytyczne: ",
-    "no_data_value":    "brak"
+    "no_data_value":    "brak",
+    "filter_days":        "Zakres danych:",
+    "btn_regression_on":  "Regresja: ON",
+    "btn_regression_off": "Regresja: OFF",
+    "btn_stats":          "Statystyki",
+    "err_select_sensor":  "Najpierw wybierz sensor z listy",
+    "title_stats":        "Statystyki pomiarów",
+    "stats_sensor_id":    "ID sensora: ",
+    "stats_period":       "Okres: ostatnie ",
+    "stats_days":         " dni",
+    "stats_count":        "Liczba pomiarów: ",
+    "stats_min":          "Minimum:  ",
+    "stats_max":          "Maksimum: ",
+    "stats_avg":          "Średnia:  ",
+    "stats_stddev":       "Odch. std: "
 }

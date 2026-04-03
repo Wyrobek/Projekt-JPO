@@ -1,239 +1,314 @@
 {
     "pomiary": [
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 15:00:00",
+            "Wartość": 50.8
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 14:00:00",
+            "Wartość": 47.6
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 13:00:00",
+            "Wartość": 36.4
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 12:00:00",
+            "Wartość": 34.0
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 11:00:00",
+            "Wartość": 28.1
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 10:00:00",
+            "Wartość": 41.5
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 09:00:00",
+            "Wartość": 53.2
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 08:00:00",
+            "Wartość": 120.2
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 07:00:00",
+            "Wartość": 59.1
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 06:00:00",
+            "Wartość": 36.6
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 05:00:00",
+            "Wartość": 29.8
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 04:00:00",
+            "Wartość": 31.3
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 03:00:00",
+            "Wartość": 41.3
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 02:00:00",
+            "Wartość": 68.0
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-03 01:00:00",
+            "Wartość": 46.9
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-03 00:00:00",
-            "Wartość": 16.3
+            "Wartość": 58.8
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 23:00:00",
-            "Wartość": 34.7
+            "Wartość": 72.6
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 22:00:00",
-            "Wartość": 44.3
+            "Wartość": 31.0
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 21:00:00",
+            "Wartość": 40.6
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 20:00:00",
+            "Wartość": 34.4
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 19:00:00",
+            "Wartość": 32.5
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 18:00:00",
+            "Wartość": 20.7
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 17:00:00",
+            "Wartość": 16.1
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 16:00:00",
+            "Wartość": 31.3
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 15:00:00",
+            "Wartość": 50.7
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 14:00:00",
+            "Wartość": 51.5
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 13:00:00",
+            "Wartość": 62.9
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 12:00:00",
+            "Wartość": 44.1
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 11:00:00",
+            "Wartość": 39.7
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 10:00:00",
+            "Wartość": 90.0
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 09:00:00",
+            "Wartość": 71.6
+        },
+        {
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
+            "Data": "2026-04-02 08:00:00",
             "Wartość": 63.6
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 20:00:00",
-            "Wartość": 66.1
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 19:00:00",
-            "Wartość": 75.9
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 18:00:00",
-            "Wartość": 80.8
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 17:00:00",
-            "Wartość": 81.9
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 16:00:00",
-            "Wartość": 81.6
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 15:00:00",
-            "Wartość": 80.9
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 14:00:00",
-            "Wartość": 79.8
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 13:00:00",
-            "Wartość": 75.0
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 12:00:00",
-            "Wartość": 69.2
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 11:00:00",
-            "Wartość": 58.5
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 10:00:00",
-            "Wartość": 27.7
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 09:00:00",
-            "Wartość": 13.4
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
-            "Data": "2026-04-02 08:00:00",
-            "Wartość": null
-        },
-        {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 07:00:00",
-            "Wartość": 3.2
+            "Wartość": 56.3
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 06:00:00",
-            "Wartość": 2.2
+            "Wartość": 45.9
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 05:00:00",
-            "Wartość": 2.7
+            "Wartość": 35.7
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 04:00:00",
-            "Wartość": 2.7
+            "Wartość": 42.9
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 03:00:00",
-            "Wartość": 10.4
+            "Wartość": 35.0
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 02:00:00",
-            "Wartość": 24.0
+            "Wartość": 30.5
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 01:00:00",
-            "Wartość": 32.9
+            "Wartość": 30.2
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-02 00:00:00",
-            "Wartość": 43.3
+            "Wartość": 33.4
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 23:00:00",
-            "Wartość": 48.2
+            "Wartość": 31.6
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 22:00:00",
-            "Wartość": 47.0
+            "Wartość": 37.8
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 21:00:00",
-            "Wartość": 56.8
+            "Wartość": 38.2
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 20:00:00",
-            "Wartość": 61.6
+            "Wartość": 16.9
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 19:00:00",
-            "Wartość": 68.8
+            "Wartość": 14.9
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 18:00:00",
-            "Wartość": 73.4
+            "Wartość": 13.5
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 17:00:00",
-            "Wartość": 74.0
+            "Wartość": 16.2
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 16:00:00",
-            "Wartość": 72.9
+            "Wartość": 32.7
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 15:00:00",
-            "Wartość": 71.9
+            "Wartość": 23.9
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 14:00:00",
-            "Wartość": 73.6
+            "Wartość": 25.9
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 13:00:00",
-            "Wartość": 70.8
+            "Wartość": 30.8
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 12:00:00",
-            "Wartość": 64.7
+            "Wartość": 41.9
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 11:00:00",
-            "Wartość": 58.9
+            "Wartość": 26.1
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 10:00:00",
-            "Wartość": 56.4
+            "Wartość": 31.2
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 09:00:00",
-            "Wartość": 49.3
+            "Wartość": 22.7
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 08:00:00",
-            "Wartość": 41.6
+            "Wartość": 18.5
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 07:00:00",
-            "Wartość": 42.7
+            "Wartość": 15.5
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 06:00:00",
-            "Wartość": 37.7
+            "Wartość": 16.0
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 05:00:00",
-            "Wartość": 33.2
+            "Wartość": 18.6
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 04:00:00",
-            "Wartość": 34.5
+            "Wartość": 17.8
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 03:00:00",
-            "Wartość": 38.0
+            "Wartość": 18.5
         },
         {
-            "Kod stanowiska": "WmOstrPilsud-O3-1g",
+            "Kod stanowiska": "PmGdaGrunwal-PM10-1g",
             "Data": "2026-04-01 02:00:00",
-            "Wartość": 43.4
+            "Wartość": 18.7
         }
     ]
 }

@@ -2,8 +2,11 @@
 #include <thread>
 #include "API/ApiClient.h"
 #include "MainWindow/MainWindow.h"
+#include <windows.h>
 
 int main() {
+
+SetDllDirectoryA("libs");
 
 #ifdef _WIN32
     system("chcp 65001 > nul");

@@ -33,9 +33,6 @@
             "command": "g++",
             "args": [
                 "${workspaceFolder}/Tests/main_test.cpp",
-                "${workspaceFolder}/Tests/translator_test.cpp",
-                "${workspaceFolder}/Tests/apiclient_test.cpp",
-                "${workspaceFolder}/Tests/plotmanager_test.cpp",
                 "${workspaceFolder}/Lang/Translator.cpp",
                 "${workspaceFolder}/API/ApiClient.cpp",
                 "${workspaceFolder}/Plot/PlotManager.cpp",

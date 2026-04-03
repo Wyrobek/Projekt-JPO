@@ -37,12 +37,23 @@ private:
     nana::button     btnMeasurements;   // Przycisk otwierający bieżące pomiary
     nana::button     btnChart;          // Przycisk rysujący wykres pomiarów
     nana::button     btnRegression;     // Przycisk rysujący wykres z regresją liniową
+    nana::button     btnStats;          // nowy przycisk statystyk
+    nana::button     btnDay1;           // filtr: ostatni dzień
+    nana::button     btnDay2;           // filtr: ostatnie 2 dni  
+    nana::button     btnDay3;           // filtr: ostatnie 3 dni
+    nana::button     btnToggleRegression; // włącz/wyłącz regresję
+
 
     // ─── Zależności ───────────────────────────────────────────────
     ApiClient   api;    // Klient API GIOŚ — pobiera i zapisuje dane
     PlotManager plot;   // Manager wykresów — generuje wykresy przez gnuplot
     Translator translator;      ///< Obsługa tłumaczeń interfejsu
     nana::button btnLang;       ///< Przycisk przełączania języka
+    
+    // Dodaj zmienne stanu:
+    int  currentSensorId  = -1;  // ID aktualnie wybranego sensora
+    int  currentDayFilter = 1;   // aktualny filtr dni (1/2/3)
+    bool showRegression   = false; // czy pokazywać regresję
 
     // ─── Konfiguracja ─────────────────────────────────────────────
     // Ustawia pozycje i rozmiary wszystkich widgetów w oknie
@@ -68,8 +79,13 @@ private:
     // Obsługuje kliknięcie przycisku "Wykres"
     void onChartClick();
 
-    // Obsługuje kliknięcie przycisku "Regresja liniowa"
-    void onRegressionClick();
+    void onSensorSelected(const nana::arg_listbox& arg);
+
+    void onStatsClick();
+    
+    void onDayFilterClick(int days);
+
+    void onToggleRegression();
 
     // ─── Pomocnicze ───────────────────────────────────────────────
     // Wyświetla okienko z komunikatem błędu

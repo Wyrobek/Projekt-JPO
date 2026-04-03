@@ -2,6 +2,10 @@
 #include "MainWindow.h"
 #include <fstream>
 #include <sstream>
+#include <vector>
+#include <numeric>
+#include <cmath>
+#include <algorithm>
 
 using namespace std;
 
@@ -10,23 +14,27 @@ using namespace std;
  * Kolejność inicjalizacji musi zgadzać się z kolejnością w headerze
  */
 MainWindow::MainWindow()
-    : form          {}
-    , labelInput    {form}
-    , inputCity     {form}
-    , btnSearch     {form}
-    , listStations  {form}
-    , listSensors   {form}
-    , labelStats    {form}
-    , labelStatsTitle{form}
-    , btnIndex      {form}
-    , btnMeasurements{form}
-    , btnChart      {form}
-    , btnRegression {form}
-    , btnLang       {form}
-    , translator    {Translator::Language::PL}
+    : form              {}
+    , labelInput        {form}
+    , inputCity         {form}
+    , btnSearch         {form}
+    , listStations      {form}
+    , listSensors       {form}
+    , labelStats        {form}
+    , labelStatsTitle   {form}
+    , btnIndex          {form}
+    , btnMeasurements   {form}
+    , btnChart          {form}
+    , btnStats          {form} 
+    , btnDay1           {form}
+    , btnDay2           {form}
+    , btnDay3           {form} 
+    , btnToggleRegression{form} 
+    , btnLang           {form}
+    , translator        {Translator::Language::PL}
 {
     form.caption(translator["app_title"]);
-    form.size({590, 610}); // trochę wyższe żeby zmieścił się przycisk języka
+    form.size({600, 640});
 
     setupLayout();
     refreshLabels();
@@ -44,28 +52,41 @@ void MainWindow::show() {
  * Format move({x, y, szerokość, wysokość})
  */
 void MainWindow::setupLayout() {
-    labelInput.move    ({20,  15, 150,  25});
-    inputCity.move     ({160, 10, 250,  30});
-    btnSearch.move     ({420, 10,  70,  30});
+    labelInput.move ({20,  15, 150, 25});
+    inputCity.move  ({160, 10, 250, 30});
+    btnSearch.move  ({420, 10,  70, 30});
 
-    listStations.move({10, 60, 500, 220});
+    // Lista stacji — górna część
+    listStations.move({10, 50, 570, 180});
     listStations.append_header(translator["col_id"],       60);
     listStations.append_header(translator["col_street"],  200);
-    listStations.append_header(translator["col_district"],150);
-    listStations.append_header(translator["col_county"],  150);
+    listStations.append_header(translator["col_district"],155);
+    listStations.append_header(translator["col_county"],  155);
 
-    labelStats.move    ({10,  295, 150,  25});
+    labelStats.move({10, 238, 200, 20});
 
-    listSensors.move   ({10,  320, 380, 240});
+    // Lista sensorów — lewa dolna część
+    listSensors.move({10, 260, 370, 260});
     listSensors.append_header(translator["col_sensor_id"], 120);
-    listSensors.append_header(translator["col_indicator"], 250);
+    listSensors.append_header(translator["col_indicator"], 240);
 
-    labelStatsTitle.move({460, 330, 150,  30});
-    btnIndex.move       ({410, 360, 150,  30});
-    btnMeasurements.move({410, 410, 150,  30});
-    btnChart.move       ({410, 460, 150,  30});
-    btnRegression.move  ({410, 510, 150,  30});
-    btnLang.move        ({10, 570, 150,  30}); // przycisk języka na dole
+    // Przyciski po prawej stronie
+    labelStatsTitle.move    ({390, 260, 180, 25});
+    btnIndex.move           ({390, 290, 180, 35});
+    btnMeasurements.move    ({390, 335, 180, 35});
+    btnStats.move           ({390, 380, 180, 35});
+
+    // Filtr dni — trzy osobne przyciski obok siebie
+    btnDay1.move({390, 455,  55, 30}); // x=390
+    btnDay2.move({450, 455,  55, 30}); // x=450
+    btnDay3.move({510, 455,  55, 30}); // x=510
+
+    // Regresja i wykres
+    btnToggleRegression.move({390, 495, 180, 35});
+    btnChart.move           ({390, 540, 180, 35});
+
+    // Przycisk języka — lewy dolny róg
+    btnLang.move({10, 540, 150, 30});
 }
 
 
@@ -90,11 +111,20 @@ void MainWindow::bindEvents() {
         onStationSelected(arg);
     });
 
-    btnIndex.events().click      ([&]() { onIndexClick();        });
-    btnMeasurements.events().click([&]() { onMeasurementsClick(); });
-    btnChart.events().click      ([&]() { onChartClick();        });
-    btnRegression.events().click ([&]() { onRegressionClick();   });
-    btnLang.events().click       ([&]() { switchLanguage();      }); // przełącz język
+    // Kliknięcie sensora — pobierz pomiary
+    listSensors.events().selected([&](const nana::arg_listbox& arg) {
+        onSensorSelected(arg);
+    });
+
+    btnIndex.events().click          ([&]() { onIndexClick();          });
+    btnMeasurements.events().click   ([&]() { onMeasurementsClick();   });
+    btnStats.events().click          ([&]() { onStatsClick();          });
+    btnChart.events().click          ([&]() { onChartClick();          });
+    btnToggleRegression.events().click([&]() { onToggleRegression();   });
+    btnDay1.events().click           ([&]() { onDayFilterClick(1);     });
+    btnDay2.events().click           ([&]() { onDayFilterClick(2);     });
+    btnDay3.events().click           ([&]() { onDayFilterClick(3);     });
+    btnLang.events().click           ([&]() { switchLanguage();        });
 }
 
 /*
@@ -252,36 +282,6 @@ void MainWindow::onMeasurementsClick() {
     nana::exec();
 }
 
-// Generuje wykres liniowy pomiarów przez PlotManager
-void MainWindow::onChartClick() {
-    json data = loadJson("API/measurments.json");
-    if (data.is_null()) return;
-
-    if (!data.contains("pomiary") || data["pomiary"].empty()) {
-        showError(translator["title_no_data"], translator["err_no_data"]);
-        return;
-    }
-
-    if (!plot.generateChart(data)) {
-        showError(translator["title_no_data"], translator["err_no_measures"]);
-    }
-}
-
-// Generuje wykres z regresją liniową przez PlotManager
-void MainWindow::onRegressionClick() {
-    json data = loadJson("API/measurments.json");
-    if (data.is_null()) return;
-
-    if (!data.contains("pomiary") || data["pomiary"].empty()) {
-        showError(translator["title_no_data"], translator["err_no_data"]);
-        return;
-    }
-
-    if (!plot.generateRegressionChart(data)) {
-        showError(translator["title_no_data"], translator["err_no_measures"]);
-    }
-}
-
 // Wyświetla okienko z komunikatem błędu
 void MainWindow::showError(const string& title, const string& message) {
     nana::msgbox mb(form, title);
@@ -318,16 +318,25 @@ string MainWindow::safeGetStr(const json& data, const string& key) {
 
 // Odświeża teksty wszystkich widgetów po zmianie języka
 void MainWindow::refreshLabels() {
-    form.caption          (translator["app_title"]);
-    labelInput.caption    (translator["search_label"]);
-    btnSearch.caption     (translator["search_btn"]);
-    labelStats.caption    (translator["stats_label"]);
-    labelStatsTitle.caption(translator["stats_title"]);
-    btnIndex.caption      (translator["btn_index"]);
-    btnMeasurements.caption(translator["btn_measurements"]);
-    btnChart.caption      (translator["btn_chart"]);
-    btnRegression.caption (translator["btn_regression"]);
-    btnLang.caption       (translator["btn_lang"]);
+    form.caption            (translator["app_title"]);
+    labelInput.caption      (translator["search_label"]);
+    btnSearch.caption       (translator["search_btn"]);
+    labelStats.caption      (translator["stats_label"]);
+    labelStatsTitle.caption (translator["stats_title"]);
+    btnIndex.caption        (translator["btn_index"]);
+    btnMeasurements.caption (translator["btn_measurements"]);
+    btnStats.caption        (translator["btn_stats"]);          // ← brakowało
+    btnChart.caption        (translator["btn_chart"]);
+    btnToggleRegression.caption(
+        showRegression
+            ? translator["btn_regression_on"]
+            : translator["btn_regression_off"]
+    );
+    // Przyciski dni — pokaż aktywny filtr
+    btnDay1.caption(currentDayFilter == 1 ? "[ 1d ]" : "1d");
+    btnDay2.caption(currentDayFilter == 2 ? "[ 2d ]" : "2d");
+    btnDay3.caption(currentDayFilter == 3 ? "[ 3d ]" : "3d");
+    btnLang.caption         (translator["btn_lang"]);
 }
 
 
@@ -347,4 +356,134 @@ void MainWindow::refreshHeaders() {
         listSensors.column_at(0).text(translator["col_sensor_id"]);
         listSensors.column_at(1).text(translator["col_indicator"]);
     }
+}
+
+// Kliknięcie sensora — pobierz pomiary dla jego ID
+void MainWindow::onSensorSelected(const nana::arg_listbox& arg) {
+    if (!arg.item.selected()) return;
+
+    currentSensorId = stoi(arg.item.text(0));
+    api.fetchMeasurements(currentSensorId);
+
+    // Podświetl aktywny filtr
+    onDayFilterClick(currentDayFilter);
+}
+
+// Filtruj pomiary według liczby dni
+void MainWindow::onDayFilterClick(int days) {
+    currentDayFilter = days;
+
+    // Wizualnie zaznacz aktywny przycisk
+    btnDay1.caption(days == 1 ? "[ 1d ]" : "1d");
+    btnDay2.caption(days == 2 ? "[ 2d ]" : "2d");
+    btnDay3.caption(days == 3 ? "[ 3d ]" : "3d");
+}
+
+// Włącz/wyłącz regresję na wykresie
+void MainWindow::onToggleRegression() {
+    showRegression = !showRegression;
+    btnToggleRegression.caption(
+        showRegression
+            ? translator["btn_regression_on"]
+            : translator["btn_regression_off"]
+    );
+}
+
+// Wyświetl wykres z aktualnym filtrem i opcją regresji
+void MainWindow::onChartClick() {
+    if (currentSensorId == -1) {
+        showError(translator["title_no_data"], translator["err_select_sensor"]);
+        return;
+    }
+
+    json data = loadJson("API/measurments.json");
+    if (data.is_null()) return;
+
+    if (!data.contains("pomiary") || data["pomiary"].empty()) {
+        showError(translator["title_no_data"], translator["err_no_data"]);
+        return;
+    }
+
+    // Przefiltruj dane według liczby dni
+    json filtered;
+    filtered["pomiary"] = json::array();
+    int hoursLimit = currentDayFilter * 24;
+    int count = 0;
+
+    for (const auto& pomiar : data["pomiary"]) {
+        if (count >= hoursLimit) break;
+        if (!pomiar.contains("Wartość") || pomiar["Wartość"].is_null()) continue;
+        filtered["pomiary"].push_back(pomiar);
+        count++;
+    }
+
+    // Rysuj z regresją lub bez
+    bool success = showRegression
+        ? plot.generateRegressionChart(filtered)
+        : plot.generateChart(filtered);
+
+    if (!success) {
+        showError(translator["title_no_data"], translator["err_no_measures"]);
+    }
+}
+
+// Wyświetl statystyki w osobnym okienku
+void MainWindow::onStatsClick() {
+    if (currentSensorId == -1) {
+        showError(translator["title_no_data"], translator["err_select_sensor"]);
+        return;
+    }
+
+    json data = loadJson("API/measurments.json");
+    if (data.is_null()) return;
+
+    if (!data.contains("pomiary") || data["pomiary"].empty()) {
+        showError(translator["title_no_data"], translator["err_no_data"]);
+        return;
+    }
+
+    // Zbierz wartości zgodnie z filtrem dni
+    vector<double> values;
+    int hoursLimit = currentDayFilter * 24;
+    int count = 0;
+
+    for (const auto& pomiar : data["pomiary"]) {
+        if (count >= hoursLimit) break;
+        if (!pomiar.contains("Wartość") || pomiar["Wartość"].is_null()) continue;
+        values.push_back(pomiar["Wartość"].get<double>());
+        count++;
+    }
+
+    if (values.empty()) {
+        showError(translator["title_no_data"], translator["err_no_measures"]);
+        return;
+    }
+
+    // Oblicz statystyki
+    double minVal = *min_element(values.begin(), values.end());
+    double maxVal = *max_element(values.begin(), values.end());
+    double avgVal = accumulate(values.begin(), values.end(), 0.0) / values.size();
+    double sum_sq = 0;
+    for (double v : values) sum_sq += (v - avgVal) * (v - avgVal);
+    double stdDev = sqrt(sum_sq / values.size());
+
+    // Wyświetl w okienku
+    nana::form window(form, {400, 280});
+    window.caption(translator["title_stats"]);
+
+    string content = "";
+    content += translator["stats_sensor_id"] + to_string(currentSensorId) + "\n";
+    content += translator["stats_period"]    + to_string(currentDayFilter) + translator["stats_days"] + "\n";
+    content += translator["stats_count"]     + to_string(values.size())    + "\n\n";
+    content += translator["stats_min"]       + to_string(minVal)           + " μg/m³\n";
+    content += translator["stats_max"]       + to_string(maxVal)           + " μg/m³\n";
+    content += translator["stats_avg"]       + to_string(avgVal)           + " μg/m³\n";
+    content += translator["stats_stddev"]    + to_string(stdDev)           + " μg/m³\n";
+
+    nana::label lbl(window, content);
+    lbl.move({20, 20, 360, 240});
+    lbl.text_align(nana::align::left);
+
+    window.show();
+    nana::exec();
 }
