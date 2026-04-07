@@ -92,14 +92,89 @@ $(function(){initNavTree('classPlotManager.html','','classPlotManager-members');
   <div class="headertitle"><div class="title">PlotManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="PlotManager_8h_source.html">PlotManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab4dc5c8b3f5d0ea7c222fb34819fd301" id="r_ab4dc5c8b3f5d0ea7c222fb34819fd301"><td class="memItemLeft"><a id="ab4dc5c8b3f5d0ea7c222fb34819fd301" name="ab4dc5c8b3f5d0ea7c222fb34819fd301"></a>
-bool&#160;</td><td class="memItemRight"><b>generateChart</b> (const json &amp;data)</td></tr>
-<tr class="memitem:a6494afbd0a52bfef0ee52b64652fa437" id="r_a6494afbd0a52bfef0ee52b64652fa437"><td class="memItemLeft"><a id="a6494afbd0a52bfef0ee52b64652fa437" name="a6494afbd0a52bfef0ee52b64652fa437"></a>
-bool&#160;</td><td class="memItemRight"><b>generateRegressionChart</b> (const json &amp;data)</td></tr>
+<tr class="memitem:a6e6244b5cd4e992443024bab7546a86a" id="r_a6e6244b5cd4e992443024bab7546a86a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6e6244b5cd4e992443024bab7546a86a">generateChart</a> (const json &amp;data, const std::string &amp;indicator=&quot;&quot;)</td></tr>
+<tr class="memitem:a2929022c41bf37cd23c3f39c2dc6537d" id="r_a2929022c41bf37cd23c3f39c2dc6537d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2929022c41bf37cd23c3f39c2dc6537d">generateRegressionChart</a> (const json &amp;data, const std::string &amp;indicator=&quot;&quot;)</td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Klasa odpowiedzialna za generowanie wykresów przez gnuplot Zapisuje dane do plików tymczasowych i uruchamia gnuplot w tle Wykresy otwierają się w osobnym oknie gnuplot bez blokowania GUI </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a6e6244b5cd4e992443024bab7546a86a" name="a6e6244b5cd4e992443024bab7546a86a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6244b5cd4e992443024bab7546a86a">&#9670;&#160;</a></span>generateChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlotManager::generateChart </td>
+          <td>(</td>
+          <td class="paramtype">const json &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>indicator</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generuje prosty wykres liniowy pomiarów </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>obiekt JSON z tablicą "pomiary" </td></tr>
+    <tr><td class="paramname">indicator</td><td>nazwa mierzonego wskaźnika np. "PM10" — pojawia się w tytule </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli wykres został wygenerowany, false jeśli brak danych</dd></dl>
+<p>Generuje wykres liniowy z nazwą wskaźnika w tytule </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>dane pomiarowe </td></tr>
+    <tr><td class="paramname">indicator</td><td>nazwa wskaźnika np. "PM10" — wyświetlana w tytule </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2929022c41bf37cd23c3f39c2dc6537d" name="a2929022c41bf37cd23c3f39c2dc6537d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2929022c41bf37cd23c3f39c2dc6537d">&#9670;&#160;</a></span>generateRegressionChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlotManager::generateRegressionChart </td>
+          <td>(</td>
+          <td class="paramtype">const json &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>indicator</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generuje wykres liniowy z nałożoną regresją liniową Regresja obliczana jest przez gnuplot metodą najmniejszych kwadratów </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>obiekt JSON z tablicą "pomiary" </td></tr>
+    <tr><td class="paramname">indicator</td><td>nazwa mierzonego wskaźnika np. "PM10" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli wykres został wygenerowany, false jeśli brak danych</dd></dl>
+<p>Generuje wykres z regresją liniową i nazwą wskaźnika w tytule </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>dane pomiarowe </td></tr>
+    <tr><td class="paramname">indicator</td><td>nazwa wskaźnika np. "PM10" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Plot/<a class="el" href="PlotManager_8h_source.html">PlotManager.h</a></li>
 <li>Plot/<b>PlotManager.cpp</b></li>

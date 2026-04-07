@@ -1,14 +1,70 @@
 \doxysection{Plot\+Manager Class Reference}
 \hypertarget{classPlotManager}{}\label{classPlotManager}\index{PlotManager@{PlotManager}}
+
+
+{\ttfamily \+\#include $<$Plot\+Manager.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classPlotManager_ab4dc5c8b3f5d0ea7c222fb34819fd301}\label{classPlotManager_ab4dc5c8b3f5d0ea7c222fb34819fd301} 
-bool {\bfseries generate\+Chart} (const json \&data)
+bool \doxymbox{\hyperlink{classPlotManager_a6e6244b5cd4e992443024bab7546a86a}{generate\+Chart}} (const json \&data, const std::\+string \&indicator="{}"{})
 \item 
-\Hypertarget{classPlotManager_a6494afbd0a52bfef0ee52b64652fa437}\label{classPlotManager_a6494afbd0a52bfef0ee52b64652fa437} 
-bool {\bfseries generate\+Regression\+Chart} (const json \&data)
+bool \doxymbox{\hyperlink{classPlotManager_a2929022c41bf37cd23c3f39c2dc6537d}{generate\+Regression\+Chart}} (const json \&data, const std::\+string \&indicator="{}"{})
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za generowanie wykresów przez gnuplot Zapisuje dane do plików tymczasowych i uruchamia gnuplot w tle Wykresy otwierają się w osobnym oknie gnuplot bez blokowania GUI 
+
+\label{doc-func-members}
+\Hypertarget{classPlotManager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPlotManager_a6e6244b5cd4e992443024bab7546a86a}\index{PlotManager@{PlotManager}!generateChart@{generateChart}}
+\index{generateChart@{generateChart}!PlotManager@{PlotManager}}
+\doxysubsubsection{\texorpdfstring{generateChart()}{generateChart()}}
+{\footnotesize\ttfamily \label{classPlotManager_a6e6244b5cd4e992443024bab7546a86a} 
+bool Plot\+Manager::\+generate\+Chart (\begin{DoxyParamCaption}\item[{const json \&}]{data}{, }\item[{const std::\+string \&}]{indicator}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+Generuje prosty wykres liniowy pomiarów 
+\begin{DoxyParams}{Parameters}
+{\em data} & obiekt JSON z tablicą "{}pomiary"{} \\
+\hline
+{\em indicator} & nazwa mierzonego wskaźnika np. "{}\+PM10"{} — pojawia się w tytule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jeśli wykres został wygenerowany, false jeśli brak danych
+\end{DoxyReturn}
+Generuje wykres liniowy z nazwą wskaźnika w tytule 
+\begin{DoxyParams}{Parameters}
+{\em data} & dane pomiarowe \\
+\hline
+{\em indicator} & nazwa wskaźnika np. "{}\+PM10"{} — wyświetlana w tytule \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPlotManager_a2929022c41bf37cd23c3f39c2dc6537d}\index{PlotManager@{PlotManager}!generateRegressionChart@{generateRegressionChart}}
+\index{generateRegressionChart@{generateRegressionChart}!PlotManager@{PlotManager}}
+\doxysubsubsection{\texorpdfstring{generateRegressionChart()}{generateRegressionChart()}}
+{\footnotesize\ttfamily \label{classPlotManager_a2929022c41bf37cd23c3f39c2dc6537d} 
+bool Plot\+Manager::\+generate\+Regression\+Chart (\begin{DoxyParamCaption}\item[{const json \&}]{data}{, }\item[{const std::\+string \&}]{indicator}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+Generuje wykres liniowy z nałożoną regresją liniową Regresja obliczana jest przez gnuplot metodą najmniejszych kwadratów 
+\begin{DoxyParams}{Parameters}
+{\em data} & obiekt JSON z tablicą "{}pomiary"{} \\
+\hline
+{\em indicator} & nazwa mierzonego wskaźnika np. "{}\+PM10"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jeśli wykres został wygenerowany, false jeśli brak danych
+\end{DoxyReturn}
+Generuje wykres z regresją liniową i nazwą wskaźnika w tytule 
+\begin{DoxyParams}{Parameters}
+{\em data} & dane pomiarowe \\
+\hline
+{\em indicator} & nazwa wskaźnika np. "{}\+PM10"{} \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}

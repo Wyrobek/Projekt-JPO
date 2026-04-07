@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['translator_0',['Translator',['../classTranslator.html',1,'Translator'],['../classTranslator.html#ad72b40588ef78ea8139f68cfc3a30aa0',1,'Translator::Translator()']]]
+  ['operator_5b_5d_0',['operator[]',['../classTranslator.html#a6d1bb942816c03dc33c2da74708b1161',1,'Translator']]]
 ];

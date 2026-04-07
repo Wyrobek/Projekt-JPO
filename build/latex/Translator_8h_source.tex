@@ -2,32 +2,34 @@
 \hypertarget{Translator_8h_source}{}\label{Translator_8h_source}\index{Lang/Translator.h@{Lang/Translator.h}}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <map>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }json\ =\ nlohmann::ordered\_json;}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classTranslator_ad72b40588ef78ea8139f68cfc3a30aa0}{Translator}}\ \{}
-\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{enum\ class}\ Language\ \{\ PL,\ EN\ \};}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{classTranslator_ad72b40588ef78ea8139f68cfc3a30aa0}{Translator}}(Language\ lang\ =\ Language::PL);}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Translator.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <nlohmann/json.hpp>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }json\ =\ nlohmann::ordered\_json;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classTranslator_ad72b40588ef78ea8139f68cfc3a30aa0}{Translator}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{classTranslator_a40ce11ce3040eb2e5d2f50fefac9e2f4}{Language}}\ \{\ PL,\ EN\ \};}
 \DoxyCodeLine{00018\ }
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classTranslator_a90c1738a41c21d9e3ed5626945b21733}{setLanguage}}(Language\ lang);}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00024\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classTranslator_ae6390bb4de9cccab7eb2c7d84f1a0e34}{get}}(\textcolor{keyword}{const}\ std::string\&\ key)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{classTranslator_ad72b40588ef78ea8139f68cfc3a30aa0}{Translator}}(\doxymbox{\hyperlink{classTranslator_a40ce11ce3040eb2e5d2f50fefac9e2f4}{Language}}\ lang\ =\ Language::PL);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classTranslator_a90c1738a41c21d9e3ed5626945b21733}{setLanguage}}(\doxymbox{\hyperlink{classTranslator_a40ce11ce3040eb2e5d2f50fefac9e2f4}{Language}}\ lang);}
 \DoxyCodeLine{00025\ }
-\DoxyCodeLine{00027\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classTranslator_a6d1bb942816c03dc33c2da74708b1161}{operator[]}}(\textcolor{keyword}{const}\ std::string\&\ key)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ Language\ getLanguage()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ currentLanguage;\ \}}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00032\ \ \ \ \ Language\ currentLanguage;}
-\DoxyCodeLine{00033\ \ \ \ \ std::map<std::string,\ std::string>\ translations;}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ load();}
-\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classTranslator_ae6390bb4de9cccab7eb2c7d84f1a0e34}{get}}(\textcolor{keyword}{const}\ std::string\&\ key)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classTranslator_a6d1bb942816c03dc33c2da74708b1161}{operator[]}}(\textcolor{keyword}{const}\ std::string\&\ key)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \doxymbox{\hyperlink{classTranslator_a40ce11ce3040eb2e5d2f50fefac9e2f4}{Language}}\ \doxymbox{\hyperlink{classTranslator_a551494d3824c7c225b9be78d73260b43}{getLanguage}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ currentLanguage;\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{classTranslator_a40ce11ce3040eb2e5d2f50fefac9e2f4}{Language}}\ currentLanguage;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ std::map<std::string,\ std::string>\ translations;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ load();}
+\DoxyCodeLine{00045\ \};}
 
 \end{DoxyCode}

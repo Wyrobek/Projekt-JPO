@@ -92,25 +92,178 @@ $(function(){initNavTree('classApiClient.html','','classApiClient-members'); });
   <div class="headertitle"><div class="title">ApiClient Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ApiClient_8h_source.html">ApiClient.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae81dff8f0fb995816b7ee6c4071ee439" id="r_ae81dff8f0fb995816b7ee6c4071ee439"><td class="memItemLeft"><a id="ae81dff8f0fb995816b7ee6c4071ee439" name="ae81dff8f0fb995816b7ee6c4071ee439"></a>
-void&#160;</td><td class="memItemRight"><b>fetchStations</b> ()</td></tr>
-<tr class="memitem:ad7d84fea01915462dfefadd62ad98d79" id="r_ad7d84fea01915462dfefadd62ad98d79"><td class="memItemLeft"><a id="ad7d84fea01915462dfefadd62ad98d79" name="ad7d84fea01915462dfefadd62ad98d79"></a>
-void&#160;</td><td class="memItemRight"><b>fetchSensors</b> (int stationId)</td></tr>
-<tr class="memitem:a24c8fe39d7f0bf1d02343770387de8f1" id="r_a24c8fe39d7f0bf1d02343770387de8f1"><td class="memItemLeft"><a id="a24c8fe39d7f0bf1d02343770387de8f1" name="a24c8fe39d7f0bf1d02343770387de8f1"></a>
-void&#160;</td><td class="memItemRight"><b>fetchMeasurements</b> (int stationId)</td></tr>
-<tr class="memitem:a8e1df93ab74d42b9fbfb02eb071aefd6" id="r_a8e1df93ab74d42b9fbfb02eb071aefd6"><td class="memItemLeft"><a id="a8e1df93ab74d42b9fbfb02eb071aefd6" name="a8e1df93ab74d42b9fbfb02eb071aefd6"></a>
-void&#160;</td><td class="memItemRight"><b>fetchAirQualityIndex</b> (int stationId)</td></tr>
+<tr class="memitem:ae81dff8f0fb995816b7ee6c4071ee439" id="r_ae81dff8f0fb995816b7ee6c4071ee439"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae81dff8f0fb995816b7ee6c4071ee439">fetchStations</a> ()</td></tr>
+<tr class="memitem:ad7d84fea01915462dfefadd62ad98d79" id="r_ad7d84fea01915462dfefadd62ad98d79"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad7d84fea01915462dfefadd62ad98d79">fetchSensors</a> (int stationId)</td></tr>
+<tr class="memitem:a5eecb3fd45563827d811bf2abfd9bf71" id="r_a5eecb3fd45563827d811bf2abfd9bf71"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5eecb3fd45563827d811bf2abfd9bf71">fetchMeasurements</a> (int sensorId)</td></tr>
+<tr class="memitem:a8e1df93ab74d42b9fbfb02eb071aefd6" id="r_a8e1df93ab74d42b9fbfb02eb071aefd6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8e1df93ab74d42b9fbfb02eb071aefd6">fetchAirQualityIndex</a> (int stationId)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a47582b9b7c1e6b827bcc4a6e5476a189" id="r_a47582b9b7c1e6b827bcc4a6e5476a189"><td class="memItemLeft"><a id="a47582b9b7c1e6b827bcc4a6e5476a189" name="a47582b9b7c1e6b827bcc4a6e5476a189"></a>
-static bool&#160;</td><td class="memItemRight"><b>isInternetAvailable</b> ()</td></tr>
-<tr class="memitem:aa9745c5472911e948ed88a7deacaaf73" id="r_aa9745c5472911e948ed88a7deacaaf73"><td class="memItemLeft"><a id="aa9745c5472911e948ed88a7deacaaf73" name="aa9745c5472911e948ed88a7deacaaf73"></a>
-static bool&#160;</td><td class="memItemRight"><b>fileExists</b> (const std::string &amp;filename)</td></tr>
+<tr class="memitem:a47582b9b7c1e6b827bcc4a6e5476a189" id="r_a47582b9b7c1e6b827bcc4a6e5476a189"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a47582b9b7c1e6b827bcc4a6e5476a189">isInternetAvailable</a> ()</td></tr>
+<tr class="memitem:aa9745c5472911e948ed88a7deacaaf73" id="r_aa9745c5472911e948ed88a7deacaaf73"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aa9745c5472911e948ed88a7deacaaf73">fileExists</a> (const std::string &amp;filename)</td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Klasa odpowiedzialna za komunikację z API GIOŚ (Główny Inspektorat Ochrony Środowiska)</p>
+<p>Wszystkie metody fetch() pobierają dane z internetu i zapisują je do plików JSON w folderze API/. W przypadku braku połączenia używają danych zapisanych podczas ostatniej sesji online.</p>
+<p>Przykład użycia: <a class="el" href="classApiClient.html">ApiClient</a> api; api.fetchStations(); api.fetchSensors(52); api.fetchMeasurements(295); </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a8e1df93ab74d42b9fbfb02eb071aefd6" name="a8e1df93ab74d42b9fbfb02eb071aefd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1df93ab74d42b9fbfb02eb071aefd6">&#9670;&#160;</a></span>fetchAirQualityIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApiClient::fetchAirQualityIndex </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pobiera indeks jakości powietrza dla podanej stacji Indeks zawiera ogólną ocenę (0-5) oraz szczegółowe wartości dla każdego wskaźnika: SO2, NO2, PM10, PM2.5, O3 Zapisuje wynik do API/index.json </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji pomiarowej</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pobiera indeks jakości powietrza dla podanej stacji Indeks to ocena 0-5 gdzie: 0=bardzo dobry, 5=bardzo zły Zawiera też oceny cząstkowe dla każdego wskaźnika osobno Zapisuje tylko sekcję "AqIndex" z odpowiedzi — reszta to metadane </p>
+
+</div>
+</div>
+<a id="a5eecb3fd45563827d811bf2abfd9bf71" name="a5eecb3fd45563827d811bf2abfd9bf71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eecb3fd45563827d811bf2abfd9bf71">&#9670;&#160;</a></span>fetchMeasurements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApiClient::fetchMeasurements </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sensorId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pobiera ostatnie MAX_MEASUREMENTS godzinnych pomiarów dla podanego stanowiska pomiarowego Obsługuje wartości null — niektóre godziny mogą nie mieć danych Zapisuje wynik do API/measurments.json </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensorId</td><td>ID stanowiska pomiarowego (nie stacji!)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pobiera pomiary dla konkretnego stanowiska (sensora) API zwraca dane od najnowszych — <a class="el" href="classPlotManager.html">PlotManager</a> odwraca kolejność przy rysowaniu Wartość null oznacza brak pomiaru w danej godzinie — zapisywana jako nullptr Zapisuje do API/measurments.json </p>
+
+</div>
+</div>
+<a id="ad7d84fea01915462dfefadd62ad98d79" name="ad7d84fea01915462dfefadd62ad98d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d84fea01915462dfefadd62ad98d79">&#9670;&#160;</a></span>fetchSensors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApiClient::fetchSensors </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stationId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pobiera listę sensorów (stanowisk pomiarowych) dla podanej stacji Każdy sensor mierzy inny wskaźnik np. PM10, NO2, O3, SO2 Zapisuje wynik do API/sensors.json </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stationId</td><td>ID stacji pomiarowej (z API GIOŚ)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Pobiera listę sensorów dla podanej stacji Jeden sensor = jedno stanowisko pomiarowe mierzące konkretny wskaźnik np. stacja może mieć sensory dla PM10, PM2.5, NO2, O3 jednocześnie Zapisuje do API/sensors.json </p>
+
+</div>
+</div>
+<a id="ae81dff8f0fb995816b7ee6c4071ee439" name="ae81dff8f0fb995816b7ee6c4071ee439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81dff8f0fb995816b7ee6c4071ee439">&#9670;&#160;</a></span>fetchStations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApiClient::fetchStations </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pobiera listę wszystkich stacji pomiarowych z API GIOŚ Grupuje stacje według miast i zapisuje do API/dataBase.json Format: { "Poznań": [{stacja1}, {stacja2}], "Warszawa": [...] } Przy braku internetu używa istniejącego pliku jeśli dostępny</p>
+<p>Pobiera listę wszystkich stacji pomiarowych z API GIOŚ Grupuje stacje według miast — klucz to nazwa miasta, wartość to tablica stacji Zapisuje do API/dataBase.json</p>
+<p>Tryb offline: jeśli brak internetu ale plik istnieje — używa zapisanych danych Tryb online: pobiera świeże dane i nadpisuje plik </p>
+
+</div>
+</div>
+<a id="aa9745c5472911e948ed88a7deacaaf73" name="aa9745c5472911e948ed88a7deacaaf73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9745c5472911e948ed88a7deacaaf73">&#9670;&#160;</a></span>fileExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ApiClient::fileExists </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sprawdza czy plik istnieje na dysku i nie jest pusty Używane przed próbą odczytu danych w trybie offline </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>ścieżka do pliku </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true jeśli plik istnieje i zawiera dane</dd></dl>
+<p>Sprawdza czy plik istnieje na dysku i zawiera jakieś dane file.peek() != eof() odróżnia pusty plik od nieistniejącego Pusty plik JSON powodowałby crash przy parsowaniu — dlatego oba warunki </p>
+
+</div>
+</div>
+<a id="a47582b9b7c1e6b827bcc4a6e5476a189" name="a47582b9b7c1e6b827bcc4a6e5476a189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47582b9b7c1e6b827bcc4a6e5476a189">&#9670;&#160;</a></span>isInternetAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ApiClient::isInternetAvailable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sprawdza czy jest aktywne połączenie z internetem Wysyła testowe zapytanie do API z timeoutem TIMEOUT_MS </p><dl class="section return"><dt>Returns</dt><dd>true jeśli API odpowiedziało kodem 200 OK</dd></dl>
+<p>Sprawdza połączenie z internetem wysyłając testowe zapytanie do API Używa krótkiego timeoutu żeby nie blokować GUI przy braku sieci cpr::ssl::CaInfo wskazuje plik certyfikatów CA dla weryfikacji HTTPS </p><dl class="section return"><dt>Returns</dt><dd>true jeśli odpowiedź HTTP to 200 OK </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>API/<a class="el" href="ApiClient_8h_source.html">ApiClient.h</a></li>
 <li>API/<b>ApiClient.cpp</b></li>

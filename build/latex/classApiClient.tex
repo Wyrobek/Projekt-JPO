@@ -1,29 +1,108 @@
 \doxysection{Api\+Client Class Reference}
 \hypertarget{classApiClient}{}\label{classApiClient}\index{ApiClient@{ApiClient}}
+
+
+{\ttfamily \+\#include $<$Api\+Client.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classApiClient_ae81dff8f0fb995816b7ee6c4071ee439}\label{classApiClient_ae81dff8f0fb995816b7ee6c4071ee439} 
-void {\bfseries fetch\+Stations} ()
+void \doxymbox{\hyperlink{classApiClient_ae81dff8f0fb995816b7ee6c4071ee439}{fetch\+Stations}} ()
 \item 
-\Hypertarget{classApiClient_ad7d84fea01915462dfefadd62ad98d79}\label{classApiClient_ad7d84fea01915462dfefadd62ad98d79} 
-void {\bfseries fetch\+Sensors} (int station\+Id)
+void \doxymbox{\hyperlink{classApiClient_ad7d84fea01915462dfefadd62ad98d79}{fetch\+Sensors}} (int station\+Id)
 \item 
-\Hypertarget{classApiClient_a24c8fe39d7f0bf1d02343770387de8f1}\label{classApiClient_a24c8fe39d7f0bf1d02343770387de8f1} 
-void {\bfseries fetch\+Measurements} (int station\+Id)
+void \doxymbox{\hyperlink{classApiClient_a5eecb3fd45563827d811bf2abfd9bf71}{fetch\+Measurements}} (int sensor\+Id)
 \item 
-\Hypertarget{classApiClient_a8e1df93ab74d42b9fbfb02eb071aefd6}\label{classApiClient_a8e1df93ab74d42b9fbfb02eb071aefd6} 
-void {\bfseries fetch\+Air\+Quality\+Index} (int station\+Id)
+void \doxymbox{\hyperlink{classApiClient_a8e1df93ab74d42b9fbfb02eb071aefd6}{fetch\+Air\+Quality\+Index}} (int station\+Id)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classApiClient_a47582b9b7c1e6b827bcc4a6e5476a189}\label{classApiClient_a47582b9b7c1e6b827bcc4a6e5476a189} 
-static bool {\bfseries is\+Internet\+Available} ()
+static bool \doxymbox{\hyperlink{classApiClient_a47582b9b7c1e6b827bcc4a6e5476a189}{is\+Internet\+Available}} ()
 \item 
-\Hypertarget{classApiClient_aa9745c5472911e948ed88a7deacaaf73}\label{classApiClient_aa9745c5472911e948ed88a7deacaaf73} 
-static bool {\bfseries file\+Exists} (const std::\+string \&filename)
+static bool \doxymbox{\hyperlink{classApiClient_aa9745c5472911e948ed88a7deacaaf73}{file\+Exists}} (const std::\+string \&filename)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za komunikację z API GIOŚ (Główny Inspektorat Ochrony Środowiska)
+
+Wszystkie metody fetch() pobierają dane z internetu i zapisują je do plików JSON w folderze API/\+. W przypadku braku połączenia używają danych zapisanych podczas ostatniej sesji online.
+
+Przykład użycia:\+ \doxylink{classApiClient}{Api\+Client} api; api.\+fetch\+Stations(); api.\+fetch\+Sensors(52); api.\+fetch\+Measurements(295); 
+
+\label{doc-func-members}
+\Hypertarget{classApiClient_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classApiClient_a8e1df93ab74d42b9fbfb02eb071aefd6}\index{ApiClient@{ApiClient}!fetchAirQualityIndex@{fetchAirQualityIndex}}
+\index{fetchAirQualityIndex@{fetchAirQualityIndex}!ApiClient@{ApiClient}}
+\doxysubsubsection{\texorpdfstring{fetchAirQualityIndex()}{fetchAirQualityIndex()}}
+{\footnotesize\ttfamily \label{classApiClient_a8e1df93ab74d42b9fbfb02eb071aefd6} 
+void Api\+Client::\+fetch\+Air\+Quality\+Index (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})}
+
+Pobiera indeks jakości powietrza dla podanej stacji Indeks zawiera ogólną ocenę (0-\/5) oraz szczegółowe wartości dla każdego wskaźnika:\+ SO2, NO2, PM10, PM2.\+5, O3 Zapisuje wynik do API/\+index.\+json 
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & ID stacji pomiarowej\\
+\hline
+\end{DoxyParams}
+Pobiera indeks jakości powietrza dla podanej stacji Indeks to ocena 0-\/5 gdzie:\+ 0=bardzo dobry, 5=bardzo zły Zawiera też oceny cząstkowe dla każdego wskaźnika osobno Zapisuje tylko sekcję "{}\+Aq\+Index"{} z odpowiedzi — reszta to metadane \Hypertarget{classApiClient_a5eecb3fd45563827d811bf2abfd9bf71}\index{ApiClient@{ApiClient}!fetchMeasurements@{fetchMeasurements}}
+\index{fetchMeasurements@{fetchMeasurements}!ApiClient@{ApiClient}}
+\doxysubsubsection{\texorpdfstring{fetchMeasurements()}{fetchMeasurements()}}
+{\footnotesize\ttfamily \label{classApiClient_a5eecb3fd45563827d811bf2abfd9bf71} 
+void Api\+Client::\+fetch\+Measurements (\begin{DoxyParamCaption}\item[{int}]{sensor\+Id}{}\end{DoxyParamCaption})}
+
+Pobiera ostatnie MAX\+\_\+\+MEASUREMENTS godzinnych pomiarów dla podanego stanowiska pomiarowego Obsługuje wartości null — niektóre godziny mogą nie mieć danych Zapisuje wynik do API/\+measurments.\+json 
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Id} & ID stanowiska pomiarowego (nie stacji!)\\
+\hline
+\end{DoxyParams}
+Pobiera pomiary dla konkretnego stanowiska (sensora) API zwraca dane od najnowszych — \doxylink{classPlotManager}{Plot\+Manager} odwraca kolejność przy rysowaniu Wartość null oznacza brak pomiaru w danej godzinie — zapisywana jako nullptr Zapisuje do API/\+measurments.\+json \Hypertarget{classApiClient_ad7d84fea01915462dfefadd62ad98d79}\index{ApiClient@{ApiClient}!fetchSensors@{fetchSensors}}
+\index{fetchSensors@{fetchSensors}!ApiClient@{ApiClient}}
+\doxysubsubsection{\texorpdfstring{fetchSensors()}{fetchSensors()}}
+{\footnotesize\ttfamily \label{classApiClient_ad7d84fea01915462dfefadd62ad98d79} 
+void Api\+Client::\+fetch\+Sensors (\begin{DoxyParamCaption}\item[{int}]{station\+Id}{}\end{DoxyParamCaption})}
+
+Pobiera listę sensorów (stanowisk pomiarowych) dla podanej stacji Każdy sensor mierzy inny wskaźnik np. PM10, NO2, O3, SO2 Zapisuje wynik do API/\+sensors.\+json 
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & ID stacji pomiarowej (z API GIOŚ)\\
+\hline
+\end{DoxyParams}
+Pobiera listę sensorów dla podanej stacji Jeden sensor = jedno stanowisko pomiarowe mierzące konkretny wskaźnik np. stacja może mieć sensory dla PM10, PM2.\+5, NO2, O3 jednocześnie Zapisuje do API/\+sensors.\+json \Hypertarget{classApiClient_ae81dff8f0fb995816b7ee6c4071ee439}\index{ApiClient@{ApiClient}!fetchStations@{fetchStations}}
+\index{fetchStations@{fetchStations}!ApiClient@{ApiClient}}
+\doxysubsubsection{\texorpdfstring{fetchStations()}{fetchStations()}}
+{\footnotesize\ttfamily \label{classApiClient_ae81dff8f0fb995816b7ee6c4071ee439} 
+void Api\+Client::\+fetch\+Stations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Pobiera listę wszystkich stacji pomiarowych z API GIOŚ Grupuje stacje według miast i zapisuje do API/\+data\+Base.\+json Format:\+ \{ "{}\+Poznań"{}:\+ \+[\{stacja1\}, \{stacja2\}]\+, "{}\+Warszawa"{}:\+ \+[...]\+ \} Przy braku internetu używa istniejącego pliku jeśli dostępny
+
+Pobiera listę wszystkich stacji pomiarowych z API GIOŚ Grupuje stacje według miast — klucz to nazwa miasta, wartość to tablica stacji Zapisuje do API/\+data\+Base.\+json
+
+Tryb offline:\+ jeśli brak internetu ale plik istnieje — używa zapisanych danych Tryb online:\+ pobiera świeże dane i nadpisuje plik \Hypertarget{classApiClient_aa9745c5472911e948ed88a7deacaaf73}\index{ApiClient@{ApiClient}!fileExists@{fileExists}}
+\index{fileExists@{fileExists}!ApiClient@{ApiClient}}
+\doxysubsubsection{\texorpdfstring{fileExists()}{fileExists()}}
+{\footnotesize\ttfamily \label{classApiClient_aa9745c5472911e948ed88a7deacaaf73} 
+bool Api\+Client::\+file\+Exists (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sprawdza czy plik istnieje na dysku i nie jest pusty Używane przed próbą odczytu danych w trybie offline 
+\begin{DoxyParams}{Parameters}
+{\em filename} & ścieżka do pliku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jeśli plik istnieje i zawiera dane
+\end{DoxyReturn}
+Sprawdza czy plik istnieje na dysku i zawiera jakieś dane file.\+peek() != eof() odróżnia pusty plik od nieistniejącego Pusty plik JSON powodowałby crash przy parsowaniu — dlatego oba warunki \Hypertarget{classApiClient_a47582b9b7c1e6b827bcc4a6e5476a189}\index{ApiClient@{ApiClient}!isInternetAvailable@{isInternetAvailable}}
+\index{isInternetAvailable@{isInternetAvailable}!ApiClient@{ApiClient}}
+\doxysubsubsection{\texorpdfstring{isInternetAvailable()}{isInternetAvailable()}}
+{\footnotesize\ttfamily \label{classApiClient_a47582b9b7c1e6b827bcc4a6e5476a189} 
+bool Api\+Client::\+is\+Internet\+Available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sprawdza czy jest aktywne połączenie z internetem Wysyła testowe zapytanie do API z timeoutem TIMEOUT\+\_\+\+MS \begin{DoxyReturn}{Returns}
+true jeśli API odpowiedziało kodem 200 OK
+\end{DoxyReturn}
+Sprawdza połączenie z internetem wysyłając testowe zapytanie do API Używa krótkiego timeoutu żeby nie blokować GUI przy braku sieci cpr::\+ssl::\+\+Ca\+Info wskazuje plik certyfikatów CA dla weryfikacji HTTPS \begin{DoxyReturn}{Returns}
+true jeśli odpowiedź HTTP to 200 OK 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
