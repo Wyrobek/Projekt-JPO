@@ -9,6 +9,9 @@
 #include "../API/ApiClient.h"
 #include "../Plot/PlotManager.h"
 #include "../Lang/Translator.h"
+#include <iostream>
+#include <string>
+using namespace std;
 
 /**
  * Główne okno aplikacji "Sprawdź jakość powietrza"
@@ -54,6 +57,7 @@ private:
     int  currentSensorId  = -1;  // ID aktualnie wybranego sensora
     int  currentDayFilter = 1;   // aktualny filtr dni (1/2/3)
     bool showRegression   = false; // czy pokazywać regresję
+    string currentIndicator = ""; // nazwa wskaźnika aktualnie wybranego sensora
 
     // ─── Konfiguracja ─────────────────────────────────────────────
     // Ustawia pozycje i rozmiary wszystkich widgetów w oknie

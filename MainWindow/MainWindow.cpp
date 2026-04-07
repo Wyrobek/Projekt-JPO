@@ -362,10 +362,10 @@ void MainWindow::refreshHeaders() {
 void MainWindow::onSensorSelected(const nana::arg_listbox& arg) {
     if (!arg.item.selected()) return;
 
-    currentSensorId = stoi(arg.item.text(0));
-    api.fetchMeasurements(currentSensorId);
+    currentSensorId  = stoi(arg.item.text(0));
+    currentIndicator = arg.item.text(1); // ← pobierz nazwę z drugiej kolumny
 
-    // Podświetl aktywny filtr
+    api.fetchMeasurements(currentSensorId);
     onDayFilterClick(currentDayFilter);
 }
 
@@ -419,8 +419,8 @@ void MainWindow::onChartClick() {
 
     // Rysuj z regresją lub bez
     bool success = showRegression
-        ? plot.generateRegressionChart(filtered)
-        : plot.generateChart(filtered);
+    ? plot.generateRegressionChart(filtered, currentIndicator)
+    : plot.generateChart(filtered, currentIndicator);
 
     if (!success) {
         showError(translator["title_no_data"], translator["err_no_measures"]);

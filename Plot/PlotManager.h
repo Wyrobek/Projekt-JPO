@@ -4,23 +4,17 @@
 
 using json = nlohmann::ordered_json;
 
-// Klasa do generowania wykresów przez gnuplot
 class PlotManager {
 public:
-    // Generowanie wykresu z pomiarami
-    bool generateChart(const json& data);
+    // Generowanie wykresu — przyjmuje nazwę wskaźnika do tytułu
+    bool generateChart(const json& data, const std::string& indicator = "");
 
     // Generuje wykres z regresją liniową
-    bool generateRegressionChart(const json& data);
+    bool generateRegressionChart(const json& data, const std::string& indicator = "");
 
 private:
-    // Zapisanie danych do pliku tymczasowego, zwraca liczbę zapisanych punktów
-    int writeTempData(const json& data);
-
-    // Zapisanie etykiety osi X do skryptu gnuplot
-    void writeXTics(std::ofstream& script, int total);
-
-    // Uruchamianie gnuplot w osobnym wątku
+    int  writeTempData(const json& data, int days);
+    void writeXTics(std::ofstream& script, int total, int days);
     void runGnuplot(const std::string& flags = "");
 
     static const std::string TEMP_DATA_FILE;
