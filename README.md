@@ -62,7 +62,6 @@ Projekt/<br>
     MainWindow.h                -- nagłówek głównego okna
     <br>
     MainWindow.cpp              -- interfejs użytkownika (Nana GUI), obsługa zdarzeń
-    <br><br>
 
   Plot/<br>
     PlotManager.h               -- nagłówek managera wykresów
@@ -72,7 +71,6 @@ Projekt/<br>
     tmp_plot.dat                -- tymczasowe dane dla gnuplot (generowane automatycznie)
     <br>
     tmp_plot.gp                 -- tymczasowy skrypt gnuplot (generowany automatycznie)
-    <br><br>
 
   Lang/<br>
     Translator.h                -- nagłówek klasy tłumaczeń
@@ -82,7 +80,6 @@ Projekt/<br>
     pl.json                     -- tłumaczenia polskie
     <br>
     en.json                     -- tłumaczenia angielskie
-    <br><br>
 
   API/                        -- pliki JSON z danymi (generowane automatycznie)
   <br>
@@ -93,8 +90,6 @@ Projekt/<br>
     measurments.json            -- pomiary dla ostatnio wybranego sensora
     <br>
     index.json                  -- indeks jakości powietrza
-    <br><br>
-
 
   libs/                         -- biblioteki DLL wymagane przez aplikację
   <br>
@@ -105,7 +100,6 @@ Projekt/<br>
     libssl-3-x64.dll
     <br>
     ... (pozostałe DLL-e)
-    <br><br>
 
   Tests/<br>
     main_test.cpp               -- punkt wejścia testów jednostkowych
@@ -115,12 +109,10 @@ Projekt/<br>
     apiclient_test.cpp          -- testy klasy ApiClient (3 testy)
     <br>
     plotmanager_test.cpp        -- testy klasy PlotManager (4 testy)
-    <br><br>
 
   Start.bat                     -- uruchamia aplikację z bibliotekami z folderu libs/
   <br>
   RunTests.bat                  -- uruchamia testy jednostkowe z bibliotekami z libs/
-  <br><br>
 
 
 ## BUDOWANIE APLIKACJI
