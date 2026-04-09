@@ -1,173 +1,222 @@
-
+================================================================================
  # SPRAWDŹ JAKOŚĆ POWIETRZA
  # Aplikacja desktopowa C++ / Windows
- 
+================================================================================
+
+
 ## OPIS
-----
+--------
 Aplikacja pozwala sprawdzić jakość powietrza w Polsce na podstawie danych
 z API Głównego Inspektoratu Ochrony Środowiska (GIOŚ).
-Umożliwia wyszukiwanie stacji pomiarowych, przeglądanie sensorów,
-odczyt bieżących pomiarów oraz generowanie wykresów z regresją liniową.
+Umożliwia wyszukiwanie stacji pomiarowych po nazwie miasta, przeglądanie
+sensorów, odczyt bieżących pomiarów, statystyk oraz generowanie wykresów
+z opcjonalną regresją liniową.
 Aplikacja działa również w trybie offline, korzystając z danych
 zapisanych podczas ostatniego połączenia z internetem.
- 
- 
+
+
 ## FUNKCJE
--------
+----------
 - Wyszukiwanie stacji pomiarowych po nazwie miasta
 - Przeglądanie listy sensorów dla wybranej stacji
 - Wyświetlanie indeksu jakości powietrza (SO2, NO2, PM10, PM2.5, O3)
-- Tabela bieżących pomiarów
-- Wykres liniowy pomiarów (gnuplot)
-- Wykres z regresją liniową (gnuplot)
+- Tabela bieżących pomiarów z filtrem zakresu (1/2/3 dni)
+- Statystyki pomiarów: minimum, maksimum, średnia, odchylenie standardowe
+- Wykres liniowy pomiarów (gnuplot) z nazwą mierzonego wskaźnika w tytule
+- Opcjonalna regresja liniowa na wykresie (włącz/wyłącz przyciskiem)
+- Filtr zakresu danych: ostatnia doba, dwie doby lub trzy doby
 - Tryb offline — dane zapisywane lokalnie w plikach JSON
-- Obsługa dwóch języków: polski i angielski
- 
- 
+- Obsługa dwóch języków: polski i angielski (przełącznik w lewym dolnym rogu)
+- Testy jednostkowe (Google Test) dla klas Translator, ApiClient, PlotManager
+
+
 ## WYMAGANIA
----------
+------------
 System operacyjny:  Windows 10/11 (64-bit)
 Środowisko:         MSYS2 MinGW64
 Kompilator:         g++ 15.x (mingw-w64-x86_64-gcc)
- 
+
 Wymagane biblioteki (instalacja przez MSYS2):
-  pacman -S mingw-w64-x86_64-gcc
-  pacman -S mingw-w64-x86_64-curl
-  pacman -S mingw-w64-x86_64-cpr
-  pacman -S mingw-w64-x86_64-nlohmann-json
-  pacman -S mingw-w64-x86_64-nana
-  pacman -S mingw-w64-x86_64-libpng
-  pacman -S mingw-w64-x86_64-libjpeg-turbo
-  pacman -S mingw-w64-x86_64-gtest
-  pacman -S mingw-w64-x86_64-gnuplot
- 
- 
+  pacman -S mingw-w64-x86_64-gcc<br>
+  pacman -S mingw-w64-x86_64-curl<br>
+  pacman -S mingw-w64-x86_64-cpr<br>
+  pacman -S mingw-w64-x86_64-nlohmann-json<br>
+  pacman -S mingw-w64-x86_64-nana<br>
+  pacman -S mingw-w64-x86_64-libpng<br>
+  pacman -S mingw-w64-x86_64-libjpeg-turbo<br>
+  pacman -S mingw-w64-x86_64-gtest<br>
+  pacman -S mingw-w64-x86_64-gnuplot<br>
+
+
 ## STRUKTURA PROJEKTU
-------------------
-Projekt/<br/>
-  main.cpp                    -- punkt wejścia aplikacji
-<br/>
- 
-  API/<br/>
-    ApiClient.h               -- nagłówek klienta API
-    <br/>
-    ApiClient.cpp             -- pobieranie danych z API GIOŚ
-    <br/>
- 
-  MainWindow/<br/>
-    MainWindow.h              -- nagłówek głównego okna
-    <br/>
-    MainWindow.cpp            -- interfejs użytkownika (Nana GUI)
-    <br/>
-    
-  Plot/<br/>
-    PlotManager.h             -- nagłówek managera wykresów
-    <br/>
-    PlotManager.cpp           -- generowanie wykresów (gnuplot)
-    <br/>
-    
-  Lang/<br/>
-    Translator.h              -- nagłówek klasy tłumaczeń
-    <br/>
-    Translator.cpp            -- obsługa wielojęzyczności
-    <br/>
-    pl.json                   -- tłumaczenia polskie
-    <br/>
-    en.json                   -- tłumaczenia angielskie
-    <br/>
- 
+---------------------
+Projekt/<br>
+  main.cpp                    -- punkt wejścia aplikacji, inicjalizacja DLL i GUI
+<br><br>
+
+  API/<br>
+    ApiClient.h                 -- nagłówek klienta API GIOŚ
+    <br>
+    ApiClient.cpp               -- pobieranie danych z API, obsługa trybu offline
+    <br><br>
+
+  MainWindow/<br>
+    MainWindow.h                -- nagłówek głównego okna
+    <br>
+    MainWindow.cpp              -- interfejs użytkownika (Nana GUI), obsługa zdarzeń
+    <br><br>
+
+  Plot/<br>
+    PlotManager.h               -- nagłówek managera wykresów
+    <br>
+    PlotManager.cpp             -- generowanie wykresów przez gnuplot
+    <br>
+    tmp_plot.dat                -- tymczasowe dane dla gnuplot (generowane automatycznie)
+    <br>
+    tmp_plot.gp                 -- tymczasowy skrypt gnuplot (generowany automatycznie)
+    <br><br>
+
+  Lang/<br>
+    Translator.h                -- nagłówek klasy tłumaczeń
+    <br>
+    Translator.cpp              -- obsługa wielojęzyczności (PL/EN)
+    <br>
+    pl.json                     -- tłumaczenia polskie
+    <br>
+    en.json                     -- tłumaczenia angielskie
+    <br><br>
+
   API/                        -- pliki JSON z danymi (generowane automatycznie)
-    <br/>
-    dataBase.json             -- lista stacji pogrupowana po miastach
-    <br/>
-    sensors.json              -- sensory dla ostatnio wybranej stacji
-    <br/>
-    measurments.json          -- pomiary dla ostatnio wybranego sensora
-    <br/>
-    index.json                -- indeks jakości powietrza
-    <br/>
- 
-  Plot/<br/>
-    tmp_plot.dat              -- tymczasowe dane dla gnuplot
-    <br/>
-    tmp_plot.gp               -- tymczasowy skrypt gnuplot
-    <br/>
- 
-  tests/<br/>
-    main_test.cpp             -- punkt wejścia testów
-    <br/>
-    translator_test.cpp       -- testy klasy Translator
-    <br/>
-    apiclient_test.cpp        -- testy klasy ApiClient
-    <br/>
-    plotmanager_test.cpp      -- testy klasy PlotManager
-   
- 
+  <br>
+    dataBase.json               -- lista stacji pogrupowana po miastach
+    <br>
+    sensors.json                -- sensory dla ostatnio wybranej stacji
+    <br>
+    measurments.json            -- pomiary dla ostatnio wybranego sensora
+    <br>
+    index.json                  -- indeks jakości powietrza
+    <br><br>
+
+
+  libs/                         -- biblioteki DLL wymagane przez aplikację
+  <br>
+    libcpr-1.dll
+    <br>
+    libcurl-4.dll
+    <br>
+    libssl-3-x64.dll
+    <br>
+    ... (pozostałe DLL-e)
+    <br><br>
+
+  Tests/<br>
+    main_test.cpp               -- punkt wejścia testów jednostkowych
+    <br>
+    translator_test.cpp         -- testy klasy Translator (6 testów)
+    <br>
+    apiclient_test.cpp          -- testy klasy ApiClient (3 testy)
+    <br>
+    plotmanager_test.cpp        -- testy klasy PlotManager (4 testy)
+    <br><br>
+
+  Start.bat                     -- uruchamia aplikację z bibliotekami z folderu libs/
+  <br>
+  RunTests.bat                  -- uruchamia testy jednostkowe z bibliotekami z libs/
+  <br><br>
+
+
 ## BUDOWANIE APLIKACJI
--------------------
+----------------------
 Komenda w terminalu MSYS2 MinGW64:
- 
-  g++ main.cpp API/ApiClient.cpp MainWindow/MainWindow.cpp \
-      Plot/PlotManager.cpp Lang/Translator.cpp \
-      -IAPI -IMainWindow -IPlot -ILang \
-      -o Powietrze.exe \
-      -lcurl -std=c++17 -lnana -lgdi32 -lcomdlg32 \
-      -lole32 -luuid -lcpr -lssl -lcrypto -lpng -ljpeg \
-      -mwindows
- 
-Lub przez VS Code: Ctrl+Shift+B (task "build")
- 
- 
+
+  g++ main.cpp API/ApiClient.cpp MainWindow/MainWindow.cpp \<br>
+      Plot/PlotManager.cpp Lang/Translator.cpp \<br>
+      -IAPI -IMainWindow -IPlot -ILang \<br>
+      -o Powietrze.exe \<br>
+      -lcurl -std=c++17 -lnana -lgdi32 -lcomdlg32 \<br>
+      -lole32 -luuid -lcpr -lssl -lcrypto -lpng -ljpeg \<br>
+      -mwindows<br>
+
+Lub przez VS Code: Ctrl+Shift+B (task "build app")
+
+
 ## BUDOWANIE I URUCHAMIANIE TESTÓW
---------------------------------
+------------------------------------
 Komenda w terminalu MSYS2 MinGW64:
- 
-  g++ tests/main_test.cpp tests/translator_test.cpp \
-      tests/apiclient_test.cpp tests/plotmanager_test.cpp \
-      Lang/Translator.cpp API/ApiClient.cpp Plot/PlotManager.cpp \
-      -ILang -IAPI -IPlot \
-      -o tests/tests.exe \
-      -lgtest -lcpr -lcurl -lssl -lcrypto -std=c++17
- 
+
+  g++ Tests/main_test.cpp Tests/translator_test.cpp \<br>
+      Tests/apiclient_test.cpp Tests/plotmanager_test.cpp \<br>
+      Lang/Translator.cpp API/ApiClient.cpp Plot/PlotManager.cpp \<br>
+      -ILang -IAPI -IPlot \<br>
+      -o Tests/tests.exe \<br>
+      -lgtest -lgtest_main -lpthread \<br>
+      -lcpr -lcurl -lssl -lcrypto -std=c++17<br>
+
+Lub przez VS Code: Ctrl+Shift+P -> "Tasks: Run Task" -> "build tests"<br>
+
 Uruchomienie testów:
-  ./tests/tests.exe
- 
+  RunTests.bat                  (zalecane - ustawia PATH do libs/)
+  lub: ./Tests/tests.exe        (tylko jesli libs/ jest w PATH)
+
 Oczekiwany wynik:
-  [==========] Running X tests from 3 test suites.
-  [  PASSED  ] X tests.
- 
- 
+  [==========] Running 9 tests from 2 test suites.
+  [  PASSED  ] 9 tests.
+
+
 ## UŻYTKOWANIE
------------
-1. Uruchom Powietrze.exe
-2. Wpisz nazwę miasta w polu tekstowym (np. "Poznań")
-3. Kliknij "Szukaj" — pojawi się lista stacji
-4. Kliknij na stację — pojawi się lista sensorów
-5. Użyj przycisków po prawej stronie:
-     - "Indeks jakości powietrza" — ogólna ocena powietrza
-     - "Bieżące pomiary"         — tabela ostatnich pomiarów
-     - "Wykres"                  — wykres liniowy w gnuplot
-     - "Regresja liniowa"        — wykres z linią trendu
-6. Przycisk języka (lewy dolny róg) — przełącza między PL i EN
- 
+--------------
+1. Uruchom Start.bat (lub Powietrze.exe jeśli DLL-e są w PATH)
+2. Wpisz nazwę miasta w polu tekstowym (np. "Poznan")
+3. Kliknij "Szukaj" -- pojawi się lista stacji pomiarowych
+4. Kliknij na stację -- pojawi się lista sensorów po lewej stronie
+5. Kliknij na sensor -- zostaną pobrane pomiary dla tego sensora
+6. Wybierz zakres danych przyciskami: [ 1d ] [ 2d ] [ 3d ]
+7. Użyj przycisków po prawej stronie:
+     - "Indeks jakosci powietrza"  -- ogólna ocena jakości powietrza
+     - "Biezace pomiary"           -- tabela ostatnich pomiarów
+     - "Statystyki"                -- min, max, srednia, odchylenie std
+     - "Regresja: OFF/ON"          -- wlącz/wyłącz linię trendu na wykresie
+     - "Wykres"                    -- otwórz wykres w gnuplot
+8. Przycisk języka (lewy dolny róg) -- przełącza interfejs między PL i EN
+
+
 ## TRYB OFFLINE
-------------
+---------------
 Jeśli brak połączenia z internetem, aplikacja automatycznie
 korzysta z danych zapisanych podczas ostatniej sesji online.
 Komunikat o braku internetu pojawi się przy wyborze stacji.
- 
- 
+Dane z poprzedniej sesji pozostają dostępne w plikach JSON w folderze API/.
+
+
+## DYSTRYBUCJA (uruchomienie na nowym komputerze)
+--------------------------------------------------
+Aplikacja wymaga obecności plików DLL w folderze libs/.
+Uruchamiaj zawsze przez Start.bat -- skrypt automatycznie
+ustawia PATH do folderu libs/ przed startem aplikacji.
+
+Wymagane narzędzia zewnętrzne:
+  - gnuplot (do generowania wykresów)
+    Pobierz z: http://www.gnuplot.info/download.html
+    Podczas instalacji zaznacz "Add to PATH"
+
+
 ## API
----
+------
 Źródło danych: Główny Inspektorat Ochrony Środowiska (GIOŚ)
 URL:           https://api.gios.gov.pl/pjp-api/v1/rest
 Dokumentacja:  https://api.gios.gov.pl/pjp-api/swagger-ui/
- 
- 
+
+Używane endpointy:
+  /station/findAll        -- lista wszystkich stacji pomiarowych
+  /station/sensors/{id}  -- sensory dla podanej stacji
+  /data/getData/{id}     -- pomiary dla podanego sensora
+  /aqindex/getIndex/{id} -- indeks jakości powietrza dla stacji
+
+
 ## AUTOR
--------
-### Filip Wyrobek
-### Numer indeksu: 164350
-### Teleinformatyka | Semestr 4
- 
+--------
+Filip Wyrobek
+Numer indeksu: 164350
+Teleinformatyka | Semestr 4
+
 ================================================================================

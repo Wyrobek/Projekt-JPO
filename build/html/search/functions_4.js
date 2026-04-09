@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setlanguage_0',['setLanguage',['../classTranslator.html#a90c1738a41c21d9e3ed5626945b21733',1,'Translator']]]
+  ['operator_5b_5d_0',['operator[]',['../classTranslator.html#a6d1bb942816c03dc33c2da74708b1161',1,'Translator']]]
 ];

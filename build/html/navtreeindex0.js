@@ -11,6 +11,8 @@ var NAVTREEINDEX0 =
 "classApiClient.html#ad7d84fea01915462dfefadd62ad98d79":[0,0,0,2],
 "classApiClient.html#ae81dff8f0fb995816b7ee6c4071ee439":[0,0,0,3],
 "classMainWindow.html":[0,0,1],
+"classMainWindow.html#a34c4b4207b46d11a4100c9b19f0e81bb":[0,0,1,0],
+"classMainWindow.html#ae3d7a4598609a86e8bd317c0d85c4495":[0,0,1,1],
 "classPlotManager.html":[0,0,2],
 "classPlotManager.html#a2929022c41bf37cd23c3f39c2dc6537d":[0,0,2,1],
 "classPlotManager.html#a6e6244b5cd4e992443024bab7546a86a":[0,0,2,0],

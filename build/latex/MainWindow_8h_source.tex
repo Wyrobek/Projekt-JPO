@@ -17,104 +17,91 @@
 \DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
 \DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
 \DoxyCodeLine{00015\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }MainWindow\ \{}
-\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Konstruktor\ —\ tworzy\ okno,\ ustawia\ layout\ i\ podpina\ zdarzenia}}
-\DoxyCodeLine{00024\ \ \ \ \ MainWindow();}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Wyświetla\ okno\ i\ uruchamia\ pętlę\ zdarzeń\ Nana}}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ show();}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ ───\ Widgety\ interfejsu\ ───────────────────────────────────────}}
-\DoxyCodeLine{00031\ \ \ \ \ nana::form\ \ \ \ \ \ \ form;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Główne\ okno\ aplikacji}}
-\DoxyCodeLine{00032\ \ \ \ \ nana::label\ \ \ \ \ \ labelInput;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Etykieta\ "{}Wpisz\ szukane\ miasto"{}}}
-\DoxyCodeLine{00033\ \ \ \ \ nana::textbox\ \ \ \ inputCity;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Pole\ tekstowe\ do\ wpisania\ miasta}}
-\DoxyCodeLine{00034\ \ \ \ \ nana::button\ \ \ \ \ btnSearch;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Przycisk\ "{}Szukaj"{}}}
-\DoxyCodeLine{00035\ \ \ \ \ nana::listbox\ \ \ \ listStations;\ \ \ \ \ \ \textcolor{comment}{//\ Lista\ stacji\ pomiarowych\ dla\ wybranego\ miasta}}
-\DoxyCodeLine{00036\ \ \ \ \ nana::listbox\ \ \ \ listSensors;\ \ \ \ \ \ \ \textcolor{comment}{//\ Lista\ sensorów\ dla\ wybranej\ stacji}}
-\DoxyCodeLine{00037\ \ \ \ \ nana::label\ \ \ \ \ \ labelStats;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Etykieta\ "{}Statystyki\ danej\ stacji"{}}}
-\DoxyCodeLine{00038\ \ \ \ \ nana::label\ \ \ \ \ \ labelStatsTitle;\ \ \ \textcolor{comment}{//\ Etykieta\ "{}Statystyki"{}}}
-\DoxyCodeLine{00039\ \ \ \ \ nana::button\ \ \ \ \ btnIndex;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Przycisk\ otwierający\ indeks\ jakości\ powietrza}}
-\DoxyCodeLine{00040\ \ \ \ \ nana::button\ \ \ \ \ btnMeasurements;\ \ \ \textcolor{comment}{//\ Przycisk\ otwierający\ bieżące\ pomiary}}
-\DoxyCodeLine{00041\ \ \ \ \ nana::button\ \ \ \ \ btnChart;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Przycisk\ rysujący\ wykres\ pomiarów}}
-\DoxyCodeLine{00042\ \ \ \ \ nana::button\ \ \ \ \ btnRegression;\ \ \ \ \ \textcolor{comment}{//\ Przycisk\ rysujący\ wykres\ z\ regresją\ liniową}}
-\DoxyCodeLine{00043\ \ \ \ \ nana::button\ \ \ \ \ btnStats;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ nowy\ przycisk\ statystyk}}
-\DoxyCodeLine{00044\ \ \ \ \ nana::button\ \ \ \ \ btnDay1;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ filtr:\ ostatni\ dzień}}
-\DoxyCodeLine{00045\ \ \ \ \ nana::button\ \ \ \ \ btnDay2;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ filtr:\ ostatnie\ 2\ dni\ \ }}
-\DoxyCodeLine{00046\ \ \ \ \ nana::button\ \ \ \ \ btnDay3;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ filtr:\ ostatnie\ 3\ dni}}
-\DoxyCodeLine{00047\ \ \ \ \ nana::button\ \ \ \ \ btnToggleRegression;\ \textcolor{comment}{//\ włącz/wyłącz\ regresję}}
-\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classMainWindow_a34c4b4207b46d11a4100c9b19f0e81bb}{MainWindow}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{classMainWindow_a34c4b4207b46d11a4100c9b19f0e81bb}{MainWindow}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classMainWindow_ae3d7a4598609a86e8bd317c0d85c4495}{show}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ ───\ Widgety\ interfejsu\ ───────────────────────────────────────}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ nana::form\ \ \ \ \ \ \ form;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ nana::label\ \ \ \ \ \ labelInput;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ nana::textbox\ \ \ \ inputCity;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ nana::button\ \ \ \ \ btnSearch;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ nana::listbox\ \ \ \ listStations;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ nana::listbox\ \ \ \ listSensors;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ nana::label\ \ \ \ \ \ labelStats;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ nana::label\ \ \ \ \ \ labelStatsTitle;\ \ \ \ }
 \DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ ───\ Zależności\ ───────────────────────────────────────────────}}
-\DoxyCodeLine{00051\ \ \ \ \ \doxymbox{\hyperlink{classApiClient}{ApiClient}}\ \ \ api;\ \ \ \ \textcolor{comment}{//\ Klient\ API\ GIOŚ\ —\ pobiera\ i\ zapisuje\ dane}}
-\DoxyCodeLine{00052\ \ \ \ \ \doxymbox{\hyperlink{classPlotManager}{PlotManager}}\ plot;\ \ \ \textcolor{comment}{//\ Manager\ wykresów\ —\ generuje\ wykresy\ przez\ gnuplot}}
-\DoxyCodeLine{00053\ \ \ \ \ \doxymbox{\hyperlink{classTranslator}{Translator}}\ translator;\ \ \ \ \ \ }
-\DoxyCodeLine{00054\ \ \ \ \ nana::button\ btnLang;\ \ \ \ \ \ \ }
-\DoxyCodeLine{00055\ \ \ \ \ }
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ Dodaj\ zmienne\ stanu:}}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \ currentSensorId\ \ =\ -\/1;\ \ \textcolor{comment}{//\ ID\ aktualnie\ wybranego\ sensora}}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \ currentDayFilter\ =\ 1;\ \ \ \textcolor{comment}{//\ aktualny\ filtr\ dni\ (1/2/3)}}
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ showRegression\ \ \ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ czy\ pokazywać\ regresję}}
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{string}\ currentIndicator\ =\ \textcolor{stringliteral}{"{}"{}};\ \textcolor{comment}{//\ nazwa\ wskaźnika\ aktualnie\ wybranego\ sensora}}
+\DoxyCodeLine{00050\ \ \ \ \ nana::button\ \ \ \ \ btnIndex;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ nana::button\ \ \ \ \ btnMeasurements;\ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ nana::button\ \ \ \ \ btnStats;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ nana::button\ \ \ \ \ btnChart;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ nana::button\ \ \ \ \ btnRegression;\ \ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ nana::button\ \ \ \ \ btnToggleRegression;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ nana::button\ \ \ \ \ btnDay1;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ nana::button\ \ \ \ \ btnDay2;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ nana::button\ \ \ \ \ btnDay3;\ \ \ \ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ ───\ Konfiguracja\ ─────────────────────────────────────────────}}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//\ Ustawia\ pozycje\ i\ rozmiary\ wszystkich\ widgetów\ w\ oknie}}
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ setupLayout();}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ Podpina\ handlery\ zdarzeń\ do\ przycisków\ i\ list}}
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ bindEvents();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ ───\ Zależności\ ───────────────────────────────────────────────}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \doxymbox{\hyperlink{classApiClient}{ApiClient}}\ \ \ api;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \doxymbox{\hyperlink{classPlotManager}{PlotManager}}\ plot;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \doxymbox{\hyperlink{classTranslator}{Translator}}\ \ translator;\ \ }
+\DoxyCodeLine{00067\ \ \ \ \ nana::button\ btnLang;\ \ \ \ }
 \DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//\ ───\ Handlery\ zdarzeń\ ─────────────────────────────────────────}}
-\DoxyCodeLine{00070\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Szukaj"{}\ —\ wyszukuje\ stacje\ w\ podanym\ mieście}}
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ onSearch();}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ zaznaczenie\ stacji\ na\ liście\ —\ pobiera\ sensory\ i\ dane}}
-\DoxyCodeLine{00074\ \ \ \ \ \textcolor{comment}{//\ parametr\ arg\ argument\ zdarzenia\ zawierający\ zaznaczony\ element\ listy}}
-\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ onStationSelected(\textcolor{keyword}{const}\ nana::arg\_listbox\&\ arg);}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Indeks\ jakości\ powietrza"{}}}
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ onIndexClick();}
-\DoxyCodeLine{00079\ }
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Bieżące\ pomiary"{}}}
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ onMeasurementsClick();}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{//\ Obsługuje\ kliknięcie\ przycisku\ "{}Wykres"{}}}
-\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ onChartClick();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//\ ───\ Stan\ aplikacji\ ───────────────────────────────────────────}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \ currentSensorId\ \ =\ -\/1;\ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \ currentDayFilter\ =\ 1;\ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ showRegression\ \ \ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{string}\ currentIndicator\ =\ \textcolor{stringliteral}{"{}"{}};\ \ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//\ ───\ Konfiguracja\ ─────────────────────────────────────────────}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ setupLayout();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ bindEvents();}
 \DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ onSensorSelected(\textcolor{keyword}{const}\ nana::arg\_listbox\&\ arg);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ ───\ Handlery\ zdarzeń\ ─────────────────────────────────────────}}
 \DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ onStatsClick();}
-\DoxyCodeLine{00089\ \ \ \ \ }
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ onDayFilterClick(\textcolor{keywordtype}{int}\ days);}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ onSearch();}
 \DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ onToggleRegression();}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//\ ───\ Pomocnicze\ ───────────────────────────────────────────────}}
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ Wyświetla\ okienko\ z\ komunikatem\ błędu}}
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ parametr\ title\ \ tytuł\ okienka}}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{comment}{//\ parametr\ message\ treść\ komunikatu}}
-\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ showError(\textcolor{keyword}{const}\ std::string\&\ title,\ \textcolor{keyword}{const}\ std::string\&\ message);}
-\DoxyCodeLine{00099\ }
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{comment}{//\ Wczytuje\ plik\ JSON\ z\ dysku}}
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ parametr\ filename\ ścieżka\ do\ pliku}}
-\DoxyCodeLine{00102\ \ \ \ \ \textcolor{comment}{//\ return\ sparsowany\ obiekt\ JSON\ lub\ nullptr\ jeśli\ plik\ nie\ istnieje}}
-\DoxyCodeLine{00103\ \ \ \ \ json\ loadJson(\textcolor{keyword}{const}\ std::string\&\ filename);}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00105\ \ \ \ \ \textcolor{comment}{//\ Bezpiecznie\ odczytuje\ wartość\ stringa\ z\ obiektu\ JSON}}
-\DoxyCodeLine{00106\ \ \ \ \ \textcolor{comment}{//\ Zwraca\ "{}brak"{}\ jeśli\ klucz\ nie\ istnieje\ lub\ ma\ wartość\ null}}
-\DoxyCodeLine{00107\ \ \ \ \ \textcolor{comment}{//\ parametr\ data\ obiekt\ JSON}}
-\DoxyCodeLine{00108\ \ \ \ \ \textcolor{comment}{//\ parametr\ key\ \ nazwa\ klucza}}
-\DoxyCodeLine{00109\ \ \ \ \ std::string\ safeGetStr(\textcolor{keyword}{const}\ json\&\ data,\ \textcolor{keyword}{const}\ std::string\&\ key);}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{//\ Przełącza\ język\ i\ odświeża\ interfejs}}
-\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ switchLanguage();}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ onStationSelected(\textcolor{keyword}{const}\ nana::arg\_listbox\&\ arg);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ onSensorSelected(\textcolor{keyword}{const}\ nana::arg\_listbox\&\ arg);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ onIndexClick();}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ onMeasurementsClick();}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ onStatsClick();}
 \DoxyCodeLine{00113\ }
-\DoxyCodeLine{00114\ \ \ \ \ \textcolor{comment}{//\ Odświeża\ teksty\ wszystkich\ widgetów}}
-\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshLabels();\ \ \ \ \ \ }
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00117\ \ \ \ \ \textcolor{comment}{//\ Odświeża\ nagłówki\ tabel\ po\ zmianie\ języka}}
-\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshHeaders();}
-\DoxyCodeLine{00119\ \};}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ onChartClick();}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ onDayFilterClick(\textcolor{keywordtype}{int}\ days);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ onToggleRegression();}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{comment}{//\ ───\ Pomocnicze\ ───────────────────────────────────────────────}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ showError(\textcolor{keyword}{const}\ std::string\&\ title,\ \textcolor{keyword}{const}\ std::string\&\ message);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00138\ \ \ \ \ json\ loadJson(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00145\ \ \ \ \ std::string\ safeGetStr(\textcolor{keyword}{const}\ json\&\ data,\ \textcolor{keyword}{const}\ std::string\&\ key);}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{void}\ switchLanguage();}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshLabels();}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{void}\ refreshHeaders();}
+\DoxyCodeLine{00159\ \};}
 
 \end{DoxyCode}

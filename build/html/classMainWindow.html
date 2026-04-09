@@ -97,12 +97,39 @@ $(function(){initNavTree('classMainWindow.html','','classMainWindow-members'); }
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3d7a4598609a86e8bd317c0d85c4495" id="r_ae3d7a4598609a86e8bd317c0d85c4495"><td class="memItemLeft"><a id="ae3d7a4598609a86e8bd317c0d85c4495" name="ae3d7a4598609a86e8bd317c0d85c4495"></a>
-void&#160;</td><td class="memItemRight"><b>show</b> ()</td></tr>
+<tr class="memitem:a34c4b4207b46d11a4100c9b19f0e81bb" id="r_a34c4b4207b46d11a4100c9b19f0e81bb"><td class="memItemLeft"><a id="a34c4b4207b46d11a4100c9b19f0e81bb" name="a34c4b4207b46d11a4100c9b19f0e81bb"></a>
+&#160;</td><td class="memItemRight"><b>MainWindow</b> ()</td></tr>
+<tr class="memdesc:a34c4b4207b46d11a4100c9b19f0e81bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor — tworzy okno, ustawia layout i podpina zdarzenia. <br /></td></tr>
+<tr class="memitem:ae3d7a4598609a86e8bd317c0d85c4495" id="r_ae3d7a4598609a86e8bd317c0d85c4495"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae3d7a4598609a86e8bd317c0d85c4495">show</a> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Główne okno aplikacji "Sprawdź jakość powietrza" Odpowiada za wyświetlanie interfejsu użytkownika oraz obsługę zdarzeń Komunikuje się z API GIOŚ przez <a class="el" href="classApiClient.html">ApiClient</a> i rysuje wykresy przez <a class="el" href="classPlotManager.html">PlotManager</a> </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>Główne okno aplikacji "Sprawdź jakość powietrza" Odpowiada za wyświetlanie interfejsu użytkownika oraz obsługę zdarzeń Komunikuje się z API GIOŚ przez <a class="el" href="classApiClient.html">ApiClient</a> i rysuje wykresy przez <a class="el" href="classPlotManager.html">PlotManager</a></p>
+<p>Przepływ użytkownika:</p><ol type="1">
+<li>Wpisz miasto → kliknij "Szukaj" → pojawia się lista stacji</li>
+<li>Kliknij stację → pojawia się lista sensorów</li>
+<li>Kliknij sensor → pobierają się pomiary</li>
+<li>Użyj przycisków po prawej żeby zobaczyć dane </li>
+</ol>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ae3d7a4598609a86e8bd317c0d85c4495" name="ae3d7a4598609a86e8bd317c0d85c4495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d7a4598609a86e8bd317c0d85c4495">&#9670;&#160;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::show </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wyświetla okno i uruchamia pętlę zdarzeń Nana Blokuje się do momentu zamknięcia okna przez użytkownika </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>MainWindow/<a class="el" href="MainWindow_8h_source.html">MainWindow.h</a></li>
 <li>MainWindow/<b>MainWindow.cpp</b></li>
 </ul>

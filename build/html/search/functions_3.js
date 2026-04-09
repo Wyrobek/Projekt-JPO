@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_5b_5d_0',['operator[]',['../classTranslator.html#a6d1bb942816c03dc33c2da74708b1161',1,'Translator']]]
+  ['mainwindow_0',['MainWindow',['../classMainWindow.html#a34c4b4207b46d11a4100c9b19f0e81bb',1,'MainWindow']]]
 ];
