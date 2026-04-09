@@ -52,13 +52,11 @@ Wymagane biblioteki (instalacja przez MSYS2):
 ---------------------
 Projekt/<br>
   main.cpp                    -- punkt wejścia aplikacji, inicjalizacja DLL i GUI
-<br><br>
-
+  
   API/<br>
     ApiClient.h                 -- nagłówek klienta API GIOŚ
     <br>
     ApiClient.cpp               -- pobieranie danych z API, obsługa trybu offline
-    <br><br>
 
   MainWindow/<br>
     MainWindow.h                -- nagłówek głównego okna
