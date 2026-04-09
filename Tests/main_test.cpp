@@ -8,9 +8,9 @@ int main(int argc, char **argv) {
  
     SetDllDirectoryA("libs");
     
-    #ifdef _WIN32
-        SetCurrentDirectoryA("..");
-    #endif
+    // #ifdef _WIN32
+    //     SetCurrentDirectoryA("..");
+    // #endif
 
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
