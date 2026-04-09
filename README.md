@@ -134,15 +134,15 @@ Lub przez VS Code: Ctrl+Shift+B (task "build app")
 ------------------------------------
 Komenda w terminalu MSYS2 MinGW64:
 
-  g++ Tests/main_test.cpp Tests/translator_test.cpp \<br>
-      Tests/apiclient_test.cpp Tests/plotmanager_test.cpp \<br>
-      Lang/Translator.cpp API/ApiClient.cpp Plot/PlotManager.cpp \<br>
-      -ILang -IAPI -IPlot \<br>
-      -o Tests/tests.exe \<br>
-      -lgtest -lgtest_main -lpthread \<br>
-      -lcpr -lcurl -lssl -lcrypto -std=c++17<br>
+  g++ Tests/main_test.cpp Tests/translator_test.cpp \ <br>
+      Tests/apiclient_test.cpp Tests/plotmanager_test.cpp \ <br>
+      Lang/Translator.cpp API/ApiClient.cpp Plot/PlotManager.cpp \ <br>
+      -ILang -IAPI -IPlot \ <br>
+      -o Tests/tests.exe \ <br>
+      -lgtest -lgtest_main -lpthread \ <br>
+      -lcpr -lcurl -lssl -lcrypto -std=c++17 <br>
 
-Lub przez VS Code: Ctrl+Shift+P -> "Tasks: Run Task" -> "build tests"<br>
+Lub przez VS Code: Ctrl+Shift+P -> "Tasks: Run Task" -> "build tests" <br>
 
 Uruchomienie testów:
   RunTests.bat                  (zalecane - ustawia PATH do libs/)
