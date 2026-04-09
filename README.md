@@ -119,13 +119,13 @@ Projekt/<br>
 ----------------------
 Komenda w terminalu MSYS2 MinGW64:
 
-  g++ main.cpp API/ApiClient.cpp MainWindow/MainWindow.cpp \<br>
-      Plot/PlotManager.cpp Lang/Translator.cpp \<br>
-      -IAPI -IMainWindow -IPlot -ILang \<br>
-      -o Powietrze.exe \<br>
-      -lcurl -std=c++17 -lnana -lgdi32 -lcomdlg32 \<br>
-      -lole32 -luuid -lcpr -lssl -lcrypto -lpng -ljpeg \<br>
-      -mwindows<br>
+  g++ main.cpp API/ApiClient.cpp MainWindow/MainWindow.cpp \ <br>
+      Plot/PlotManager.cpp Lang/Translator.cpp \ <br>
+      -IAPI -IMainWindow -IPlot -ILang \ <br>
+      -o Powietrze.exe \ <br>
+      -lcurl -std=c++17 -lnana -lgdi32 -lcomdlg32 \ <br>
+      -lole32 -luuid -lcpr -lssl -lcrypto -lpng -ljpeg \ <br>
+      -mwindows <br>
 
 Lub przez VS Code: Ctrl+Shift+B (task "build app")
 
