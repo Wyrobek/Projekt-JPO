@@ -7,6 +7,12 @@
 
 using namespace std;
 
+class OfflineModeFallback {};
+class CriticalDataError : public runtime_error {
+public:
+    CriticalDataError() : runtime_error("Brak internetu oraz brak pliku ") {}
+};
+
 // Bazowy adres API GIOŚ — wszystkie endpointy zaczynają się od tego URL
 const std::string ApiClient::BASE_URL = "https://api.gios.gov.pl/pjp-api/v1/rest";
 
@@ -47,15 +53,21 @@ void ApiClient::fetchStations() {
     try {
         if (!isInternetAvailable()) {
             if (fileExists("API/dataBase.json")) {
-                cout << "Brak internetu - używasz zapisanych danych\n";
-                return;
-            } else {
-                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+                throw OfflineModeFallback(); 
             }
+            throw CriticalDataError();
         }
 
-    } catch (const runtime_error& e) {
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
         cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "dataBase.json" << "\n";
         return;
     }
 
@@ -116,15 +128,21 @@ void ApiClient::fetchSensors(int stationId) {
     try {
         if (!isInternetAvailable()) {
             if (fileExists("API/sensors.json")) {
-                cout << "Brak internetu - używasz zapisanych danych\n";
-                return;
-            } else {
-                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+                throw OfflineModeFallback(); 
             }
+            throw CriticalDataError();
         }
 
-    } catch (const runtime_error& e) {
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
         cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "sensors.json" << "\n";
         return;
     }
 
@@ -174,16 +192,22 @@ void ApiClient::fetchSensors(int stationId) {
 void ApiClient::fetchMeasurements(int sensorId) {
     try {
         if (!isInternetAvailable()) {
-            if (fileExists("API/measurements.json")) {
-                cout << "Brak internetu - używasz zapisanych danych\n";
-                return;
-            } else {
-                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+            if (fileExists("API/dataBase.json")) {
+                throw OfflineModeFallback(); 
             }
+            throw CriticalDataError();
         }
 
-    } catch (const runtime_error& e) {
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
         cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "measurements.json" << "\n";
         return;
     }
 
@@ -246,15 +270,21 @@ void ApiClient::fetchAirQualityIndex(int stationId) {
     try {
         if (!isInternetAvailable()) {
             if (fileExists("API/dataBase.json")) {
-                cout << "Brak internetu - używasz zapisanych danych\n";
-                return;
-            } else {
-                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+                throw OfflineModeFallback(); 
             }
+            throw CriticalDataError();
         }
 
-    } catch (const runtime_error& e) {
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
         cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "index.json" << "\n";
         return;
     }
 
