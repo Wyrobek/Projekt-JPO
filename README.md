@@ -1,7 +1,7 @@
-================================================================================
+============================================================================
  # SPRAWDŹ JAKOŚĆ POWIETRZA
  # Aplikacja desktopowa C++ / Windows
-================================================================================
+============================================================================
 
 
 ## OPIS
@@ -52,19 +52,16 @@ Wymagane biblioteki (instalacja przez MSYS2):
 ---------------------
 Projekt/<br>
   main.cpp                    -- punkt wejścia aplikacji, inicjalizacja DLL i GUI
-<br><br>
-
+  
   API/<br>
     ApiClient.h                 -- nagłówek klienta API GIOŚ
     <br>
     ApiClient.cpp               -- pobieranie danych z API, obsługa trybu offline
-    <br><br>
 
   MainWindow/<br>
     MainWindow.h                -- nagłówek głównego okna
     <br>
     MainWindow.cpp              -- interfejs użytkownika (Nana GUI), obsługa zdarzeń
-    <br><br>
 
   Plot/<br>
     PlotManager.h               -- nagłówek managera wykresów
@@ -74,7 +71,6 @@ Projekt/<br>
     tmp_plot.dat                -- tymczasowe dane dla gnuplot (generowane automatycznie)
     <br>
     tmp_plot.gp                 -- tymczasowy skrypt gnuplot (generowany automatycznie)
-    <br><br>
 
   Lang/<br>
     Translator.h                -- nagłówek klasy tłumaczeń
@@ -84,7 +80,6 @@ Projekt/<br>
     pl.json                     -- tłumaczenia polskie
     <br>
     en.json                     -- tłumaczenia angielskie
-    <br><br>
 
   API/                        -- pliki JSON z danymi (generowane automatycznie)
   <br>
@@ -95,8 +90,6 @@ Projekt/<br>
     measurments.json            -- pomiary dla ostatnio wybranego sensora
     <br>
     index.json                  -- indeks jakości powietrza
-    <br><br>
-
 
   libs/                         -- biblioteki DLL wymagane przez aplikację
   <br>
@@ -107,7 +100,6 @@ Projekt/<br>
     libssl-3-x64.dll
     <br>
     ... (pozostałe DLL-e)
-    <br><br>
 
   Tests/<br>
     main_test.cpp               -- punkt wejścia testów jednostkowych
@@ -117,25 +109,23 @@ Projekt/<br>
     apiclient_test.cpp          -- testy klasy ApiClient (3 testy)
     <br>
     plotmanager_test.cpp        -- testy klasy PlotManager (4 testy)
-    <br><br>
 
   Start.bat                     -- uruchamia aplikację z bibliotekami z folderu libs/
   <br>
   RunTests.bat                  -- uruchamia testy jednostkowe z bibliotekami z libs/
-  <br><br>
 
 
 ## BUDOWANIE APLIKACJI
 ----------------------
 Komenda w terminalu MSYS2 MinGW64:
 
-  g++ main.cpp API/ApiClient.cpp MainWindow/MainWindow.cpp \<br>
-      Plot/PlotManager.cpp Lang/Translator.cpp \<br>
-      -IAPI -IMainWindow -IPlot -ILang \<br>
-      -o Powietrze.exe \<br>
-      -lcurl -std=c++17 -lnana -lgdi32 -lcomdlg32 \<br>
-      -lole32 -luuid -lcpr -lssl -lcrypto -lpng -ljpeg \<br>
-      -mwindows<br>
+  g++ main.cpp API/ApiClient.cpp MainWindow/MainWindow.cpp \ <br>
+      Plot/PlotManager.cpp Lang/Translator.cpp \ <br>
+      -IAPI -IMainWindow -IPlot -ILang \ <br>
+      -o Powietrze.exe \ <br>
+      -lcurl -std=c++17 -lnana -lgdi32 -lcomdlg32 \ <br>
+      -lole32 -luuid -lcpr -lssl -lcrypto -lpng -ljpeg \ <br>
+      -mwindows <br>
 
 Lub przez VS Code: Ctrl+Shift+B (task "build app")
 
@@ -144,15 +134,15 @@ Lub przez VS Code: Ctrl+Shift+B (task "build app")
 ------------------------------------
 Komenda w terminalu MSYS2 MinGW64:
 
-  g++ Tests/main_test.cpp Tests/translator_test.cpp \<br>
-      Tests/apiclient_test.cpp Tests/plotmanager_test.cpp \<br>
-      Lang/Translator.cpp API/ApiClient.cpp Plot/PlotManager.cpp \<br>
-      -ILang -IAPI -IPlot \<br>
-      -o Tests/tests.exe \<br>
-      -lgtest -lgtest_main -lpthread \<br>
-      -lcpr -lcurl -lssl -lcrypto -std=c++17<br>
+  g++ Tests/main_test.cpp Tests/translator_test.cpp \ <br>
+      Tests/apiclient_test.cpp Tests/plotmanager_test.cpp \ <br>
+      Lang/Translator.cpp API/ApiClient.cpp Plot/PlotManager.cpp \ <br>
+      -ILang -IAPI -IPlot \ <br>
+      -o Tests/tests.exe \ <br>
+      -lgtest -lgtest_main -lpthread \ <br>
+      -lcpr -lcurl -lssl -lcrypto -std=c++17 <br>
 
-Lub przez VS Code: Ctrl+Shift+P -> "Tasks: Run Task" -> "build tests"<br>
+Lub przez VS Code: Ctrl+Shift+P -> "Tasks: Run Task" -> "build tests" <br>
 
 Uruchomienie testów:
   RunTests.bat                  (zalecane - ustawia PATH do libs/)
