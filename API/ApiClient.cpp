@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iostream>
 #include <cpr/cpr.h>
+#include <stdexcept>
 
 using namespace std;
 
@@ -43,14 +44,29 @@ bool ApiClient::fileExists(const std::string& filename) {
  * Tryb online:  pobiera świeże dane i nadpisuje plik
  */
 void ApiClient::fetchStations() {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/dataBase.json")) {
-            cout << "Brak internetu - używasz zapisanych danych\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/dataBase.json")) {
+                cout << "Brak internetu - używasz zapisanych danych\n";
+                return;
+            } else {
+                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+            }
         }
-        cout << "Brak internetu oraz brak pliku dataBase.json!\n";
+
+    } catch (const runtime_error& e) {
+        cout << e.what() << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/dataBase.json")) {
+    //         cout << "Brak internetu - używasz zapisanych danych\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku dataBase.json!\n";
+    //     return;
+    // }
 
     string url = BASE_URL + "/station/findAll?size=" + to_string(MAX_STATIONS);
     cpr::Response response = cpr::Get(
@@ -97,14 +113,29 @@ void ApiClient::fetchStations() {
  * Zapisuje do API/sensors.json
  */
 void ApiClient::fetchSensors(int stationId) {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/sensors.json")) {
-            cout << "Brak internetu - używasz zapisanych danych\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/sensors.json")) {
+                cout << "Brak internetu - używasz zapisanych danych\n";
+                return;
+            } else {
+                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+            }
         }
-        cout << "Brak internetu oraz brak pliku sensors.json!\n";
+
+    } catch (const runtime_error& e) {
+        cout << e.what() << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/sensors.json")) {
+    //         cout << "Brak internetu - używasz zapisanych danych\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku sensors.json!\n";
+    //     return;
+    // }
 
     string url = BASE_URL + "/station/sensors/" + to_string(stationId) + "?size=500";
     cpr::Response response = cpr::Get(
@@ -141,14 +172,29 @@ void ApiClient::fetchSensors(int stationId) {
  * Zapisuje do API/measurments.json
  */
 void ApiClient::fetchMeasurements(int sensorId) {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/measurments.json")) {
-            cout << "Brak internetu\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/measurements.json")) {
+                cout << "Brak internetu - używasz zapisanych danych\n";
+                return;
+            } else {
+                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+            }
         }
-        cout << "Brak internetu oraz brak pliku measurments.json!\n";
+
+    } catch (const runtime_error& e) {
+        cout << e.what() << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/measurments.json")) {
+    //         cout << "Brak internetu\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku measurments.json!\n";
+    //     return;
+    // }
 
     // size=72 oznacza ostatnie 72 godziny (3 doby)
     string url = BASE_URL + "/data/getData/" + to_string(sensorId) + "?size=" + to_string(MAX_MEASUREMENTS);
@@ -197,14 +243,29 @@ void ApiClient::fetchMeasurements(int sensorId) {
  * Zapisuje tylko sekcję "AqIndex" z odpowiedzi — reszta to metadane
  */
 void ApiClient::fetchAirQualityIndex(int stationId) {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/index.json")) {
-            cout << "Brak internetu - używasz zapisanych danych\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/dataBase.json")) {
+                cout << "Brak internetu - używasz zapisanych danych\n";
+                return;
+            } else {
+                throw runtime_error("Brak internetu oraz brak pliku dataBase.json!");
+            }
         }
-        cout << "Brak internetu oraz brak pliku index.json!\n";
+
+    } catch (const runtime_error& e) {
+        cout << e.what() << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/index.json")) {
+    //         cout << "Brak internetu - używasz zapisanych danych\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku index.json!\n";
+    //     return;
+    // }
 
     string url = BASE_URL + "/aqindex/getIndex/" + to_string(stationId);
     cpr::Response response = cpr::Get(
