@@ -3,8 +3,15 @@
 #include <fstream>
 #include <iostream>
 #include <cpr/cpr.h>
+#include <stdexcept>
 
 using namespace std;
+
+class OfflineModeFallback {};
+class CriticalDataError : public runtime_error {
+public:
+    CriticalDataError() : runtime_error("Brak internetu oraz brak pliku ") {}
+};
 
 // Bazowy adres API GIOŚ — wszystkie endpointy zaczynają się od tego URL
 const std::string ApiClient::BASE_URL = "https://api.gios.gov.pl/pjp-api/v1/rest";
@@ -43,14 +50,35 @@ bool ApiClient::fileExists(const std::string& filename) {
  * Tryb online:  pobiera świeże dane i nadpisuje plik
  */
 void ApiClient::fetchStations() {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/dataBase.json")) {
-            cout << "Brak internetu - używasz zapisanych danych\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/dataBase.json")) {
+                throw OfflineModeFallback(); 
+            }
+            throw CriticalDataError();
         }
-        cout << "Brak internetu oraz brak pliku dataBase.json!\n";
+
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
+        cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "dataBase.json" << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/dataBase.json")) {
+    //         cout << "Brak internetu - używasz zapisanych danych\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku dataBase.json!\n";
+    //     return;
+    // }
 
     string url = BASE_URL + "/station/findAll?size=" + to_string(MAX_STATIONS);
     cpr::Response response = cpr::Get(
@@ -97,14 +125,35 @@ void ApiClient::fetchStations() {
  * Zapisuje do API/sensors.json
  */
 void ApiClient::fetchSensors(int stationId) {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/sensors.json")) {
-            cout << "Brak internetu - używasz zapisanych danych\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/sensors.json")) {
+                throw OfflineModeFallback(); 
+            }
+            throw CriticalDataError();
         }
-        cout << "Brak internetu oraz brak pliku sensors.json!\n";
+
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
+        cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "sensors.json" << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/sensors.json")) {
+    //         cout << "Brak internetu - używasz zapisanych danych\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku sensors.json!\n";
+    //     return;
+    // }
 
     string url = BASE_URL + "/station/sensors/" + to_string(stationId) + "?size=500";
     cpr::Response response = cpr::Get(
@@ -141,14 +190,35 @@ void ApiClient::fetchSensors(int stationId) {
  * Zapisuje do API/measurments.json
  */
 void ApiClient::fetchMeasurements(int sensorId) {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/measurments.json")) {
-            cout << "Brak internetu\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/dataBase.json")) {
+                throw OfflineModeFallback(); 
+            }
+            throw CriticalDataError();
         }
-        cout << "Brak internetu oraz brak pliku measurments.json!\n";
+
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
+        cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "measurements.json" << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/measurments.json")) {
+    //         cout << "Brak internetu\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku measurments.json!\n";
+    //     return;
+    // }
 
     // size=72 oznacza ostatnie 72 godziny (3 doby)
     string url = BASE_URL + "/data/getData/" + to_string(sensorId) + "?size=" + to_string(MAX_MEASUREMENTS);
@@ -197,14 +267,35 @@ void ApiClient::fetchMeasurements(int sensorId) {
  * Zapisuje tylko sekcję "AqIndex" z odpowiedzi — reszta to metadane
  */
 void ApiClient::fetchAirQualityIndex(int stationId) {
-    if (!isInternetAvailable()) {
-        if (fileExists("API/index.json")) {
-            cout << "Brak internetu - używasz zapisanych danych\n";
-            return;
+    try {
+        if (!isInternetAvailable()) {
+            if (fileExists("API/dataBase.json")) {
+                throw OfflineModeFallback(); 
+            }
+            throw CriticalDataError();
         }
-        cout << "Brak internetu oraz brak pliku index.json!\n";
+
+    } catch (const OfflineModeFallback&) {
+        cout << "Brak internetu - używasz zapisanych danych\n";
+        return;
+        
+    } catch (const CriticalDataError& e) {
+        cout << e.what() << "\n";
+        return;
+        
+    } catch (const exception& e) {
+        cout << "Nieznany błąd: " << e.what() << "index.json" << "\n";
         return;
     }
+
+    // if (!isInternetAvailable()) {
+    //     if (fileExists("API/index.json")) {
+    //         cout << "Brak internetu - używasz zapisanych danych\n";
+    //         return;
+    //     }
+    //     cout << "Brak internetu oraz brak pliku index.json!\n";
+    //     return;
+    // }
 
     string url = BASE_URL + "/aqindex/getIndex/" + to_string(stationId);
     cpr::Response response = cpr::Get(
