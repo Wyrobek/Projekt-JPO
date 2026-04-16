@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
 // Sprawdź czy zwraca poprawne tłumaczenie po polsku
 TEST(TranslatorTest, ReturnPolishTranslation) {
     Translator t(Translator::Language::PL);
-    EXPECT_EQ(t["search_btn"], "Szukaj");
+    EXPECT_EQ(t["search_btn"], "Szuka");
     EXPECT_EQ(t["btn_chart"],  "Wykres");
     EXPECT_EQ(t["col_street"], "Ulica");
 }
