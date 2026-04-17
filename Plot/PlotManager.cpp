@@ -98,7 +98,19 @@ void PlotManager::writeXTics(ofstream& script, int total, int days) {
  * Uruchamia gnuplot bez okna konsoli
  */
 void PlotManager::runGnuplot(const string& flags) {
-    string cmd = "gnuplot " + flags + " " + TEMP_SCRIPT_FILE;
+    // Szukaj gnuplot najpierw w libs/ obok aplikacji
+    // Jeśli nie ma — spróbuj z PATH (np. zainstalowany globalnie)
+    string gnuplotPath;
+
+    ifstream testLocal("libs/gnuplot.exe");
+    if (testLocal.is_open()) {
+        testLocal.close();
+        gnuplotPath = "libs\\gnuplot.exe"; // lokalny gnuplot w libs/
+    } else {
+        gnuplotPath = "gnuplot";           // gnuplot z PATH
+    }
+
+    string cmd = gnuplotPath + " " + flags + " " + TEMP_SCRIPT_FILE;
 
     // Sprawdź czy pliki tymczasowe istnieją
     ifstream testData(TEMP_DATA_FILE);
@@ -115,50 +127,29 @@ void PlotManager::runGnuplot(const string& flags) {
     testData.close();
     testScript.close();
 
-    // Sprawdź czy gnuplot jest dostępny
-    STARTUPINFOA si_test = {};
-    PROCESS_INFORMATION pi_test = {};
-    si_test.cb = sizeof(si_test);
-    string test_cmd = "gnuplot --version";
-
-    BOOL gnuplot_found = CreateProcessA(
-        nullptr,
-        const_cast<char*>(test_cmd.c_str()),
-        nullptr, nullptr, FALSE,
-        CREATE_NO_WINDOW, // ← bez konsoli
-        nullptr, nullptr,
-        &si_test, &pi_test
-    );
-
-    if (!gnuplot_found) {
-        MessageBoxA(nullptr,
-            "gnuplot nie został znaleziony!\n"
-            "Zainstaluj gnuplot i dodaj do PATH\n"
-            "lub umieść gnuplot.exe w folderze aplikacji.",
-            "Błąd wykresu", MB_OK);
-        return;
-    }
-
-    WaitForSingleObject(pi_test.hProcess, 3000);
-    CloseHandle(pi_test.hProcess);
-    CloseHandle(pi_test.hThread);
-
-    // Uruchom wykres — BEZ konsoli
+    // Uruchom gnuplot bez okna konsoli
     STARTUPINFOA si = {};
     PROCESS_INFORMATION pi = {};
     si.cb = sizeof(si);
 
+    // Ustaw katalog roboczy na libs/ żeby gnuplot znalazł swoje DLL-e
     BOOL result = CreateProcessA(
         nullptr,
         const_cast<char*>(cmd.c_str()),
-        nullptr, nullptr, FALSE,
-        CREATE_NO_WINDOW, // ← kluczowa zmiana: brak okna konsoli
         nullptr, nullptr,
+        FALSE,
+        CREATE_NO_WINDOW,
+        nullptr,
+        "libs",    // katalog roboczy — gnuplot szuka DLL-i tutaj
         &si, &pi
     );
 
     if (!result) {
-        MessageBoxA(nullptr, "Nie udało się uruchomić gnuplot!", "Błąd", MB_OK);
+        MessageBoxA(nullptr,
+            "Nie udało się uruchomić gnuplot!\n"
+            "Sprawdź czy libs/gnuplot.exe istnieje\n"
+            "lub zainstaluj gnuplot i dodaj do PATH.",
+            "Błąd wykresu", MB_OK);
         return;
     }
 
