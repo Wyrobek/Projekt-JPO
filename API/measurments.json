@@ -1,304 +1,304 @@
 {
     "pomiary": [
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 13:00:00",
-            "Wartość": 8.5
+            "Wartość": 8.6
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 12:00:00",
-            "Wartość": 10.4
+            "Wartość": 10.0
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 11:00:00",
-            "Wartość": 9.0
+            "Wartość": 6.4
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 10:00:00",
-            "Wartość": 11.4
+            "Wartość": 9.9
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 09:00:00",
-            "Wartość": 11.9
+            "Wartość": 15.5
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 08:00:00",
-            "Wartość": 15.1
+            "Wartość": 18.1
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 07:00:00",
-            "Wartość": 11.3
+            "Wartość": 20.2
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 06:00:00",
-            "Wartość": 11.5
+            "Wartość": 23.4
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 05:00:00",
-            "Wartość": 11.4
+            "Wartość": 32.3
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 04:00:00",
-            "Wartość": 16.0
+            "Wartość": 35.1
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-17 03:00:00",
-            "Wartość": 19.7
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-17 02:00:00",
-            "Wartość": 19.5
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-17 01:00:00",
-            "Wartość": 19.6
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-17 00:00:00",
-            "Wartość": 22.2
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 23:00:00",
-            "Wartość": 25.0
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 22:00:00",
-            "Wartość": 21.3
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 21:00:00",
-            "Wartość": 17.2
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 20:00:00",
-            "Wartość": 13.1
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 19:00:00",
-            "Wartość": 14.4
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 18:00:00",
-            "Wartość": 10.8
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 17:00:00",
-            "Wartość": 7.8
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 16:00:00",
-            "Wartość": 11.2
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 15:00:00",
-            "Wartość": 13.1
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 14:00:00",
-            "Wartość": 16.6
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 13:00:00",
-            "Wartość": 19.2
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 12:00:00",
-            "Wartość": 19.8
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 11:00:00",
-            "Wartość": 22.1
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 10:00:00",
-            "Wartość": 34.4
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 09:00:00",
             "Wartość": 30.7
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 08:00:00",
-            "Wartość": 40.2
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-17 02:00:00",
+            "Wartość": 23.3
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 07:00:00",
-            "Wartość": 34.5
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-17 01:00:00",
+            "Wartość": 21.0
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 06:00:00",
-            "Wartość": 32.1
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-17 00:00:00",
+            "Wartość": 21.7
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 05:00:00",
-            "Wartość": 29.6
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 23:00:00",
+            "Wartość": 20.2
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 04:00:00",
-            "Wartość": 27.3
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 22:00:00",
+            "Wartość": 18.6
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 03:00:00",
-            "Wartość": 26.6
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 21:00:00",
+            "Wartość": 14.2
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 02:00:00",
-            "Wartość": 25.1
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 20:00:00",
+            "Wartość": 13.7
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 01:00:00",
-            "Wartość": 27.1
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 19:00:00",
+            "Wartość": 13.5
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-16 00:00:00",
-            "Wartość": 29.3
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 18:00:00",
+            "Wartość": 14.8
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 23:00:00",
-            "Wartość": 30.1
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 17:00:00",
+            "Wartość": 13.8
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 22:00:00",
-            "Wartość": 24.7
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 16:00:00",
+            "Wartość": 13.7
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 21:00:00",
-            "Wartość": 19.2
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 15:00:00",
+            "Wartość": 14.1
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 20:00:00",
-            "Wartość": 19.0
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 14:00:00",
+            "Wartość": 13.9
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 19:00:00",
-            "Wartość": 17.2
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 13:00:00",
+            "Wartość": 14.0
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 18:00:00",
-            "Wartość": 17.4
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 17:00:00",
-            "Wartość": 16.9
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 16:00:00",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 12:00:00",
             "Wartość": 19.4
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 11:00:00",
+            "Wartość": 35.9
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 10:00:00",
+            "Wartość": 44.3
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 09:00:00",
+            "Wartość": 43.2
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 08:00:00",
+            "Wartość": 44.1
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 07:00:00",
+            "Wartość": 34.2
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 06:00:00",
+            "Wartość": 28.6
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 05:00:00",
+            "Wartość": 27.4
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 04:00:00",
+            "Wartość": 21.8
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 03:00:00",
+            "Wartość": 17.1
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 02:00:00",
+            "Wartość": 18.0
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 01:00:00",
+            "Wartość": 17.7
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-16 00:00:00",
+            "Wartość": 14.8
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 23:00:00",
+            "Wartość": 19.0
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 22:00:00",
+            "Wartość": 9.4
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 21:00:00",
+            "Wartość": 7.9
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 20:00:00",
+            "Wartość": 6.4
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 19:00:00",
+            "Wartość": 6.1
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 18:00:00",
+            "Wartość": 6.1
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 17:00:00",
+            "Wartość": 6.7
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 16:00:00",
+            "Wartość": 7.7
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 15:00:00",
-            "Wartość": 27.1
+            "Wartość": 8.7
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 14:00:00",
-            "Wartość": 33.6
+            "Wartość": 9.6
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 13:00:00",
-            "Wartość": 33.6
+            "Wartość": 10.5
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 12:00:00",
-            "Wartość": 32.2
+            "Wartość": 14.5
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 11:00:00",
+            "Wartość": 21.9
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 10:00:00",
+            "Wartość": 28.6
+        },
+        {
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
+            "Data": "2026-04-15 09:00:00",
             "Wartość": 32.2
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 10:00:00",
-            "Wartość": 32.5
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
-            "Data": "2026-04-15 09:00:00",
-            "Wartość": 30.4
-        },
-        {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 08:00:00",
-            "Wartość": 28.1
+            "Wartość": 36.1
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 07:00:00",
-            "Wartość": 28.3
+            "Wartość": 36.7
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 06:00:00",
-            "Wartość": 24.9
+            "Wartość": 36.1
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 05:00:00",
-            "Wartość": 24.2
+            "Wartość": 36.1
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 04:00:00",
-            "Wartość": 23.9
+            "Wartość": 33.9
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 03:00:00",
-            "Wartość": 23.7
+            "Wartość": 33.1
         },
         {
-            "Kod stanowiska": "PmGdaGrunwal-PM2.5-1g",
+            "Kod stanowiska": "WpPoznSzwajc-PM2.5-1g",
             "Data": "2026-04-15 02:00:00",
-            "Wartość": 23.1
+            "Wartość": 32.1
         }
     ]
 }
