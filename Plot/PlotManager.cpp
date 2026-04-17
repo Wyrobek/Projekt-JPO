@@ -138,9 +138,10 @@ void PlotManager::runGnuplot(const string& flags) {
         const_cast<char*>(cmd.c_str()),
         nullptr, nullptr,
         FALSE,
-        CREATE_NO_WINDOW,
+        CREATE_NO_WINDOW, 
+        //0,
         nullptr,
-        "libs",    // katalog roboczy — gnuplot szuka DLL-i tutaj
+        nullptr,          
         &si, &pi
     );
 
